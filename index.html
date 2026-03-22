@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>345 — love yours.</title>
+  <meta name="description" content="345 is a simple way to say something meaningful. i love you. i believe in you. i am proud of you." />
 
   <style>
     :root {
@@ -13,6 +14,8 @@
       --muted: #6d655d;
       --line: rgba(23, 20, 17, 0.10);
       --line-strong: rgba(23, 20, 17, 0.18);
+      --card: rgba(255, 255, 255, 0.46);
+      --accent: #7a6550;
       --shadow: 0 24px 60px rgba(23, 20, 17, 0.08);
       --max: 1240px;
       --radius: 28px;
@@ -47,7 +50,6 @@
       margin: 40px 0;
     }
 
-    /* NAV */
     .site-header {
       position: sticky;
       top: 0;
@@ -89,15 +91,10 @@
       text-transform: uppercase;
       border: 1px solid var(--line-strong);
       transition: 0.25s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .btn { background: var(--text); color: #fff; }
-    .btn:hover { transform: translateY(-1px); }
-
-    .btn-light { background: rgba(255,255,255,0.4); color: var(--text); }
+    .btn-light { background: rgba(255,255,255,0.4); }
 
     section.block { padding: 100px 0; }
 
@@ -107,24 +104,16 @@
       font-size: clamp(38px, 5vw, 64px);
       font-weight: 400;
       letter-spacing: -0.04em;
-      margin: 12px 0 16px;
     }
 
-    .section-head p {
-      color: var(--muted);
-      line-height: 1.9;
-      margin: 0;
-      font-size: 16px;
-    }
+    .section-head p { color: var(--muted); line-height: 1.9; }
 
-    /* HERO */
     .hero { text-align: center; padding: 120px 0 90px; }
 
     .hero h1 {
       font-size: clamp(64px, 10vw, 120px);
       margin: 0 0 20px;
       letter-spacing: -0.05em;
-      font-weight: 400;
     }
 
     .hero-sub {
@@ -144,7 +133,6 @@
 
     .hero-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 
-    /* STORY */
     .story-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
     .card {
@@ -154,22 +142,10 @@
       box-shadow: var(--shadow);
     }
 
-    /* PRODUCTS */
     .products { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-
-    .product {
-      text-align: center;
-    }
 
     .product img { width: 100%; height: 340px; object-fit: contain; }
 
-    .product h3 {
-      font-size: 20px;
-      font-weight: 400;
-      margin: 16px 0 14px;
-    }
-
-    /* FOOTER */
     footer {
       padding: 40px 0;
       text-align: center;
@@ -180,9 +156,6 @@
 
     @media(max-width:900px){
       .products, .story-layout { grid-template-columns: 1fr; }
-      .site-header-inner { grid-template-columns: 1fr; gap: 10px; padding: 16px 0; }
-      .nav-left, .nav-right { justify-content: center; flex-wrap: wrap; }
-      .brand-mark { order: -1; }
     }
   </style>
 </head>
@@ -290,9 +263,12 @@
       <span class="eyebrow">the message</span>
       <h2 class="serif">3 · 4 · 5</h2>
       <p>
-        I love you. I believe in you. I’m proud of you.
+        i love you. i believe in you. i am proud of you.
         <br><br>
-        simple things — that most people don’t hear often enough.
+        a simple way to say something meaningful —
+        whether it’s a reminder, a check-in, or just something you want someone to feel.
+        <br><br>
+        whether in absence or in abundance, these are words we don’t hear enough.
       </p>
     </div>
   </div>
