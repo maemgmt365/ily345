@@ -400,6 +400,35 @@
       margin-top: 54px;
     }
 
+    .transition-strip {
+  padding: 40px 0 10px;
+}
+
+.transition-strip .strip-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px 22px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,0.46), rgba(255,255,255,0.26));
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.transition-strip .strip-title {
+  margin: 0 0 4px;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.transition-strip .strip-copy {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
     .product {
       overflow: hidden;
     }
@@ -682,17 +711,7 @@
 
     <div class="container"><div class="divider"></div></div>
 
-    <!-- THIN STRIP ABOVE PRODUCTS -->
-    <section class="transition-strip">
-      <div class="container">
-        <div class="strip-shell reveal">
-          <h2 class="strip-title serif">this starts loud.</h2>
-          <p class="strip-copy">
-            but eventually, 345 becomes something you don’t have to explain.
-          </p>
-        </div>
-      </div>
-    </section>
+  
 
     <!-- PRODUCTS MOVED UP -->
     <section id="pieces" class="block">
@@ -754,6 +773,18 @@
       </div>
     </section>
 
+   <div class="transition-strip">
+  <div class="container">
+    <div class="strip-shell reveal">
+      <h2 class="strip-title serif">this starts loud.</h2>
+      <p class="strip-copy">
+        but eventually, 345 becomes something you don’t have to explain.
+      </p>
+    </div>
+  </div>
+</div>
+
+    
     <!-- STORY -->
     <section id="story" class="block">
       <div class="container">
