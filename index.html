@@ -4,522 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>345 — love yours.</title>
-  <meta name="description" content="345 is more than clothing — it’s a message for the moments when words go unsaid." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  <style>
     :root {
       --bg: #f6f1e8;
-      --surface: rgba(255,255,255,0.42);
       --text: #1b1712;
-      --muted: #675e55;
-      --soft: #8c8278;
-      --line: rgba(27, 23, 18, 0.10);
-      --accent: #6f5943;
-      --shadow: 0 24px 64px rgba(27, 23, 18, 0.07);
-      --max: 1160px;
+      --muted: #6b6258;
     }
 
-    html { scroll-behavior: smooth; }
+    * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
       background: var(--bg);
       color: var(--text);
-      font-family: 'Cormorant Garamond', serif;
-      overflow-x: hidden;
-      position: relative;
     }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.1;
-      background-image:
-        radial-gradient(circle at 20% 20%, rgba(111,89,67,0.07), transparent 25%),
-        radial-gradient(circle at 80% 10%, rgba(111,89,67,0.05), transparent 20%),
-        radial-gradient(circle at 50% 100%, rgba(111,89,67,0.04), transparent 30%);
-      z-index: 0;
-    }
-
-    a { color: inherit; }
 
     .wrap {
-      width: min(100% - 36px, var(--max));
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    .mono {
-      font-family: 'Space Mono', monospace;
-      letter-spacing: 0.18em;
-      text-transform: lowercase;
-    }
-
-    .inter {
-      font-family: 'Inter', sans-serif;
-    }
-
-    .topbar {
-      padding: 28px 0 12px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .brand-mark {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--text);
-      font-family: 'Space Mono', monospace;
-      font-size: 22px;
-      letter-spacing: 0.28em;
+    header {
+      margin-bottom: 60px;
+      letter-spacing: 8px;
+      font-size: 20px;
     }
 
-    .hero {
-      min-height: 72vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 34px 0 60px;
-    }
-
-    .hero-inner {
-      max-width: 760px;
-      display: grid;
-      gap: 16px;
-    }
-
-    .eyebrow {
-      color: var(--soft);
-      font-size: 10px;
-      display: inline-block;
-    }
-
-    .hero h1 {
-      font-size: clamp(64px, 11vw, 122px);
-      font-weight: 400;
-      line-height: 0.95;
-      letter-spacing: -0.04em;
-    }
-
-    .hero .lead {
-      font-size: clamp(24px, 3.2vw, 38px);
-      line-height: 1.25;
-    }
-
-    .hero .sub {
-      font-family: 'Inter', sans-serif;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.85;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .message-stack {
-      display: grid;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .message-stack div {
-      font-size: clamp(18px, 2vw, 22px);
-      color: var(--muted);
-    }
-
-    .hero-actions {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 24px;
-      border-radius: 999px;
-      border: 1px solid rgba(111, 89, 67, 0.18);
-      background: rgba(111, 89, 67, 0.04);
-      text-decoration: none;
-      color: var(--accent);
-      font-family: 'Space Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.16em;
-      text-transform: lowercase;
-      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      background: rgba(111, 89, 67, 0.08);
-      border-color: rgba(111, 89, 67, 0.28);
-    }
-
-    .btn-solid {
-      background: var(--text);
-      color: #f7f1e8;
-      border-color: var(--text);
-    }
-
-    .btn-solid:hover {
-      background: #2a251f;
-      border-color: #2a251f;
-    }
-
-    .section {
-      padding: 72px 0;
-    }
-
-    .section-head {
-      text-align: center;
-      display: grid;
-      gap: 14px;
-      margin-bottom: 34px;
-    }
-
-    .section-head h2 {
-      font-size: clamp(34px, 5vw, 60px);
-      font-weight: 400;
-      line-height: 1.04;
-      letter-spacing: -0.03em;
-    }
-
-    .section-head p {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      line-height: 1.8;
-      color: var(--muted);
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .story-panel {
-      max-width: 900px;
-      margin: 0 auto;
-      background: linear-gradient(180deg, rgba(255,255,255,0.56), rgba(255,255,255,0.28));
-      border: 1px solid rgba(111, 89, 67, 0.10);
-      border-radius: 30px;
-      padding: 32px;
-      box-shadow: var(--shadow);
-      display: grid;
-      gap: 20px;
-    }
-
-    .story-panel p {
-      font-size: clamp(24px, 2.9vw, 34px);
-      line-height: 1.45;
-      font-weight: 300;
-      text-align: center;
-    }
-
-    .story-panel strong {
+    h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
       font-weight: 500;
     }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+    .sub {
+      font-size: 22px;
+      margin-bottom: 20px;
     }
 
-    .product-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.54), rgba(255,255,255,0.24));
-      border: 1px solid rgba(111, 89, 67, 0.10);
-      border-radius: 26px;
-      padding: 20px;
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
-
-    .product-visual {
-      aspect-ratio: 4 / 5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      overflow: hidden;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.32);
-    }
-
-    .product-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-
-    .product-card h3 {
-      font-size: clamp(26px, 2.8vw, 34px);
-      font-weight: 400;
-      margin-bottom: 8px;
-    }
-
-    .product-card p {
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      line-height: 1.8;
+    .desc {
       color: var(--muted);
-      min-height: 52px;
-      margin-bottom: 16px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
     }
 
-    .gift-band {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto;
-      display: grid;
-      gap: 16px;
+    .btn {
+      display:inline-block;
+      padding:12px 24px;
+      border:1px solid black;
+      text-decoration:none;
+      margin-top:10px;
+      transition:.2s;
     }
 
-    .gift-band .line {
-      font-size: clamp(30px, 4vw, 46px);
-      line-height: 1.2;
+    .btn:hover {
+      background:black;
+      color:white;
     }
 
-    .gift-band .body {
-      font-family: 'Inter', sans-serif;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.8;
+    .section {
+      margin-top: 80px;
     }
 
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+    .products {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:40px;
+      margin-top:40px;
     }
 
-    .gallery-grid img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 22px;
-      border: 1px solid rgba(111, 89, 67, 0.10);
-      background: rgba(255,255,255,0.24);
-      box-shadow: var(--shadow);
+    .product img {
+      width:100%;
+      height:320px;
+      object-fit:contain;
+      margin-bottom:15px;
     }
 
-    .cta-shell {
-      max-width: 920px;
-      margin: 0 auto;
-      background: #1b1712;
-      color: #f6f1e8;
-      border-radius: 34px;
-      padding: 38px;
-      text-align: center;
-      box-shadow: 0 28px 70px rgba(27, 23, 18, 0.18);
-      display: grid;
-      gap: 16px;
+    .product h3 {
+      margin-bottom:10px;
+      font-weight:500;
     }
 
-    .cta-shell h2 {
-      font-size: clamp(34px, 5vw, 60px);
-      font-weight: 400;
-      line-height: 1.04;
+    .message {
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 60px auto 0;
     }
 
-    .cta-shell p {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      line-height: 1.8;
-      color: rgba(246, 241, 232, 0.76);
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .cta-shell .btn {
-      margin: 0 auto;
-      background: #f6f1e8;
-      color: #1b1712;
-      border-color: #f6f1e8;
-    }
-
-    .cta-shell .btn:hover {
-      background: #ffffff;
-      border-color: #ffffff;
-    }
-
-    footer {
-      padding: 40px 0 46px;
-      text-align: center;
-    }
-
-    .footer-copy {
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      color: var(--soft);
-      letter-spacing: 0.08em;
-      text-transform: lowercase;
-    }
-
-    .fade-up {
-      opacity: 0;
-      transform: translateY(18px);
-      animation: fadeUp 0.8s ease forwards;
-    }
-
-    .d1 { animation-delay: 0.08s; }
-    .d2 { animation-delay: 0.18s; }
-    .d3 { animation-delay: 0.28s; }
-    .d4 { animation-delay: 0.38s; }
-
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 900px) {
-      .products-grid,
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .wrap { width: min(100% - 24px, var(--max)); }
-      .topbar { padding-top: 22px; }
-      .brand-mark { font-size: 18px; }
-      .hero { min-height: auto; padding: 28px 0 40px; }
-      .story-panel,
-      .product-card,
-      .cta-shell { padding: 22px; border-radius: 24px; }
-      .hero-actions { width: 100%; }
-      .hero-actions .btn,
-      .product-card .btn,
-      .cta-shell .btn { width: 100%; }
-    }
   </style>
 </head>
+
 <body>
-  <div class="topbar">
-    <a class="brand-mark fade-up d1" href="#top">3 | 4 | 5</a>
+
+  <div class="wrap">
+
+    <header>3 | 4 | 5</header>
+
+    <!-- HERO -->
+    <h1>love yours.</h1>
+    <div class="sub">for the moments when words go unsaid.</div>
+
+    <div class="desc">
+      345 is more than clothing — it’s a message. a way to remind someone they are loved, believed in, and worth being proud of.
+    </div>
+
+    <a class="btn" href="https://345loveyours.printful.me" target="_blank">shop 345</a>
+
+
+    <!-- PRODUCTS -->
+    <div class="section">
+      <div class="products">
+
+        <div class="product">
+          <img src="./unisex-oversized-heavyweight-hoodie-white-front-69bf04d905e12.png">
+          <h3>Oversized Hoodie</h3>
+          <a class="btn" href="https://345loveyours.printful.me/product/love-yours-oversized-logo-hoodie" target="_blank">Shop</a>
+        </div>
+
+        <div class="product">
+          <img src="./mens-premium-heavyweight-tee-black-front-69bf0732df35c.jpeg">
+          <h3>T-Shirt</h3>
+          <a class="btn" href="https://345loveyours.printful.me/product/t-shirt-345-message" target="_blank">Shop</a>
+        </div>
+
+        <div class="product">
+          <img src="./distressed-dad-hat-khaki-front-69bf05bbb47bb.jpeg">
+          <h3>Distressed Hat</h3>
+          <a class="btn" href="https://345loveyours.printful.me/product/love-yours-distressed-hat" target="_blank">Shop</a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- MESSAGE -->
+    <div class="message">
+      A simple way to send a message.<br><br>
+      To yourself.<br>
+      Or someone you love.
+    </div>
+
   </div>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-inner">
-        <span class="eyebrow mono fade-up d1">345 · love yours.</span>
-        <h1 class="fade-up d2">love yours.</h1>
-        <p class="lead fade-up d2">for the moments when words go unsaid.</p>
-        <p class="sub fade-up d3">345 is more than clothing — it’s a message. a way to remind someone they are loved, believed in, and worth being proud of, even when communication is absent.</p>
-        <div class="message-stack fade-up d3">
-          <div>i love you.</div>
-          <div>i believe in you.</div>
-          <div>i am proud of you.</div>
-        </div>
-        <div class="hero-actions fade-up d4">
-          <a class="btn btn-solid" href="#pieces">shop 345</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head fade-up d1">
-          <span class="eyebrow mono">the message</span>
-          <h2>why 345 exists.</h2>
-          <p>the goal is simple: create a way to send a message when there are no perfect words, no perfect timing, or no long conversation to be had.</p>
-        </div>
-
-        <div class="story-panel fade-up d2">
-          <p>3 means <strong>i love you.</strong></p>
-          <p>4 means <strong>i believe in you.</strong></p>
-          <p>5 means <strong>i am proud of you.</strong></p>
-          <p>what started as a message passed down became a reminder to say the things we may be thinking, but do not always say.</p>
-          <p><strong>love yours.</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <section id="pieces" class="section">
-      <div class="wrap">
-        <div class="section-head fade-up d1">
-          <span class="eyebrow mono">featured pieces</span>
-          <h2>three ways to carry it.</h2>
-          <p>a small first collection — kept simple, intentional, and easy to shop while the full site continues to grow.</p>
-        </div>
-
-        <div class="products-grid">
-          <article class="product-card fade-up d2">
-            <div class="product-visual">
-              <img src="unisex-oversized-heavyweight-hoodie-white-front-69bf04d905e12.png" alt="345 oversized hoodie" />
-            </div>
-            <h3>oversized hoodie</h3>
-            <p>a quieter way to say it — with a clean back and the message carried more subtly.</p>
-            <a class="btn" href="https://345loveyours.printful.me/product/love-yours-oversized-logo-hoodie" target="_blank" rel="noopener noreferrer">shop</a>
-          </article>
-
-          <article class="product-card fade-up d3">
-            <div class="product-visual">
-              <img src="mens-premium-heavyweight-tee-black-front-69bf0732df35c.jpeg" alt="345 t-shirt" />
-            </div>
-            <h3>tee</h3>
-            <p>an everyday piece that says what we do not always say out loud.</p>
-            <a class="btn" href="https://345loveyours.printful.me/product/t-shirt-345-message" target="_blank" rel="noopener noreferrer">shop</a>
-          </article>
-
-          <article class="product-card fade-up d4">
-            <div class="product-visual">
-              <img src="distressed-dad-hat-khaki-front-69bf05bbb47bb.jpeg" alt="345 distressed hat" />
-            </div>
-            <h3>distressed hat</h3>
-            <p>something simple you can wear often and carry with you without overthinking it.</p>
-            <a class="btn" href="https://345loveyours.printful.me/product/love-yours-distressed-hat" target="_blank" rel="noopener noreferrer">shop</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap gift-band fade-up d2">
-        <span class="eyebrow mono">a reminder. a message. a gift.</span>
-        <div class="line">a simple way to send a message — to yourself, or someone you love.</div>
-        <p class="body">whether you wear it yourself or give it away, 345 is meant to carry something deeper than a product. it is a quiet reminder that someone is thinking of you.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head fade-up d1">
-          <span class="eyebrow mono">the collection</span>
-          <h2>simple for now.</h2>
-          <p>as samples come in and the brand grows, this space can evolve into a fuller gallery of pieces, campaigns, and images. for now, the message comes first.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <img class="fade-up d2" src="unisex-oversized-heavyweight-hoodie-white-front-69bf04d905e12.png" alt="345 hoodie" />
-          <img class="fade-up d3" src="mens-premium-heavyweight-tee-black-front-69bf0732df35c.jpeg" alt="345 tee" />
-          <img class="fade-up d4" src="distressed-dad-hat-khaki-front-69bf05bbb47bb.jpeg" alt="345 hat" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="cta-shell fade-up d2">
-          <span class="eyebrow mono">for now</span>
-          <h2>shop through printful while 345 takes shape.</h2>
-          <p>the current collection is fulfilled through printful so everything stays lean, simple, and intentional. as more pieces and photos come in, ily345.com can grow with it.</p>
-          <a class="btn" href="https://345loveyours.printful.me" target="_blank" rel="noopener noreferrer">shop 345</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-copy">345 · love yours. · ily345.com</div>
-  </footer>
 </body>
 </html>
