@@ -6,93 +6,104 @@
   <title>345 — love yours.</title>
 
   <style>
-    :root {
-      --bg: #f6f1e8;
-      --text: #1b1712;
-      --muted: #6b6258;
-    }
-
-    * { margin:0; padding:0; box-sizing:border-box; }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #f6f1e8;
+      color: #1b1712;
     }
 
-    .wrap {
-      max-width: 1000px;
+    .container {
+      max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
-      text-align: center;
     }
 
     header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 60px;
-      letter-spacing: 8px;
-      font-size: 20px;
+      font-size: 14px;
+      letter-spacing: 2px;
     }
 
-    h1 {
-      font-size: 64px;
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1b1712;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      font-weight: 400;
       margin-bottom: 10px;
-      font-weight: 500;
     }
 
-    .sub {
+    .hero p {
       font-size: 22px;
-      margin-bottom: 20px;
-    }
-
-    .desc {
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
+      margin-bottom: 30px;
     }
 
     .btn {
-      display:inline-block;
-      padding:12px 24px;
-      border:1px solid black;
-      text-decoration:none;
-      margin-top:10px;
-      transition:.2s;
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #1b1712;
+      text-decoration: none;
+      color: #1b1712;
+      transition: .2s;
     }
 
     .btn:hover {
-      background:black;
-      color:white;
+      background: #1b1712;
+      color: #fff;
     }
 
     .section {
-      margin-top: 80px;
+      margin: 100px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
     }
 
     .products {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:40px;
-      margin-top:40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .product {
+      text-align: center;
     }
 
     .product img {
-      width:100%;
-      height:320px;
-      object-fit:contain;
-      margin-bottom:15px;
-    }
-
-    .product h3 {
-      margin-bottom:10px;
-      font-weight:500;
+      width: 100%;
+      height: 320px;
+      object-fit: contain;
+      margin-bottom: 15px;
     }
 
     .message {
-      font-size: 22px;
-      line-height: 1.6;
+      text-align: center;
       max-width: 600px;
-      margin: 60px auto 0;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 120px;
+      font-size: 12px;
+      color: #6b6258;
     }
 
   </style>
@@ -100,53 +111,72 @@
 
 <body>
 
-  <div class="wrap">
+  <div class="container">
 
-    <header>3 | 4 | 5</header>
+    <!-- NAV -->
+    <header>
+      <div>345</div>
+      <nav>
+        <a href="#shop">Shop</a>
+        <a href="#message">Message</a>
+        <a href="https://345loveyours.printful.me" target="_blank">Printful</a>
+      </nav>
+    </header>
 
     <!-- HERO -->
-    <h1>love yours.</h1>
-    <div class="sub">for the moments when words go unsaid.</div>
-
-    <div class="desc">
-      345 is more than clothing — it’s a message. a way to remind someone they are loved, believed in, and worth being proud of.
+    <div class="hero">
+      <h1>love yours.</h1>
+      <p>for the moments when words go unsaid.</p>
+      <a class="btn" href="#shop">shop now</a>
     </div>
 
-    <a class="btn" href="https://345loveyours.printful.me" target="_blank">shop 345</a>
+    <!-- MESSAGE -->
+    <div id="message" class="section">
+      <div class="section-title">the message</div>
+      <div class="message">
+        345 is a reminder.
+        <br><br>
+        to yourself.
+        <br>
+        or someone you love.
+        <br><br>
+        i love you.
+        <br>
+        i believe in you.
+        <br>
+        i am proud of you.
+      </div>
+    </div>
 
+    <!-- SHOP -->
+    <div id="shop" class="section">
+      <div class="section-title">shop</div>
 
-    <!-- PRODUCTS -->
-    <div class="section">
       <div class="products">
 
         <div class="product">
           <img src="./unisex-oversized-heavyweight-hoodie-white-front-69bf04d905e12.png">
-          <h3>Oversized Hoodie</h3>
-          <a class="btn" href="https://345loveyours.printful.me/product/love-yours-oversized-logo-hoodie" target="_blank">Shop</a>
+          <a class="btn" href="https://345loveyours.printful.me" target="_blank">hoodie</a>
         </div>
 
         <div class="product">
-          <img src="./mens-premium-heavyweight-tee-black-front-69bf0732df35c.jpeg">
-          <h3>T-Shirt</h3>
-          <a class="btn" href="https://345loveyours.printful.me/product/t-shirt-345-message" target="_blank">Shop</a>
+          <img src="./mens-premium-heavyweight-tee-black-front-69bf0732df35c.png">
+          <a class="btn" href="https://345loveyours.printful.me" target="_blank">t-shirt</a>
         </div>
 
         <div class="product">
-          <img src="./distressed-dad-hat-khaki-front-69bf05bbb47bb.jpeg">
-          <h3>Distressed Hat</h3>
-          <a class="btn" href="https://345loveyours.printful.me/product/love-yours-distressed-hat" target="_blank">Shop</a>
+          <img src="./distressed-dad-hat-khaki-front-69bf05bbb47bb.png">
+          <a class="btn" href="https://345loveyours.printful.me" target="_blank">hat</a>
         </div>
 
       </div>
+
     </div>
 
-
-    <!-- MESSAGE -->
-    <div class="message">
-      A simple way to send a message.<br><br>
-      To yourself.<br>
-      Or someone you love.
-    </div>
+    <!-- FOOTER -->
+    <footer>
+      345 — love yours.
+    </footer>
 
   </div>
 
