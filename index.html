@@ -47,6 +47,7 @@
       margin: 40px 0;
     }
 
+    /* NAV */
     .site-header {
       position: sticky;
       top: 0;
@@ -88,12 +89,15 @@
       text-transform: uppercase;
       border: 1px solid var(--line-strong);
       transition: 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .btn { background: var(--text); color: #fff; }
     .btn:hover { transform: translateY(-1px); }
 
-    .btn-light { background: rgba(255,255,255,0.4); }
+    .btn-light { background: rgba(255,255,255,0.4); color: var(--text); }
 
     section.block { padding: 100px 0; }
 
@@ -103,16 +107,24 @@
       font-size: clamp(38px, 5vw, 64px);
       font-weight: 400;
       letter-spacing: -0.04em;
+      margin: 12px 0 16px;
     }
 
-    .section-head p { color: var(--muted); line-height: 1.9; }
+    .section-head p {
+      color: var(--muted);
+      line-height: 1.9;
+      margin: 0;
+      font-size: 16px;
+    }
 
+    /* HERO */
     .hero { text-align: center; padding: 120px 0 90px; }
 
     .hero h1 {
       font-size: clamp(64px, 10vw, 120px);
       margin: 0 0 20px;
       letter-spacing: -0.05em;
+      font-weight: 400;
     }
 
     .hero-sub {
@@ -132,6 +144,7 @@
 
     .hero-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 
+    /* STORY */
     .story-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
     .card {
@@ -141,10 +154,22 @@
       box-shadow: var(--shadow);
     }
 
+    /* PRODUCTS */
     .products { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+
+    .product {
+      text-align: center;
+    }
 
     .product img { width: 100%; height: 340px; object-fit: contain; }
 
+    .product h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 16px 0 14px;
+    }
+
+    /* FOOTER */
     footer {
       padding: 40px 0;
       text-align: center;
@@ -155,6 +180,9 @@
 
     @media(max-width:900px){
       .products, .story-layout { grid-template-columns: 1fr; }
+      .site-header-inner { grid-template-columns: 1fr; gap: 10px; padding: 16px 0; }
+      .nav-left, .nav-right { justify-content: center; flex-wrap: wrap; }
+      .brand-mark { order: -1; }
     }
   </style>
 </head>
@@ -205,7 +233,115 @@
   </div>
 </section>
 
-<!-- everything else remains EXACTLY the same -->
+<div class="container"><div class="divider"></div></div>
+
+<section id="story" class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">the story</span>
+      <h2 class="serif">this didn’t start as a brand.</h2>
+      <p>it started from something real.</p>
+    </div>
+
+    <div class="story-layout">
+      <div class="card">
+        when you’re building something, chasing something, or just focused —
+        you say yes to a lot.
+        <br><br>
+        and every yes means something else gets less of you.
+        <br><br>
+        sometimes that’s the people you care about most.
+        <br><br>
+        not because you don’t care —
+        just because you’re locked in.
+      </div>
+
+      <div class="card">
+        for me, that showed up in small ways.
+        <br><br>
+        missed conversations.
+        short responses.
+        not always being present the way I wanted to be.
+        <br><br>
+        so instead of leaving it like that —
+        I’d just send:
+        <br><br>
+        <strong>345</strong>
+        <br><br>
+        a simple way to still say everything.
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:50px">
+      <p>
+        over time, it became a habit.
+        <br><br>
+        a sign-off.
+        a check-in.
+        something simple that still carries meaning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="message" class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">the message</span>
+      <h2 class="serif">3 · 4 · 5</h2>
+      <p>
+        I love you. I believe in you. I’m proud of you.
+        <br><br>
+        simple things — that most people don’t hear often enough.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="pieces" class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">pieces</span>
+      <h2 class="serif">built to carry meaning.</h2>
+    </div>
+
+    <div class="products">
+
+      <div class="product">
+        <img src="./unisex-oversized-heavyweight-hoodie-white-front-69bf04d905e12.png">
+        <h3>hoodie</h3>
+        <a class="btn" href="https://345loveyours.printful.me/product/love-yours-oversized-logo-hoodie" target="_blank">view</a>
+      </div>
+
+      <div class="product">
+        <img src="./mens-premium-heavyweight-tee-black-front-69bf0732df35c.png">
+        <h3>tee</h3>
+        <a class="btn" href="https://345loveyours.printful.me/product/t-shirt-345-message" target="_blank">view</a>
+      </div>
+
+      <div class="product">
+        <img src="./distressed-dad-hat-khaki-front-69bf05bbb47bb.png">
+        <h3>hat</h3>
+        <a class="btn" href="https://345loveyours.printful.me/product/love-yours-distressed-hat" target="_blank">view</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-head">
+      <p>
+        this starts loud.
+        <br><br>
+        but eventually —
+        <br><br>
+        345 becomes something you don’t have to explain.
+      </p>
+    </div>
+  </div>
+</section>
 
 </main>
 
