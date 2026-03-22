@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>345 — love yours.</title>
-  <meta name="description" content="345 is a message for the moments when words go unsaid. i love you. i believe in you. i am proud of you." />
+  <meta name="description" content="345 is a simple way to say something meaningful. i love you. i believe in you. i am proud of you." />
 
   <style>
     :root {
@@ -358,39 +358,20 @@
       line-height: 1.9;
     }
 
-    /* BELIEFS */
-    .belief-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+    /* MESSAGE */
+    .message-card {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 34px;
+      text-align: center;
     }
 
-    .belief-card {
-      padding: 28px;
-      text-align: left;
-    }
-
-    .belief-card .num {
-      display: inline-block;
-      color: var(--accent);
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    .belief-card h3 {
-      margin: 0 0 10px;
-      font-size: clamp(26px, 2.8vw, 34px);
-      font-weight: 400;
-      letter-spacing: -0.03em;
-    }
-
-    .belief-card p {
-      margin: 0;
+    .message-card .message-copy {
       color: var(--muted);
-      font-size: 15px;
-      line-height: 1.85;
+      font-size: 18px;
+      line-height: 1.9;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     /* PRODUCTS */
@@ -587,7 +568,6 @@
     @media (max-width: 1050px) {
       .hero-grid,
       .story-layout,
-      .belief-grid,
       .products,
       .faq-grid {
         grid-template-columns: 1fr;
@@ -606,7 +586,7 @@
       .hero-subtitle { font-size: 24px; }
       .hero-actions, .product-toolbar, .cta-actions { flex-direction: column; }
       .btn, .btn-light { width: 100%; }
-      .hero-card, .card.pad, .belief-card, .faq-card, .cta-shell { padding: 22px; }
+      .hero-card, .card.pad, .message-card, .faq-card, .cta-shell { padding: 22px; }
       .product-visual { min-height: 320px; }
       .footer-inner { flex-direction: column; text-align: center; }
     }
@@ -636,9 +616,9 @@
         <div class="hero-copy reveal">
           <span class="eyebrow">345 · love yours.</span>
           <h1 class="serif">love yours.</h1>
-          <div class="hero-subtitle serif">for the moments when words go unsaid.</div>
+          <div class="hero-subtitle serif">a simple way to say something meaningful.</div>
           <div class="hero-body">
-            345 is more than clothing. it is a way to communicate something deeper — a way to reassure someone, remind them they matter, and say what many people do not get to hear often enough.
+            whether in absence or in abundance, these are words we don’t hear enough.
           </div>
 
           <div class="message-lines serif">
@@ -655,9 +635,9 @@
 
         <aside class="hero-card reveal">
           <div class="card-title">why it exists</div>
-          <div class="card-quote serif">not everyone hears what they need to hear on a regular basis.</div>
+          <div class="card-quote serif">sometimes the people you care about most don’t hear what you’re thinking often enough.</div>
           <div class="card-body">
-            345 was created to help close that gap. a piece can be a gift. a reminder can be reassurance. and sometimes something simple can carry a message that matters more than people realize.
+            345 became a simple way to close that gap. not a long message. not overdone. just something meaningful that still says a lot.
           </div>
           <div class="card-note">wear it. gift it. mean it.</div>
         </aside>
@@ -670,9 +650,9 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">the story</span>
-          <h2 class="serif">a reminder to say the things we already feel.</h2>
+          <h2 class="serif">this didn’t start as a brand.</h2>
           <p>
-            the heart of 345 is simple. there are things we think about the people we care about that do not always get said — not because they are untrue, but because life gets fast, communication gets missed, and reassurance gets delayed.
+            it started from something real.
           </p>
         </div>
 
@@ -690,15 +670,34 @@
 
           <div class="card pad story-right reveal">
             <p>
-              345 was built as a way to share those words when you have not been able to, when someone needs reassurance, or when you simply want them to know they are on your mind.
+              someone once shared the idea of 345 with me through something simple: the more things you say yes to, the more things you have to say no to.
             </p>
             <p>
-              it is for the friend who needs encouragement, the family member you have not checked on enough, the partner you want to reassure, or the person who rarely hears these words at all.
+              when you’re building something, chasing something, or just locked in on what you want, sometimes the people you care about get less of you. not because you don’t care — just because you’re focused.
+            </p>
+            <p>
+              for me, that showed up in missed conversations, short responses, and not always being present the way I wanted to be.
             </p>
             <p class="muted">
-              the goal is not to overcomplicate it. the goal is to make the message easier to carry, easier to give, and harder to leave unsaid.
+              so instead of leaving it there, I’d just send 345 — a simple way of saying I’m here, I’m thinking about you, and I still mean these words.
             </p>
           </div>
+        </div>
+
+        <div class="section-head reveal" style="margin-top: 42px;">
+          <p>
+            over time, it became more than that.
+            <br><br>
+            not just something you send in the absence of words — but something you send anytime.
+            <br><br>
+            a sign-off.
+            a check-in.
+            a habit.
+            <br><br>
+            morning, 345.
+            thanks for coming, 345.
+            talk soon, 345.
+          </p>
         </div>
       </div>
     </section>
@@ -706,30 +705,21 @@
     <section id="message" class="block">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">the message</span>
-          <h2 class="serif">emotion is the point.</h2>
-          <p>
-            this brand is built around three statements that should be heard more often than they are. not as a slogan, but as something genuine — a reminder, a reassurance, and sometimes a much-needed gift.
-          </p>
+          <span class="eyebrow">love yours.</span>
+          <h2 class="serif">your life. your people. the ones around you.</h2>
         </div>
 
-        <div class="belief-grid">
-          <div class="card belief-card reveal">
-            <span class="num">03</span>
-            <h3 class="serif">i love you.</h3>
-            <p>for closeness. for care. for the people who need to know they are not forgotten.</p>
-          </div>
-
-          <div class="card belief-card reveal">
-            <span class="num">04</span>
-            <h3 class="serif">i believe in you.</h3>
-            <p>for reassurance. for encouragement. for the moments when someone needs confidence from outside themselves.</p>
-          </div>
-
-          <div class="card belief-card reveal">
-            <span class="num">05</span>
-            <h3 class="serif">i am proud of you.</h3>
-            <p>for recognition. for affirmation. for the truth that many people are working hard without ever hearing it.</p>
+        <div class="card message-card reveal">
+          <div class="message-copy serif">
+            i love you.
+            <br>
+            i believe in you.
+            <br>
+            i am proud of you.
+            <br><br>
+            a simple way to remind someone what they mean to you — whether it’s a check-in, a sign-off, or just something you want them to feel.
+            <br><br>
+            whether in absence or in abundance, these are words we don’t hear enough.
           </div>
         </div>
       </div>
@@ -797,9 +787,9 @@
     <section class="block">
       <div class="container">
         <div class="card quote-band reveal">
-          <p class="big serif">a meaningful gift. a real reminder. something small that says something true.</p>
+          <p class="big serif">something small. something real. something that actually means something.</p>
           <p class="small">
-            whether it is for someone you love or for yourself, 345 is meant to carry reassurance, encouragement, and care into everyday life.
+            whether it’s for someone you love or for yourself, 345 is meant to carry a message in a way that feels simple, direct, and easy to keep using.
           </p>
         </div>
       </div>
@@ -836,9 +826,9 @@
       <div class="container">
         <div class="cta-shell reveal">
           <span class="eyebrow">shop now</span>
-          <h2 class="serif">say it while you can.</h2>
+          <h2 class="serif">this starts loud.</h2>
           <p>
-            the whole point of 345 is to make those words easier to carry and easier to give. start with a piece that feels right, and let it do what it was made to do.
+            but eventually, 345 becomes something you don’t have to explain. you just see it, you know what it means, and you get to tell the story yourself.
           </p>
           <div class="cta-actions">
             <a class="btn" href="https://345loveyours.printful.me" target="_blank" rel="noopener noreferrer">shop printful</a>
@@ -869,4 +859,4 @@
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
   </script>
 </body>
-</html>   
+</html>
