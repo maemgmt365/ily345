@@ -1,0 +1,1923 @@
+[
+ {
+  "id": "hoodie",
+  "name": "the 345 hoodie",
+  "category": "hoodies",
+  "placement": "front chest mark, message on back",
+  "price": 52,
+  "priceMax": 56,
+  "opaque": null,
+  "fill": false,
+  "short": "the one that started it",
+  "intro": "the first 345 piece and still the one most people reach for. a classic heavyweight hoodie, cotton-faced and soft inside, with the 3 | 4 | 5 mark small on the chest and the full message across the back.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+  "details": [
+   "100% cotton face",
+   "65% ring-spun cotton, 35% polyester",
+   "front pouch pocket",
+   "self-fabric patch on the back",
+   "matching flat drawstrings",
+   "3-panel hood",
+   "unisex fit"
+  ],
+  "know": [
+   "unisex fit, true to size",
+   "2XL and 3XL cost a little more",
+   "machine wash cold, hang dry to protect the embroidery",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#080808",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hoodie-345-message",
+    "listing": "the 345 hoodie",
+    "images": [
+     "1076503569082fa8c6b7b",
+     "1076503569082fa8eff33"
+    ],
+    "template": 95253842,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765035,
+      "catalogVariant": 10779,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765036,
+      "catalogVariant": 10780,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765037,
+      "catalogVariant": 10781,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765038,
+      "catalogVariant": 10782,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765039,
+      "catalogVariant": 10783,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765040,
+      "catalogVariant": 13416,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "hex": "#43413D",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hoodie-345-message",
+    "listing": "the 345 hoodie",
+    "images": [
+     "1076504169082faa5014f",
+     "1076504169082faa72965"
+    ],
+    "template": 95253842,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765041,
+      "catalogVariant": 20272,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765042,
+      "catalogVariant": 20273,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765043,
+      "catalogVariant": 20274,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765044,
+      "catalogVariant": 20275,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765045,
+      "catalogVariant": 20276,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765046,
+      "catalogVariant": 20277,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "hex": "#b28a68",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hoodie-345-message",
+    "listing": "the 345 hoodie",
+    "images": [
+     "1076504769082fac39dc4",
+     "1076504769082fac60dcd"
+    ],
+    "template": 95253842,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765047,
+      "catalogVariant": 24981,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765048,
+      "catalogVariant": 24982,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765049,
+      "catalogVariant": 24983,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765050,
+      "catalogVariant": 24984,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765051,
+      "catalogVariant": 24985,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765052,
+      "catalogVariant": 24986,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hoodie-345-message-6908305645ab5",
+    "listing": "the 345 hoodie",
+    "images": [
+     "10765114690830566637c",
+     "1076511469083056abb20"
+    ],
+    "template": 95253882,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765114,
+      "catalogVariant": 10774,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765115,
+      "catalogVariant": 10775,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765116,
+      "catalogVariant": 10776,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765117,
+      "catalogVariant": 10777,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765118,
+      "catalogVariant": 10778,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765119,
+      "catalogVariant": 13421,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Maroon",
+    "hex": "#7d263a",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
+    "listing": "the 345 hoodie | limited colorways",
+    "images": [
+     "107654316908376cced83",
+     "107654316908376d0c882"
+    ],
+    "template": 95280297,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765431,
+      "catalogVariant": 11486,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765432,
+      "catalogVariant": 11487,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765433,
+      "catalogVariant": 11488,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765434,
+      "catalogVariant": 11489,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765435,
+      "catalogVariant": 11490,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765436,
+      "catalogVariant": 13418,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Forest Green",
+    "hex": "#335231",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
+    "listing": "the 345 hoodie | limited colorways",
+    "images": [
+     "107654376908376ed436a",
+     "107654376908376f07c34"
+    ],
+    "template": 95280297,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765437,
+      "catalogVariant": 16162,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765438,
+      "catalogVariant": 16163,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765439,
+      "catalogVariant": 16164,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765440,
+      "catalogVariant": 16165,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765441,
+      "catalogVariant": 16166,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765442,
+      "catalogVariant": 16167,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Adobe",
+    "hex": "#d06e26",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
+    "listing": "the 345 hoodie | limited colorways",
+    "images": [
+     "1076544369083770c6489",
+     "1076544369083770ef5aa"
+    ],
+    "template": 95280297,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765443,
+      "catalogVariant": 24987,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765444,
+      "catalogVariant": 24988,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765445,
+      "catalogVariant": 24989,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765446,
+      "catalogVariant": 24990,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765447,
+      "catalogVariant": 24991,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765448,
+      "catalogVariant": 24992,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Dusty Rose",
+    "hex": "#d27e6f",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
+    "listing": "the 345 hoodie | limited colorways",
+    "images": [
+     "1076544969083772d98f5",
+     "10765449690837730e730"
+    ],
+    "template": 95280297,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765449,
+      "catalogVariant": 13887,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765450,
+      "catalogVariant": 13888,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765451,
+      "catalogVariant": 13889,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765452,
+      "catalogVariant": 13890,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765453,
+      "catalogVariant": 13891,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765454,
+      "catalogVariant": 13892,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Team Gold",
+    "hex": "#ffa912",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
+    "listing": "the 345 hoodie | limited colorways",
+    "images": [
+     "1076545569083775323fb",
+     "10765455690837755554b"
+    ],
+    "template": 95280297,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765455,
+      "catalogVariant": 24999,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765456,
+      "catalogVariant": 25000,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765457,
+      "catalogVariant": 25001,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765458,
+      "catalogVariant": 25002,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765459,
+      "catalogVariant": 25003,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765460,
+      "catalogVariant": 25004,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   },
+   {
+    "name": "Carolina Blue",
+    "hex": "#98b7ee",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
+    "listing": "the 345 hoodie | limited colorways",
+    "images": [
+     "107654616908377736630",
+     "10765461690837775caf6"
+    ],
+    "template": 95280297,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765461,
+      "catalogVariant": 11496,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "M",
+      "variant": 10765462,
+      "catalogVariant": 11497,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "L",
+      "variant": 10765463,
+      "catalogVariant": 11498,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "XL",
+      "variant": 10765464,
+      "catalogVariant": 11499,
+      "price": 52,
+      "printfulRetail": 40
+     },
+     {
+      "size": "2XL",
+      "variant": 10765465,
+      "catalogVariant": 11500,
+      "price": 56,
+      "printfulRetail": 42
+     },
+     {
+      "size": "3XL",
+      "variant": 10765466,
+      "catalogVariant": 13422,
+      "price": 56,
+      "printfulRetail": 42
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "oversized-hoodie",
+  "name": "the oversized hoodie",
+  "category": "hoodies",
+  "placement": "front chest mark, love yours. on the sleeve, blank back",
+  "price": 60,
+  "priceMax": 64,
+  "opaque": null,
+  "fill": false,
+  "short": "heavier, roomier, quieter",
+  "intro": "thicker, roomier and quieter than the original. brushed fleece, dropped shoulders, no drawcords. the mark sits on the chest and love yours. runs down the sleeve, so the back stays clean.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "this piece has a blank back. \"love yours.\" is embroidered on the sleeve instead, a more subtle, everyday reminder. the hope is that one day 3 | 4 | 5 speaks loud enough on its own that we won't need to print the message at all.",
+  "details": [
+   "60% Airlume combed and ring-spun cotton, 40% polyester fleece",
+   "10 oz/yd² (339 g/m²)",
+   "brushed interior fleece",
+   "roomy unisex fit",
+   "double-layered hood, no drawcord",
+   "front pocket"
+  ],
+  "know": [
+   "oversized by design: size down for a regular fit",
+   "2XL and 3XL cost a little more",
+   "machine wash cold, hang dry",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Vintage Black",
+    "hex": "#161816",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/oversized-hoodie",
+    "listing": "the 345 hoodie | oversized",
+    "images": [
+     "10764348690829bd8dd58",
+     "10764348690829bdbf962",
+     "10764348690829bde608f",
+     "10764348690829be17400"
+    ],
+    "template": 95253239,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10764348,
+      "catalogVariant": 22993,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "M",
+      "variant": 10764349,
+      "catalogVariant": 22994,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "L",
+      "variant": 10764350,
+      "catalogVariant": 22995,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "XL",
+      "variant": 10764351,
+      "catalogVariant": 22996,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "2XL",
+      "variant": 10764352,
+      "catalogVariant": 22997,
+      "price": 64,
+      "printfulRetail": 52
+     },
+     {
+      "size": "3XL",
+      "variant": 10764353,
+      "catalogVariant": 22998,
+      "price": 64,
+      "printfulRetail": 52
+     }
+    ]
+   },
+   {
+    "name": "Asphalt",
+    "hex": "#716b63",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/oversized-hoodie",
+    "listing": "the 345 hoodie | oversized",
+    "images": [
+     "10764354690829c1564e3",
+     "10764354690829c1723ef",
+     "10764354690829c1992f3",
+     "10764354690829c1c18f0"
+    ],
+    "template": 95253239,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10764354,
+      "catalogVariant": 22951,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "M",
+      "variant": 10764355,
+      "catalogVariant": 22952,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "L",
+      "variant": 10764356,
+      "catalogVariant": 22953,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "XL",
+      "variant": 10764357,
+      "catalogVariant": 22954,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "2XL",
+      "variant": 10764358,
+      "catalogVariant": 22955,
+      "price": 64,
+      "printfulRetail": 52
+     },
+     {
+      "size": "3XL",
+      "variant": 10764359,
+      "catalogVariant": 22956,
+      "price": 64,
+      "printfulRetail": 52
+     }
+    ]
+   },
+   {
+    "name": "Vintage Brown",
+    "hex": "#9e7551",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/oversized-hoodie",
+    "listing": "the 345 hoodie | oversized",
+    "images": [
+     "10764360690829c4f0365",
+     "10764360690829c52209d",
+     "10764360690829c54748c",
+     "10764360690829c56baa9"
+    ],
+    "template": 95253239,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10764360,
+      "catalogVariant": 22999,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "M",
+      "variant": 10764361,
+      "catalogVariant": 23000,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "L",
+      "variant": 10764362,
+      "catalogVariant": 23001,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "XL",
+      "variant": 10764363,
+      "catalogVariant": 23002,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "2XL",
+      "variant": 10764364,
+      "catalogVariant": 23003,
+      "price": 64,
+      "printfulRetail": 52
+     },
+     {
+      "size": "3XL",
+      "variant": 10764365,
+      "catalogVariant": 23004,
+      "price": 64,
+      "printfulRetail": 52
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/love-yours-oversized-logo-hoodie",
+    "listing": "the 345 hoodie | oversized",
+    "images": [
+     "107635106908295095357",
+     "1076351069082950bfed6",
+     "1076351069082950e3c7b",
+     "10763510690829510d6c0"
+    ],
+    "template": 95253329,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10763510,
+      "catalogVariant": 23005,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "M",
+      "variant": 10763511,
+      "catalogVariant": 23006,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "L",
+      "variant": 10763512,
+      "catalogVariant": 23007,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "XL",
+      "variant": 10763513,
+      "catalogVariant": 23008,
+      "price": 60,
+      "printfulRetail": 50
+     },
+     {
+      "size": "2XL",
+      "variant": 10763514,
+      "catalogVariant": 23009,
+      "price": 64,
+      "printfulRetail": 52
+     },
+     {
+      "size": "3XL",
+      "variant": 10763515,
+      "catalogVariant": 23010,
+      "price": 64,
+      "printfulRetail": 52
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "crewneck",
+  "name": "the crewneck",
+  "category": "sweatshirts",
+  "placement": "front chest mark, message on back",
+  "price": 48,
+  "priceMax": 52,
+  "opaque": null,
+  "fill": false,
+  "short": "the everyday one",
+  "intro": "a straight crewneck sweatshirt with a ribbed collar and cuffs, soft fleece inside. the mark on the chest, the message on the back. it runs small, so size up.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+  "details": [
+   "100% cotton face",
+   "65% cotton, 35% polyester",
+   "8.5 oz/yd² (288 g/m²)",
+   "tightly knit 3-end fleece",
+   "side-seamed",
+   "self-fabric patch on the back",
+   "runs small: order one size up"
+  ],
+  "know": [
+   "runs small: order one size up",
+   "2XL and 3XL cost a little more",
+   "machine wash cold, hang dry",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#101010",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning",
+    "listing": "the 345 crewneck",
+    "images": [
+     "1076532269083b6531c94",
+     "1076532269083b655cc9b",
+     "1076532269083b658fcae",
+     "1076532269083b65ae9c1"
+    ],
+    "template": 95254467,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765322,
+      "catalogVariant": 11254,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "M",
+      "variant": 10765323,
+      "catalogVariant": 11255,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "L",
+      "variant": 10765324,
+      "catalogVariant": 11256,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "XL",
+      "variant": 10765325,
+      "catalogVariant": 11257,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "2XL",
+      "variant": 10765326,
+      "catalogVariant": 11258,
+      "price": 52,
+      "printfulRetail": 37
+     },
+     {
+      "size": "3XL",
+      "variant": 10765327,
+      "catalogVariant": 13258,
+      "price": 52,
+      "printfulRetail": 37
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "hex": "#43413D",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning",
+    "listing": "the 345 crewneck",
+    "images": [
+     "1076532869083b67048d7",
+     "1076532869083b6735e27",
+     "1076532869083b676501b",
+     "1076532869083b6791e9d"
+    ],
+    "template": 95254467,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765328,
+      "catalogVariant": 20363,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "M",
+      "variant": 10765329,
+      "catalogVariant": 20362,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "L",
+      "variant": 10765330,
+      "catalogVariant": 20361,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "XL",
+      "variant": 10765331,
+      "catalogVariant": 20360,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "2XL",
+      "variant": 10765332,
+      "catalogVariant": 20359,
+      "price": 52,
+      "printfulRetail": 37
+     },
+     {
+      "size": "3XL",
+      "variant": 10765333,
+      "catalogVariant": 20358,
+      "price": 52,
+      "printfulRetail": 37
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "hex": "#b28a68",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning",
+    "listing": "the 345 crewneck",
+    "images": [
+     "1076533469083b6932350",
+     "1076533469083b695ba84",
+     "1076533469083b699c1d4",
+     "1076533469083b69c8c4e"
+    ],
+    "template": 95254467,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765334,
+      "catalogVariant": 25526,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "M",
+      "variant": 10765335,
+      "catalogVariant": 25527,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "L",
+      "variant": 10765336,
+      "catalogVariant": 25528,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "XL",
+      "variant": 10765337,
+      "catalogVariant": 25529,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "2XL",
+      "variant": 10765338,
+      "catalogVariant": 25530,
+      "price": 52,
+      "printfulRetail": 37
+     },
+     {
+      "size": "3XL",
+      "variant": 10765339,
+      "catalogVariant": 25531,
+      "price": 52,
+      "printfulRetail": 37
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning-690836b5d8a89",
+    "listing": "the 345 crewneck",
+    "images": [
+     "10765341690836b5e55f5",
+     "10765341690836b61abaf",
+     "10765341690836b63dee5",
+     "10765341690836b665e7d"
+    ],
+    "template": 95254482,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765341,
+      "catalogVariant": 11249,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "M",
+      "variant": 10765342,
+      "catalogVariant": 11250,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "L",
+      "variant": 10765343,
+      "catalogVariant": 11251,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "XL",
+      "variant": 10765344,
+      "catalogVariant": 11252,
+      "price": 48,
+      "printfulRetail": 35
+     },
+     {
+      "size": "2XL",
+      "variant": 10765345,
+      "catalogVariant": 11253,
+      "price": 52,
+      "printfulRetail": 37
+     },
+     {
+      "size": "3XL",
+      "variant": 10765346,
+      "catalogVariant": 13261,
+      "price": 52,
+      "printfulRetail": 37
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tee-mens",
+  "name": "the heavyweight tee",
+  "category": "tees",
+  "placement": "front chest mark, message on back",
+  "price": 36,
+  "priceMax": 40,
+  "opaque": null,
+  "fill": false,
+  "short": "structured, boxy, built to last",
+  "intro": "a heavyweight tee with a structured, slightly boxy fit that holds its shape. the mark sits small on the left chest and the message runs across the back.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+  "details": [
+   "100% combed ring-spun cotton",
+   "6.5 oz/yd² (220 g/m²)",
+   "regular fit",
+   "side-seamed",
+   "1 × 1 rib collar"
+  ],
+  "know": [
+   "regular to boxy fit, true to size",
+   "2XL to 4XL cost a little more",
+   "machine wash cold, tumble low",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#151515",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/t-shirt-345-message",
+    "listing": "the 345 tee | men's",
+    "images": [
+     "107655546908390ad816d",
+     "107655546908390b1cb40",
+     "107655546908390b41add",
+     "107655546908390b68c1d"
+    ],
+    "template": 95254051,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765554,
+      "catalogVariant": 12756,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "M",
+      "variant": 10765555,
+      "catalogVariant": 12757,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "L",
+      "variant": 10765556,
+      "catalogVariant": 12758,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "XL",
+      "variant": 10765557,
+      "catalogVariant": 12759,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "2XL",
+      "variant": 10765558,
+      "catalogVariant": 12760,
+      "price": 40,
+      "printfulRetail": 32
+     },
+     {
+      "size": "3XL",
+      "variant": 10765559,
+      "catalogVariant": 12766,
+      "price": 40,
+      "printfulRetail": 32
+     },
+     {
+      "size": "4XL",
+      "variant": 10765560,
+      "catalogVariant": 13065,
+      "price": 40,
+      "printfulRetail": 32
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/t-shirt-black-logo-embroidered",
+    "listing": "the 345 tee | men's",
+    "images": [
+     "1076512069083193123dc",
+     "10765120690831937398c",
+     "10765120690831939909b",
+     "1076512069083193c0caa"
+    ],
+    "template": 95254054,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10765120,
+      "catalogVariant": 12761,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "M",
+      "variant": 10765121,
+      "catalogVariant": 12762,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "L",
+      "variant": 10765122,
+      "catalogVariant": 12763,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "XL",
+      "variant": 10765123,
+      "catalogVariant": 12764,
+      "price": 36,
+      "printfulRetail": 30
+     },
+     {
+      "size": "2XL",
+      "variant": 10765124,
+      "catalogVariant": 12765,
+      "price": 40,
+      "printfulRetail": 30
+     },
+     {
+      "size": "3XL",
+      "variant": 10765125,
+      "catalogVariant": 12767,
+      "price": 40,
+      "printfulRetail": 32
+     },
+     {
+      "size": "4XL",
+      "variant": 10765126,
+      "catalogVariant": 13071,
+      "price": 40,
+      "printfulRetail": 32
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tee-womens",
+  "name": "the women's tee",
+  "category": "tees",
+  "placement": "front chest mark, message on back",
+  "price": 32,
+  "priceMax": 32,
+  "opaque": null,
+  "fill": false,
+  "short": "soft, longline, easy",
+  "intro": "a lighter, longline tee in combed ring-spun cotton with a crew neck. the mark on the chest, the message on the back. sits best with high-waisted bottoms.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+  "details": [
+   "100% combed and ring-spun cotton",
+   "4.3 oz/yd² (146 g/m²)",
+   "longline fit, crew neck",
+   "blind stitch on sleeves and hem",
+   "side-seamed",
+   "tear-away label"
+  ],
+  "know": [
+   "longline fit, sizes S to L only",
+   "machine wash cold, tumble low",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#101010",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f03d15f5",
+    "listing": "the 345 tee | women's",
+    "images": [
+     "1076616169083f05e05c6",
+     "1076616169083f062dc99"
+    ],
+    "template": 95293770,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10766161,
+      "catalogVariant": 16445,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "M",
+      "variant": 10766162,
+      "catalogVariant": 16446,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "L",
+      "variant": 10766163,
+      "catalogVariant": 16447,
+      "price": 32,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "hex": "#363633",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f03d15f5",
+    "listing": "the 345 tee | women's",
+    "images": [
+     "1076616469083f06f1d91",
+     "1076616469083f071f677"
+    ],
+    "template": 95293770,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10766164,
+      "catalogVariant": 16461,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "M",
+      "variant": 10766165,
+      "catalogVariant": 16462,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "L",
+      "variant": 10766166,
+      "catalogVariant": 16463,
+      "price": 32,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "hex": "#a8826b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f03d15f5",
+    "listing": "the 345 tee | women's",
+    "images": [
+     "1076616769083f07c2056",
+     "1076616769083f07e86bf"
+    ],
+    "template": 95293770,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10766167,
+      "catalogVariant": 16449,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "M",
+      "variant": 10766168,
+      "catalogVariant": 16450,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "L",
+      "variant": 10766169,
+      "catalogVariant": 16451,
+      "price": 32,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f32eb958",
+    "listing": "the 345 tee | women's",
+    "images": [
+     "1076617069083f3345ee2",
+     "1076617069083f337c6c3"
+    ],
+    "template": 95293780,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 10766170,
+      "catalogVariant": 20176,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "M",
+      "variant": 10766171,
+      "catalogVariant": 20177,
+      "price": 32,
+      "printfulRetail": 25
+     },
+     {
+      "size": "L",
+      "variant": 10766172,
+      "catalogVariant": 20178,
+      "price": 32,
+      "printfulRetail": 25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "beanie",
+  "name": "the fisherman beanie",
+  "category": "hats",
+  "placement": "embroidered mark on the cuff",
+  "price": 26,
+  "priceMax": 26,
+  "opaque": null,
+  "fill": false,
+  "short": "one size, every day",
+  "intro": "a ribbed fisherman beanie with the 3 | 4 | 5 mark embroidered on the cuff. one size, thick enough for real cold, short enough to wear year round.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+  "details": [
+   "100% acrylic",
+   "wide, ribbed knit",
+   "snug, comfortable fit",
+   "one size fits most"
+  ],
+  "know": [
+   "one size fits most",
+   "hand wash, lay flat to dry",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#000000",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hipster-beanie-white-logo",
+    "listing": "the 345 beanie",
+    "images": [
+     "1076513669083236def63",
+     "1076513669083237273e4",
+     "107651366908323753757"
+    ],
+    "template": 95254203,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765136,
+      "catalogVariant": 20487,
+      "price": 26,
+      "printfulRetail": 20
+     }
+    ]
+   },
+   {
+    "name": "Walnut",
+    "hex": "#59392b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hipster-beanie-white-logo",
+    "listing": "the 345 beanie",
+    "images": [
+     "10765137690832377f103",
+     "1076513769083237a8fc6",
+     "1076513769083237e8a1f"
+    ],
+    "template": 95254203,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765137,
+      "catalogVariant": 20489,
+      "price": 26,
+      "printfulRetail": 20
+     }
+    ]
+   },
+   {
+    "name": "Athletic Heather",
+    "hex": "#e1dad7",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hipster-beanie-black-logo",
+    "listing": "the 345 beanie",
+    "images": [
+     "10765154690832a225b9d",
+     "10765154690832a260fd9",
+     "10765154690832a2876d5"
+    ],
+    "template": 95254210,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765154,
+      "catalogVariant": 20543,
+      "price": 26,
+      "printfulRetail": 20
+     }
+    ]
+   },
+   {
+    "name": "Ecru",
+    "hex": "#fff2d9",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/hipster-beanie-black-logo",
+    "listing": "the 345 beanie",
+    "images": [
+     "10765155690832a2b6bb8",
+     "10765155690832a2e4a13",
+     "10765155690832a313fa6"
+    ],
+    "template": 95254210,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765155,
+      "catalogVariant": 20490,
+      "price": 26,
+      "printfulRetail": 20
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hat-distressed",
+  "name": "the distressed cap",
+  "category": "hats",
+  "placement": "embroidered mark on the front, love yours. on the back",
+  "price": 28,
+  "priceMax": 28,
+  "opaque": null,
+  "fill": false,
+  "short": "worn in from day one",
+  "intro": "a low-profile dad cap with a distressed brim and crown, so it looks lived in from the first wear. the mark embroidered on the front, love yours. on the back.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+  "details": [
+   "100% pre-shrunk cotton twill",
+   "6-panel unstructured cap, low profile",
+   "soft crown",
+   "6 stitched rows on the brim",
+   "adjustable hook and loop closure"
+  ],
+  "know": [
+   "one size, adjustable hook and loop closure",
+   "distressing varies piece to piece, that is the point",
+   "spot clean",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#262626",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/love-yours-distressed-hat-69081cf23bb9d",
+    "listing": "the 345 hat | distressed",
+    "images": [
+     "1076348169083c4e3c77b",
+     "1076348169083c4e5f36e",
+     "1076348169083c4e8cc21",
+     "1076348169083c4ec73ee",
+     "1076348169083c4ef3c3d",
+     "1076348169083c4f22495"
+    ],
+    "template": 95253432,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10763481,
+      "catalogVariant": 10990,
+      "price": 28,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Grey",
+    "hex": "#73726e",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/love-yours-distressed-hat-69081cf23bb9d",
+    "listing": "the 345 hat | distressed",
+    "images": [
+     "1076348269083c4f58c3e",
+     "1076348269083c4f7b480",
+     "1076348269083c4fa3c0f",
+     "1076348269083c4fce269",
+     "1076348269083c5003c19",
+     "1076348269083c502885b"
+    ],
+    "template": 95253432,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10763482,
+      "catalogVariant": 10992,
+      "price": 28,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Khaki",
+    "hex": "#f6e6c6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/love-yours-distressed-hat",
+    "listing": "the 345 hat | distressed",
+    "images": [
+     "1076348069083c0b20cb3",
+     "1076348069083c0b54ace",
+     "1076348069083c0b85551",
+     "1076348069083c0bb3ea5",
+     "1076348069083c0bd7a07",
+     "1076348069083c0c2369d"
+    ],
+    "template": 95253561,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10763480,
+      "catalogVariant": 10993,
+      "price": 28,
+      "printfulRetail": 25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hat-denim",
+  "name": "the denim cap",
+  "category": "hats",
+  "placement": "embroidered mark on the front, love yours. on the back",
+  "price": 28,
+  "priceMax": 28,
+  "opaque": "#f4f4f4",
+  "fill": false,
+  "short": "the clean one",
+  "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+  "details": [
+   "100% cotton",
+   "6-panel unstructured cap, low profile",
+   "soft crown",
+   "4 rows of visible stitching on the visor",
+   "adjustable strap",
+   "head circumference 21.65″ to 25.19″"
+  ],
+  "know": [
+   "one size, adjustable strap",
+   "pigment dye softens and fades with wear",
+   "spot clean",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#0d0d0d",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/denim-hat-white-logo",
+    "listing": "the 345 hat | denim",
+    "images": [
+     "1076512869083ad57f2d1",
+     "1076512869083ad5d7b75",
+     "1076512869083ad606905",
+     "1076512869083ad6282e7",
+     "1076512869083ad641c3b",
+     "1076512869083ad662288"
+    ],
+    "template": 95254159,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765128,
+      "catalogVariant": 11983,
+      "price": 28,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Blue",
+    "hex": "#5c839a",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/denim-hat-white-logo",
+    "listing": "the 345 hat | denim",
+    "images": [
+     "1076512969083ad68f448",
+     "1076512969083ad6b18e9",
+     "1076512969083ad6d0545",
+     "1076512969083ad6f3703",
+     "1076512969083ad7263ed",
+     "1076512969083ad750941"
+    ],
+    "template": 95254159,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765129,
+      "catalogVariant": 11984,
+      "price": 28,
+      "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Light Blue",
+    "hex": "#c9dddc",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/denim-hat-white-logo",
+    "listing": "the 345 hat | denim",
+    "images": [
+     "1076513069083ad77e9f1",
+     "1076513069083ad7a9219",
+     "1076513069083ad7cd605",
+     "1076513069083ad807043",
+     "1076513069083ad830db9",
+     "1076513069083ad85b638"
+    ],
+    "template": 95254159,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 10765130,
+      "catalogVariant": 11985,
+      "price": 28,
+      "printfulRetail": 25
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "blanket",
+  "name": "the sherpa blanket",
+  "category": "home",
+  "placement": "message embroidered on the corner",
+  "price": 65,
+  "priceMax": 65,
+  "opaque": "#1a1a1a",
+  "fill": true,
+  "short": "for the couch, the car, the gift",
+  "intro": "fleece on one side, sherpa on the other, 50 by 60 inches. the full message is embroidered on the corner. the piece most often bought as a gift.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "the full message is embroidered on the corner: i love you. i believe in you. i am proud of you.",
+  "details": [
+   "100% polyester fleece on one side",
+   "100% polyester sherpa on the other",
+   "50″ × 60″ (127 × 152 cm)"
+  ],
+  "know": [
+   "50 x 60 inches",
+   "machine wash cold, tumble low",
+   "ships in its own box",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"
+  ],
+  "colors": [
+   {
+    "name": "Black",
+    "hex": "#131313",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/premium-sherpa-blanket-345-meaning",
+    "listing": "the 345 sherpa blanket",
+    "images": [
+     "107654686908380364026",
+     "10765468690838039e910"
+    ],
+    "template": 95287559,
+    "sizes": [
+     {
+      "size": "50″×60″",
+      "variant": 10765468,
+      "catalogVariant": 13444,
+      "price": 65,
+      "printfulRetail": 50
+     }
+    ]
+   },
+   {
+    "name": "Fireside Brown",
+    "hex": "#482f2c",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/premium-sherpa-blanket-345-meaning",
+    "listing": "the 345 sherpa blanket",
+    "images": [
+     "1076546969083803cb0aa",
+     "107654696908380401fb0"
+    ],
+    "template": 95287559,
+    "sizes": [
+     {
+      "size": "50″×60″",
+      "variant": 10765469,
+      "catalogVariant": 13445,
+      "price": 65,
+      "printfulRetail": 50
+     }
+    ]
+   },
+   {
+    "name": "Heather Grey",
+    "hex": "#716a69",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/premium-sherpa-blanket-345-meaning",
+    "listing": "the 345 sherpa blanket",
+    "images": [
+     "107654706908380432d59",
+     "10765470690838045c5ad"
+    ],
+    "template": 95287559,
+    "sizes": [
+     {
+      "size": "50″×60″",
+      "variant": 10765470,
+      "catalogVariant": 13446,
+      "price": 65,
+      "printfulRetail": 50
+     }
+    ]
+   }
+  ]
+ }
+]

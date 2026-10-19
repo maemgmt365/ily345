@@ -1,0 +1,17 @@
+name = "ily345-checkout"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+[vars]
+SITE_ORIGIN = "https://ily345.com"
+SUPPORT_EMAIL = "support345@gmail.com"
+STRIPE_TAX = "off"
+# "off" = orders land in Printful as drafts for you to confirm; "on" = auto-submit.
+PRINTFUL_CONFIRM = "off"
+# Set after tools/verify-printful.mjs prints the store id:
+PRINTFUL_STORE_ID = "11103974"
+
+# Secrets (never in this file):  wrangler secret put STRIPE_SECRET_KEY
+#                                wrangler secret put STRIPE_WEBHOOK_SECRET
+#                                wrangler secret put PRINTFUL_TOKEN

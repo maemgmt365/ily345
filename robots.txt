@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ily345.com/sitemap.xml

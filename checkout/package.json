@@ -1,0 +1,13 @@
+{
+  "name": "ily345-checkout",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "verify": "node tools/verify-printful.mjs",
+    "webhook": "node tools/setup-stripe-webhook.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
