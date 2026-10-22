@@ -41,7 +41,7 @@ imgs = {p.stem: _bake(p) for p in (ROOT/'previews/img').glob('*.jpg')} if (ROOT/
 def needed(src, seed):
     data = json.loads(products); ids = set()
     if 'story' in src:
-        ids.add('1076503569082fa8eff33')
+        ids.add('1076511469083056abb20')
     elif 'index' in src:
         ids.add('1076503569082fa8eff33')
         for p in data:
