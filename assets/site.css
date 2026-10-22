@@ -445,3 +445,9 @@ h1, h2, h3, p { margin: 0; }
 /* back to top */
 .to-top { position: fixed; right: 22px; bottom: 22px; z-index: 30; width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--line-strong); background: var(--bg); color: var(--ink); cursor: pointer; transition: border-color 0.2s var(--ease), color 0.2s var(--ease); }
 .to-top:hover { border-color: var(--accent); color: var(--accent); }
+
+/* highlights: one accent device, used sparingly. the pipe, the full stop, one phrase per section */
+.pipe { color: var(--accent); }
+.hl-dot { color: var(--accent); }
+.hl { color: var(--accent); }
+.purpose .hl, .story-closer .hl, .story-hero .hl { color: var(--accent-soft); }
