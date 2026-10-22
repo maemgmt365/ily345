@@ -224,6 +224,8 @@ SHARED_KNOW = ["made to order, one at a time, by our print partner printful", "s
 # printful's hat mockups sit smaller in their frame than the garments; scale them so every
 # tile reads the same size (measured: garments fill ~95% of the mockup, hats ~79%).
 ZOOM = {"beanie": 1.19, "hat-distressed": 1.19, "hat-denim": 1.19}
+# mockups that are not transparent: blend their near-white background into the tile
+BLEND = {"hat-denim"}
 
 STORE = "https://345loveyours.printful.me"
 out = []
@@ -253,7 +255,7 @@ for p in PRODUCTS:
     out.append({
         "id": p["id"], "name": p["name"], "category": p["category"], "placement": p["placement"],
         "price": prices[0], "priceMax": prices[-1], "opaque": p.get("opaque"), "fill": bool(p.get("fill")),
-        "zoom": ZOOM.get(p["id"], 1),
+        "zoom": ZOOM.get(p["id"], 1), "blend": p["id"] in BLEND,
         "short": p["short"], "intro": p["intro"], "message": MESSAGE, "note": p["note"], "details": p["details"],
         "know": GOOD_TO_KNOW[p["id"]] + SHARED_KNOW,
         "colors": colors,

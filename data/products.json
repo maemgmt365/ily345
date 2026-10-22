@@ -9,6 +9,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1,
+  "blend": false,
   "short": "the one that started it",
   "intro": "the first 345 piece and still the one most people reach for. a classic heavyweight hoodie, cotton-faced and soft inside, with the 3 | 4 | 5 mark small on the chest and the full message across the back.",
   "message": [
@@ -608,6 +609,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1,
+  "blend": false,
   "short": "heavier, roomier, quieter",
   "intro": "thicker, roomier and quieter than the original. brushed fleece, dropped shoulders, no drawcords. the mark sits on the chest and love yours. runs down the sleeve, so the back stays clean.",
   "message": [
@@ -878,6 +880,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1,
+  "blend": false,
   "short": "the everyday one",
   "intro": "a straight crewneck sweatshirt with a ribbed collar and cuffs, soft fleece inside. the mark on the chest, the message on the back. it runs small, so size up.",
   "message": [
@@ -1149,6 +1152,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1,
+  "blend": false,
   "short": "structured, boxy, built to last",
   "intro": "a heavyweight tee with a structured, slightly boxy fit that holds its shape. the mark sits small on the left chest and the message runs across the back.",
   "message": [
@@ -1316,6 +1320,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1,
+  "blend": false,
   "short": "soft, longline, easy",
   "intro": "a lighter, longline tee in combed ring-spun cotton with a crew neck. the mark on the chest, the message on the back. sits best with high-waisted bottoms.",
   "message": [
@@ -1493,6 +1498,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1.19,
+  "blend": false,
   "short": "one size, every day",
   "intro": "a ribbed fisherman beanie with the 3 | 4 | 5 mark embroidered on the cuff. one size, thick enough for real cold, short enough to wear year round.",
   "message": [
@@ -1616,6 +1622,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1.19,
+  "blend": false,
   "short": "worn in from day one",
   "intro": "a low-profile dad cap with a distressed brim and crown, so it looks lived in from the first wear. the mark embroidered on the front, love yours. on the back.",
   "message": [
@@ -1728,6 +1735,7 @@
   "opaque": null,
   "fill": false,
   "zoom": 1.19,
+  "blend": true,
   "short": "the clean one",
   "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
   "message": [
@@ -1841,6 +1849,7 @@
   "opaque": "#1a1a1a",
   "fill": true,
   "zoom": 1,
+  "blend": false,
   "short": "for the couch, the car, the gift",
   "intro": "fleece on one side, sherpa on the other, 50 by 60 inches. the full message is embroidered on the corner. the piece most often bought as a gift.",
   "message": [

@@ -93,7 +93,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=5dbce319').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -102,7 +102,7 @@
     if (typeof colorName !== 'string') colorName = null;
     var c = p.colors.filter(function (x) { return x.name === colorName; })[0] || p.colors[0];
     var front = c.images[0], back = c.images[1];
-    var cover = p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '';
+    var cover = (p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '') + (p.blend ? ' blend' : '');
     var href = 'product.html?p=' + p.id + (colorName ? '&c=' + encodeURIComponent(c.name) : '');
     var ci = p.colors.indexOf(c);
     var chips = p.colors.map(function (x, i) {
@@ -201,7 +201,7 @@
     var ci = new URLSearchParams(location.search).get('c');
     if (ci) { var idx = p.colors.map(function (c) { return c.name.toLowerCase(); }).indexOf(ci.toLowerCase()); if (idx >= 0) state.color = idx; }
     document.title = p.name + ' · 3 | 4 | 5';
-    var cover = p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '';
+    var cover = (p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '') + (p.blend ? ' blend' : '');
     var root = $('#pdp');
     root.innerHTML =
       '<div class="pdp-gallery">' +
