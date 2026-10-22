@@ -74,6 +74,14 @@ async function createCheckout(request, env, cors) {
   if (body.email) form.set('customer_email', String(body.email).slice(0, 200));
   if ((env.STRIPE_TAX || 'off') === 'on') form.set('automatic_tax[enabled]', 'true');
 
+  // Gift note: optional, printed on the packing slip inside the box.
+  form.set('custom_fields[0][key]', 'gift_note');
+  form.set('custom_fields[0][label][type]', 'custom');
+  form.set('custom_fields[0][label][custom]', 'gift note (printed inside the box)');
+  form.set('custom_fields[0][type]', 'text');
+  form.set('custom_fields[0][optional]', 'true');
+  form.set('custom_fields[0][text][maximum_length]', '140');
+
   lines.forEach((l, i) => {
     const p = `line_items[${i}]`;
     form.set(`${p}[quantity]`, String(l.qty));
@@ -175,7 +183,7 @@ async function handleWebhook(request, env, ctx) {
     },
     packing_slip: {
       email: env.SUPPORT_EMAIL || '',
-      message: 'i love you. i believe in you. i am proud of you. love yours.',
+      message: giftNote(session) || 'i love you. i believe in you. i am proud of you. love yours.',
       store_name: '3 | 4 | 5'
     }
   };
@@ -189,6 +197,14 @@ async function handleWebhook(request, env, ctx) {
 }
 
 /* ---------------- helpers ---------------- */
+
+// The optional gift note typed at checkout, trimmed and kept printable.
+function giftNote(session) {
+  var f = (session.custom_fields || []).filter(function (x) { return x.key === 'gift_note' && x.text && x.text.value; })[0];
+  if (!f) return '';
+  var note = String(f.text.value).replace(/[\r\n]+/g, ' ').trim().slice(0, 140);
+  return note ? note + '  (3 | 4 | 5: i love you. i believe in you. i am proud of you.)' : '';
+}
 
 async function loadCatalog(env) {
   const origin = env.SITE_ORIGIN || 'https://ily345.com';

@@ -40,7 +40,9 @@ def _bake(path):
 imgs = {p.stem: _bake(p) for p in (ROOT/'previews/img').glob('*.jpg')} if (ROOT/'previews/img').exists() else {}
 def needed(src, seed):
     data = json.loads(products); ids = set()
-    if 'index' in src:
+    if 'story' in src:
+        ids.add('1076503569082fa8eff33')
+    elif 'index' in src:
         ids.add('1076503569082fa8eff33')
         for p in data:
             for c in p['colors']: ids.update(c['images'][:2])
@@ -65,6 +67,7 @@ pages = {
   '404.html': ('PREVIEW-404.html', ''),
   'thanks.html': ('PREVIEW-thanks.html', ''),
   'story.html': ('PREVIEW-story.html', ''),
+  'send.html': ('PREVIEW-send.html', ''),
 }
 for src, (dst, seed) in pages.items():
     html = (ROOT/src.split('#')[0]).read_text()

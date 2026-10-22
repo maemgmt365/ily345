@@ -60,6 +60,7 @@
           '<nav class="nav label" aria-label="primary">' +
             '<a href="index.html#shop"' + (page === 'shop' || page === 'product' ? ' aria-current="page"' : '') + '>shop</a>' +
             '<a href="story.html" class="hide-sm"' + (page === 'story' ? ' aria-current="page"' : '') + '>story</a>' +
+            '<a href="send.html" class="hide-sm"' + (page === 'send' ? ' aria-current="page"' : '') + '>send a 345</a>' +
           '</nav>' +
           '<a class="wordmark" href="index.html" aria-label="3 4 5 home">3 | 4 | 5</a>' +
           '<nav class="nav right label" aria-label="bag">' +
@@ -77,6 +78,7 @@
           '<nav class="nav" aria-label="footer">' +
             '<a href="index.html#shop">shop</a>' +
             '<a href="story.html">story</a>' +
+            '<a href="send.html">send a 345</a>' +
             '<a href="index.html#details">good to know</a>' +
             '<a href="mailto:' + CONFIG.supportEmail + '">' + CONFIG.supportEmail + '</a>' +
           '</nav>' +
@@ -93,7 +95,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=b262ec84').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=bfccfbd1').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -278,7 +280,7 @@
         '<div class="sum-row"><span class="muted">shipping</span><span class="muted">at checkout</span></div>' +
         '<div class="sum-row total"><span>subtotal</span><span>' + money(sub) + '</span></div>' +
         '<button class="btn full" id="checkout">checkout</button>' +
-        '<div class="pdp-hint" id="checkout-hint">secure checkout by stripe. apple pay, google pay and cards. us shipping.</div>';
+        '<div class="pdp-hint" id="checkout-hint">secure checkout by stripe. apple pay, google pay and cards. us shipping. sending it as a gift? you can add a note at checkout and we print it inside the box.</div>';
       $('#checkout').addEventListener('click', startCheckout);
     }
     lines.addEventListener('click', function (e) {
@@ -314,6 +316,86 @@
     if (sid) { try { localStorage.removeItem(CONFIG.bagKey); } catch (e) {} renderBagCount(); }
   }
 
+  /* ---------- send a 345: a card drawn on canvas, shareable by link or image ---------- */
+  function initSend() {
+    var cv = $('#send-canvas'); if (!cv) return;
+    var ctx = cv.getContext('2d');
+    var MEAN = { '3': 'i love you.', '4': 'i believe in you.', '5': 'i am proud of you.', '345': 'i love you. i believe in you. i am proud of you.' };
+    var TONES = {
+      stone: { bg: '#e9e7e1', ink: '#171717', muted: '#7a7873', accent: '#8a6a4e' },
+      espresso: { bg: '#2b221c', ink: '#f1ebe4', muted: '#b39c86', accent: '#c9b39b' },
+      latte: { bg: '#b28a68', ink: '#1f1915', muted: '#5a4737', accent: '#f1ebe4' },
+      black: { bg: '#171717', ink: '#f1efea', muted: '#9a9790', accent: '#c9b39b' }
+    };
+    var q = new URLSearchParams(location.search);
+    var state = { n: MEAN[q.get('n')] ? q.get('n') : '3', to: (q.get('to') || '').slice(0, 24), from: (q.get('from') || '').slice(0, 24), tone: TONES[q.get('tone')] ? q.get('tone') : 'stone' };
+    $('#send-to').value = state.to; $('#send-from').value = state.from;
+
+    function line(text, x, y, font, color, align) { ctx.font = font; ctx.fillStyle = color; ctx.textAlign = align || 'left'; ctx.fillText(text, x, y); }
+    function wrap(text, x, y, maxW, lh, font, color) {
+      ctx.font = font; ctx.fillStyle = color; ctx.textAlign = 'left';
+      var words = text.split(' '), cur = '', lines = [];
+      words.forEach(function (w) { var t = cur ? cur + ' ' + w : w; if (ctx.measureText(t).width > maxW && cur) { lines.push(cur); cur = w; } else cur = t; });
+      if (cur) lines.push(cur);
+      lines.forEach(function (l, i) { ctx.fillText(l, x, y + i * lh); });
+      return y + lines.length * lh;
+    }
+    function draw() {
+      var t = TONES[state.tone], W = cv.width, H = cv.height, m = 96;
+      ctx.clearRect(0, 0, W, H); ctx.fillStyle = t.bg; ctx.fillRect(0, 0, W, H);
+      ctx.strokeStyle = t.accent; ctx.lineWidth = 2; ctx.strokeRect(40, 40, W - 80, H - 80);
+      line('3  |  4  |  5', m, 160, '500 26px -apple-system, Helvetica, Arial, sans-serif', t.accent);
+      if (state.to) line('for ' + state.to.toLowerCase(), W - m, 160, '500 26px -apple-system, Helvetica, Arial, sans-serif', t.muted, 'right');
+      var big = state.n === '345' ? '3 | 4 | 5' : state.n;
+      line(big, W / 2, state.n === '345' ? 640 : 700, (state.n === '345' ? '300 300px' : '300 520px') + ' Georgia, "Times New Roman", serif', t.ink, 'center');
+      var y = wrap(MEAN[state.n], m, 880, W - 2 * m, 72, '400 56px Georgia, "Times New Roman", serif', t.ink);
+      if (state.from) line('from ' + state.from.toLowerCase(), m, y + 40, '500 26px -apple-system, Helvetica, Arial, sans-serif', t.muted);
+      line('3 means i love you.  4 means i believe in you.  5 means i am proud of you.', m, H - 150, '400 22px -apple-system, Helvetica, Arial, sans-serif', t.muted);
+      line('ily345.com  ·  love yours.', m, H - 108, '500 22px -apple-system, Helvetica, Arial, sans-serif', t.accent);
+      $('#send-meaning').textContent = MEAN[state.n].replace(/\.$/, '');
+      $('#send-tone-name').textContent = state.tone;
+      $$('#send-nums button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-n') === state.n); });
+      $$('#send-tones button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-tone') === state.tone); });
+      var u = new URLSearchParams(); u.set('n', state.n); if (state.to) u.set('to', state.to); if (state.from) u.set('from', state.from); if (state.tone !== 'stone') u.set('tone', state.tone);
+      try { history.replaceState(null, '', 'send.html?' + u.toString()); } catch (e) {}
+    }
+    function shareUrl() { return 'https://ily345.com/' + location.pathname.split('/').pop() + location.search; }
+    function hint(msg) { var h = $('#send-hint'); h.textContent = msg; }
+    $('#send-nums').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; state.n = b.getAttribute('data-n'); draw(); });
+    $('#send-tones').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; state.tone = b.getAttribute('data-tone'); draw(); });
+    $('#send-to').addEventListener('input', function (e) { state.to = e.target.value.slice(0, 24); draw(); });
+    $('#send-from').addEventListener('input', function (e) { state.from = e.target.value.slice(0, 24); draw(); });
+    $('#send-copy').addEventListener('click', function () {
+      var u = shareUrl();
+      (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { hint('link copied. paste it in a text and they will open this exact card.'); }, function () { hint('copy this: ' + u); });
+    });
+    $('#send-save').addEventListener('click', function () {
+      var a = document.createElement('a'); a.download = '345-' + state.n + (state.to ? '-' + state.to.toLowerCase().replace(/[^a-z0-9]+/g, '-') : '') + '.png'; a.href = cv.toDataURL('image/png'); a.click();
+      hint('saved. drop it in a text, a story, or print it.');
+    });
+    $('#send-share').addEventListener('click', function () {
+      var text = (state.n === '345' ? '3 4 5' : state.n) + '. ' + MEAN[state.n] + (state.from ? ' from ' + state.from : '');
+      if (navigator.share) {
+        cv.toBlob(function (blob) {
+          var file = blob && typeof File !== 'undefined' ? new File([blob], '345.png', { type: 'image/png' }) : null;
+          var data = { title: 'send a 345', text: text, url: shareUrl() };
+          if (file && navigator.canShare && navigator.canShare({ files: [file] })) data.files = [file];
+          navigator.share(data).catch(function () {});
+        });
+      } else { $('#send-copy').click(); }
+    });
+    draw();
+  }
+
+  /* ---------- back to top (appears after the first screen) ---------- */
+  function initTop() {
+    var b = document.createElement('button'); b.className = 'to-top label'; b.textContent = 'top'; b.setAttribute('aria-label', 'back to top'); b.hidden = true;
+    b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    document.body.appendChild(b);
+    var last = 0;
+    window.addEventListener('scroll', function () { var y = window.scrollY; var show = y > window.innerHeight * 1.5; if (show !== !b.hidden) b.hidden = !show; last = y; }, { passive: true });
+  }
+
   /* ---------- reveal ---------- */
   function observeReveal() {
     if (!('IntersectionObserver' in window)) { $$('.reveal').forEach(function (el) { el.classList.add('in'); }); return; }
@@ -325,10 +407,13 @@
 
   /* ---------- boot ---------- */
   renderChrome();
+  initTop();
   observeReveal();
   if (page === 'home') loadProducts(initHome);
   if (page === 'shop') loadProducts(initShop);
   if (page === 'product') loadProducts(initProduct);
   if (page === 'bag') initBag();
   if (page === 'thanks') initThanks();
+  if (page === 'send') initSend();
+  if (page === 'story') { var si = $('#story-img'); if (si) si.src = CONFIG.imgFull(CONFIG.heroImage); observeReveal(); }
 })();

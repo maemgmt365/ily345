@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>send a 345 · 3 | 4 | 5</title>
+  <meta name="description" content="send someone a 3, a 4 or a 5. i love you. i believe in you. i am proud of you. a card you can text, post or save.">
+  <link rel="canonical" href="https://ily345.com/send.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="send a 345">
+  <meta property="og:description" content="3 means i love you. 4 means i believe in you. 5 means i am proud of you.">
+  <meta property="og:url" content="https://ily345.com/send.html">
+  <meta property="og:image" content="https://ily345.com/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css?v=bfccfbd1">
+</head>
+<body data-page="send">
+  <header id="site-header"></header>
+
+  <main class="wrap send">
+    <div class="send-intro reveal">
+      <div class="label accent">send a 345</div>
+      <h1 class="display">say it the easy way.</h1>
+      <p class="sub">pick a number, add a name if you want, and send the card. no account, nothing to buy. the numbers do the talking.</p>
+    </div>
+
+    <div class="send-grid">
+      <div class="send-controls reveal">
+        <div class="opt">
+          <div class="opt-head label"><span>the number</span><span class="muted" id="send-meaning">i love you</span></div>
+          <div class="send-nums" id="send-nums">
+            <button class="label" data-n="3" aria-pressed="true">3</button>
+            <button class="label" data-n="4" aria-pressed="false">4</button>
+            <button class="label" data-n="5" aria-pressed="false">5</button>
+            <button class="label" data-n="345" aria-pressed="false">3 | 4 | 5</button>
+          </div>
+        </div>
+        <div class="opt">
+          <div class="opt-head label"><span>to</span><span class="muted">optional</span></div>
+          <input class="send-input" id="send-to" type="text" maxlength="24" placeholder="a name" autocomplete="off">
+        </div>
+        <div class="opt">
+          <div class="opt-head label"><span>from</span><span class="muted">optional</span></div>
+          <input class="send-input" id="send-from" type="text" maxlength="24" placeholder="your name" autocomplete="off">
+        </div>
+        <div class="opt">
+          <div class="opt-head label"><span>card</span><span class="muted" id="send-tone-name">stone</span></div>
+          <div class="color-list" id="send-tones">
+            <button style="background:#e9e7e1" data-tone="stone" aria-pressed="true" aria-label="stone"></button>
+            <button style="background:#2b221c" data-tone="espresso" aria-pressed="false" aria-label="espresso"></button>
+            <button style="background:#b28a68" data-tone="latte" aria-pressed="false" aria-label="latte"></button>
+            <button style="background:#171717" data-tone="black" aria-pressed="false" aria-label="black"></button>
+          </div>
+        </div>
+        <div class="send-actions">
+          <button class="btn" id="send-share">share</button>
+          <button class="btn ghost" id="send-copy">copy link</button>
+          <button class="btn ghost" id="send-save">save image</button>
+        </div>
+        <p class="pdp-hint" id="send-hint">share opens your phone's share sheet. copy link puts a link to this exact card on your clipboard. save image downloads it for a story or a text.</p>
+      </div>
+
+      <div class="send-preview reveal">
+        <canvas id="send-canvas" width="1080" height="1350" aria-label="your 345 card"></canvas>
+      </div>
+    </div>
+
+    <div class="send-foot reveal">
+      <div class="rule"></div>
+      <p class="sub">want to say it with something they can wear? <a class="link-u" href="index.html#shop">shop the pieces</a>, or read <a class="link-u" href="story.html">why 345 exists</a>.</p>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/site.js?v=bfccfbd1"></script>
+</body>
+</html>
