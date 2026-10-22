@@ -95,7 +95,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=fccb1e59').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=6f8fb639').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -350,7 +350,7 @@
       line(big, W / 2, state.n === '345' ? 640 : 700, (state.n === '345' ? '300 300px' : '300 520px') + ' Georgia, "Times New Roman", serif', t.ink, 'center');
       var y = wrap(MEAN[state.n], m, 880, W - 2 * m, 72, '400 56px Georgia, "Times New Roman", serif', t.ink);
       if (state.from) line('from ' + state.from.toLowerCase(), m, y + 40, '500 26px -apple-system, Helvetica, Arial, sans-serif', t.muted);
-      line('3 means i love you.  4 means i believe in you.  5 means i am proud of you.', m, H - 150, '400 22px -apple-system, Helvetica, Arial, sans-serif', t.muted);
+      line('3 | i love you.  4 | i believe in you.  5 | i am proud of you.', m, H - 150, '400 22px -apple-system, Helvetica, Arial, sans-serif', t.muted);
       line('ily345.com  ·  love yours.', m, H - 108, '500 22px -apple-system, Helvetica, Arial, sans-serif', t.accent);
       $('#send-meaning').textContent = MEAN[state.n].replace(/\.$/, '');
       $('#send-tone-name').textContent = state.tone;
