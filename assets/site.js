@@ -16,7 +16,6 @@
     showGridPrice: true,
     featured: [['hoodie', 'Black'], ['oversized-hoodie', 'Vintage Brown'], ['crewneck', 'Latte']],
     heroImage: '1076503569082fa8eff33', // black hoodie, back (the message)
-    storyImage: '1076511469083056abb20', // white hoodie, back: contrast on the espresso band
     groups: [
       { title: 'hoodies and sweatshirts', cats: ['hoodies', 'sweatshirts'] },
       { title: 'tees', cats: ['tees'] },
@@ -96,7 +95,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=26e9fe0d').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=d74bc67a').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -416,5 +415,5 @@
   if (page === 'bag') initBag();
   if (page === 'thanks') initThanks();
   if (page === 'send') initSend();
-  if (page === 'story') { var si = $('#story-img'); if (si) si.src = CONFIG.imgFull(CONFIG.storyImage); observeReveal(); }
+  if (page === 'story') observeReveal();
 })();
