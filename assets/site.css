@@ -378,6 +378,6 @@ h1, h2, h3, p { margin: 0; }
   box-shadow: 0 0 0 2px var(--bg); transition: transform 0.2s var(--ease);
 }
 .color-list button:first-child { margin-left: 0; }
-.color-list button:hover { transform: translateY(-4px); z-index: 2; }
+.color-list button:hover { transform: translateY(-4px); z-index: 4; }
 .color-list button[aria-pressed="true"] { transform: translateY(-4px); z-index: 3; border-color: var(--ink); }
 .color-list button[aria-pressed="true"]::after { display: none; }
