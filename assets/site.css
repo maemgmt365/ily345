@@ -11,9 +11,11 @@
   --line-strong: rgba(23, 23, 23, 0.28);
   --white: #ffffff;
   --tile-2: #e9e7e2;
-  --dark: #161614;
-  --dark-ink: #f1efea;
-  --dark-muted: #9a9790;
+  --accent: #8a6a4e;          /* warm brown: the latte and walnut pieces */
+  --accent-soft: #c9b39b;
+  --dark: #2b221c;            /* espresso instead of black for the purpose band */
+  --dark-ink: #f1ebe4;
+  --dark-muted: #b39c86;
   --max: 1360px;
   --gutter: 28px;
   --serif: Georgia, "Times New Roman", Times, serif;
@@ -53,6 +55,7 @@ h1, h2, h3, p { margin: 0; }
   line-height: 1.4;
 }
 .label.muted { color: var(--muted); }
+.label.accent { color: var(--accent); }
 .serif { font-family: var(--serif); font-weight: 400; }
 .small { font-size: var(--fs-small); }
 .muted { color: var(--muted); }
@@ -110,13 +113,13 @@ h1, h2, h3, p { margin: 0; }
   transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
   white-space: nowrap;
 }
-.btn:hover { background: #000; border-color: #000; }
+.btn:hover { background: var(--accent); border-color: var(--accent); }
 .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line-strong); }
-.btn.ghost:hover { border-color: var(--ink); background: transparent; }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
 .btn.full { width: 100%; }
 .btn[disabled] { opacity: 0.4; cursor: default; }
 .link-u { border-bottom: 1px solid var(--line-strong); padding-bottom: 1px; transition: border-color 0.2s; }
-.link-u:hover { border-color: var(--ink); }
+.link-u:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---------- sections ---------- */
 .section { padding: 84px 0; }
@@ -141,14 +144,16 @@ h1, h2, h3, p { margin: 0; }
   overflow: hidden; min-height: 60vh;
 }
 .hero-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 6%; }
-.hero-caption { position: absolute; left: var(--gutter); bottom: 22px; color: var(--muted); }
+.hero-caption { position: absolute; left: var(--gutter); bottom: 22px; color: var(--accent); }
 
 /* ---------- product grid ---------- */
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 24px; }
 .grid.four { grid-template-columns: repeat(4, 1fr); }
 .tile { display: block; }
-.grid > .tile:nth-child(3n+2) .tile-visual { background: var(--tile-2); }
-.tile:hover .tile-visual img:not(.alt) { transform: scale(1.02); }
+/* all tiles share one tone; the alternation read as inconsistent */
+.tile-visual img { transform: scale(var(--zoom, 1)); }
+.tile:hover .tile-visual img:not(.alt) { transform: scale(calc(var(--zoom, 1) * 1.02)); }
+.tile.has-alt:hover .tile-visual img:not(.alt) { opacity: 0; }
 .tile-visual img { transition: opacity 0.45s var(--ease), transform 0.8s var(--ease); }
 .tile-visual {
   position: relative; background: var(--tile); aspect-ratio: 4 / 5; overflow: hidden;
@@ -170,7 +175,7 @@ h1, h2, h3, p { margin: 0; }
 /* ---------- purpose band (the chapter change) ---------- */
 .purpose { background: var(--dark); color: var(--dark-ink); padding: 120px 0; }
 .purpose-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; }
-.purpose-eyebrow { color: var(--dark-muted); margin-bottom: 18px; }
+.purpose-eyebrow { color: var(--accent-soft); margin-bottom: 18px; }
 .purpose-body { display: grid; gap: 18px; max-width: 560px; font-size: 17px; line-height: 1.75; color: var(--dark-ink); }
 .purpose-body p { margin: 0; }
 .purpose-sign { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 30px); line-height: 1.3; margin-top: 8px !important; }
@@ -189,11 +194,11 @@ h1, h2, h3, p { margin: 0; }
 .essay-col { max-width: 640px; margin: 0 auto; font-family: var(--serif); font-size: 19px; line-height: 1.8; }
 .essay-col h2 { margin: 0 0 22px; }
 .essay-col .signoff { color: var(--muted); font-size: 17px; }
-.essay-break { padding: 72px 0; margin: 40px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: center; }
+.essay-break { padding: 72px 0; margin: 40px 0; border-top: 1px solid var(--accent-soft); border-bottom: 1px solid var(--accent-soft); text-align: center; }
 .essay-break .lines { display: grid; gap: 4px; }
-.stat { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: baseline; padding: 18px 0; border-top: 1px solid var(--line); margin: 8px 0 !important; }
-.stat + .stat { border-bottom: 1px solid var(--line); }
-.stat-num { font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); line-height: 1; letter-spacing: -0.02em; }
+.stat { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: baseline; padding: 18px 0; border-top: 1px solid var(--accent-soft); margin: 8px 0 !important; }
+.stat + .stat { border-bottom: 1px solid var(--accent-soft); }
+.stat-num { font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); line-height: 1; letter-spacing: -0.02em; color: var(--accent); }
 .stat-text { font-family: var(--sans); font-size: var(--fs-small); color: var(--muted); line-height: 1.6; }
 .essay-sources { max-width: 640px; margin: 48px auto 0; }
 .essay-cta { display: flex; justify-content: center; margin-top: 56px; }
@@ -212,7 +217,7 @@ h1, h2, h3, p { margin: 0; }
 .pdp { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; padding: 40px 0 84px; align-items: start; }
 .pdp-gallery { display: grid; gap: 12px; position: sticky; top: 80px; }
 .pdp-main { background: var(--tile); aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.pdp-main img { width: 100%; height: 100%; object-fit: contain; padding: 6%; }
+.pdp-main img { width: 100%; height: 100%; object-fit: contain; padding: 6%; transform: scale(var(--zoom, 1)); }
 .pdp-main.cover img { padding: 0; object-fit: cover; }
 .pdp-main.flat img { padding: 0; }
 .thumbs { display: flex; gap: 10px; }
@@ -347,4 +352,4 @@ h1, h2, h3, p { margin: 0; }
 }
 
 /* product shots: let any white/light mockup background melt into the tile */
-.hero-visual img, .tile-visual:not(.cover) img, .pdp-main:not(.cover) img, .thumbs img, .bag-thumb:not(.cover) img { mix-blend-mode: multiply; }
+.hero-visual img, .tile-visual:not(.cover) img, .pdp-main:not(.cover) img, .thumbs img, .bag-thumb:not(.cover) img { mix-blend-mode: darken; }

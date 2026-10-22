@@ -21,6 +21,15 @@ TEMPLATES = {  # printful listing id -> product template id (same colour set)
     659088: 95254210, 659086: 95254203, 659084: 95254159, 659047: 95253239, 659001: 95253329,
     658998: 95253432, 658997: 95253561,
 }
+# which mockup is the real back view (with the message) per Printful catalog product:
+# printful's mock order is front, left, right, back for tees and sweatshirts.
+BACK_INDEX = {508: 2, 411: 3}
+def reorder_mocks(pid, mocks):
+    i = BACK_INDEX.get(pid)
+    if i is None or i >= len(mocks):
+        return mocks
+    return [mocks[0], mocks[i]] + [m for j, m in enumerate(mocks) if j not in (0, i)]
+
 def catalog_variant(pid, color, size):
     same = [v for v in catalog[str(pid)] if v["color"] == color]
     m = [v for v in same if v["size"] == size] if size != "One size" else (same if len(same) == 1 else [v for v in same if v["size"] in (None, "", "One size")])
@@ -165,7 +174,6 @@ PRODUCTS = [
     },
     {
         "id": "hat-denim",
-        "opaque": "#f4f4f4",
         "name": "the denim cap",
         "short": "the clean one",
         "price": {"base": 28, "plus": 28},
@@ -213,6 +221,10 @@ GOOD_TO_KNOW = {
 }
 SHARED_KNOW = ["made to order, one at a time, by our print partner printful", "ships from the us, usually 5 to 9 business days door to door", "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"]
 
+# printful's hat mockups sit smaller in their frame than the garments; scale them so every
+# tile reads the same size (measured: garments fill ~95% of the mockup, hats ~79%).
+ZOOM = {"beanie": 1.19, "hat-distressed": 1.19, "hat-denim": 1.19}
+
 STORE = "https://345loveyours.printful.me"
 out = []
 for p in PRODUCTS:
@@ -233,7 +245,7 @@ for p in PRODUCTS:
             "tag": tag,
             "printful": f"{STORE}/product/{slug}",
             "listing": src["name"],
-            "images": c["mocks"],
+            "images": reorder_mocks(src["pid"], c["mocks"]),
             "template": TEMPLATES[src["id"]],
             "sizes": [{"size": s or "One size", "variant": vid, "catalogVariant": catalog_variant(src["pid"], c["color"], s or "One size"), "price": (p["price"]["plus"] if (s or "") in ("2XL","3XL","4XL") else p["price"]["base"]), "printfulRetail": price} for s, vid, price in c["sizes"]],
         })
@@ -241,6 +253,7 @@ for p in PRODUCTS:
     out.append({
         "id": p["id"], "name": p["name"], "category": p["category"], "placement": p["placement"],
         "price": prices[0], "priceMax": prices[-1], "opaque": p.get("opaque"), "fill": bool(p.get("fill")),
+        "zoom": ZOOM.get(p["id"], 1),
         "short": p["short"], "intro": p["intro"], "message": MESSAGE, "note": p["note"], "details": p["details"],
         "know": GOOD_TO_KNOW[p["id"]] + SHARED_KNOW,
         "colors": colors,

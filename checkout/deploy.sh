@@ -13,7 +13,7 @@ echo "store id $STORE_ID written to wrangler.toml"
 
 echo "== 2. cloudflare: install wrangler, login if needed, deploy"
 npm install --silent
-npx wrangler whoami >/dev/null 2>&1 || npx wrangler login </dev/tty >/dev/tty 2>&1
+npx wrangler whoami >/dev/null 2>&1 || npx wrangler login
 printf '%s' "$STRIPE_SECRET_KEY" | npx wrangler secret put STRIPE_SECRET_KEY
 printf '%s' "$PRINTFUL_TOKEN"    | npx wrangler secret put PRINTFUL_TOKEN
 DEPLOY_OUT=$(npx wrangler deploy 2>&1 | tee /dev/stderr)

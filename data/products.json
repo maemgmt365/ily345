@@ -8,6 +8,7 @@
   "priceMax": 56,
   "opaque": null,
   "fill": false,
+  "zoom": 1,
   "short": "the one that started it",
   "intro": "the first 345 piece and still the one most people reach for. a classic heavyweight hoodie, cotton-faced and soft inside, with the 3 | 4 | 5 mark small on the chest and the full message across the back.",
   "message": [
@@ -606,6 +607,7 @@
   "priceMax": 64,
   "opaque": null,
   "fill": false,
+  "zoom": 1,
   "short": "heavier, roomier, quieter",
   "intro": "thicker, roomier and quieter than the original. brushed fleece, dropped shoulders, no drawcords. the mark sits on the chest and love yours. runs down the sleeve, so the back stays clean.",
   "message": [
@@ -875,6 +877,7 @@
   "priceMax": 52,
   "opaque": null,
   "fill": false,
+  "zoom": 1,
   "short": "the everyday one",
   "intro": "a straight crewneck sweatshirt with a ribbed collar and cuffs, soft fleece inside. the mark on the chest, the message on the back. it runs small, so size up.",
   "message": [
@@ -910,9 +913,9 @@
     "listing": "the 345 crewneck",
     "images": [
      "1076532269083b6531c94",
+     "1076532269083b65ae9c1",
      "1076532269083b655cc9b",
-     "1076532269083b658fcae",
-     "1076532269083b65ae9c1"
+     "1076532269083b658fcae"
     ],
     "template": 95254467,
     "sizes": [
@@ -968,9 +971,9 @@
     "listing": "the 345 crewneck",
     "images": [
      "1076532869083b67048d7",
+     "1076532869083b6791e9d",
      "1076532869083b6735e27",
-     "1076532869083b676501b",
-     "1076532869083b6791e9d"
+     "1076532869083b676501b"
     ],
     "template": 95254467,
     "sizes": [
@@ -1026,9 +1029,9 @@
     "listing": "the 345 crewneck",
     "images": [
      "1076533469083b6932350",
+     "1076533469083b69c8c4e",
      "1076533469083b695ba84",
-     "1076533469083b699c1d4",
-     "1076533469083b69c8c4e"
+     "1076533469083b699c1d4"
     ],
     "template": 95254467,
     "sizes": [
@@ -1084,9 +1087,9 @@
     "listing": "the 345 crewneck",
     "images": [
      "10765341690836b5e55f5",
+     "10765341690836b665e7d",
      "10765341690836b61abaf",
-     "10765341690836b63dee5",
-     "10765341690836b665e7d"
+     "10765341690836b63dee5"
     ],
     "template": 95254482,
     "sizes": [
@@ -1145,6 +1148,7 @@
   "priceMax": 40,
   "opaque": null,
   "fill": false,
+  "zoom": 1,
   "short": "structured, boxy, built to last",
   "intro": "a heavyweight tee with a structured, slightly boxy fit that holds its shape. the mark sits small on the left chest and the message runs across the back.",
   "message": [
@@ -1178,8 +1182,8 @@
     "listing": "the 345 tee | men's",
     "images": [
      "107655546908390ad816d",
-     "107655546908390b1cb40",
      "107655546908390b41add",
+     "107655546908390b1cb40",
      "107655546908390b68c1d"
     ],
     "template": 95254051,
@@ -1243,8 +1247,8 @@
     "listing": "the 345 tee | men's",
     "images": [
      "1076512069083193123dc",
-     "10765120690831937398c",
      "10765120690831939909b",
+     "10765120690831937398c",
      "1076512069083193c0caa"
     ],
     "template": 95254054,
@@ -1311,6 +1315,7 @@
   "priceMax": 32,
   "opaque": null,
   "fill": false,
+  "zoom": 1,
   "short": "soft, longline, easy",
   "intro": "a lighter, longline tee in combed ring-spun cotton with a crew neck. the mark on the chest, the message on the back. sits best with high-waisted bottoms.",
   "message": [
@@ -1487,6 +1492,7 @@
   "priceMax": 26,
   "opaque": null,
   "fill": false,
+  "zoom": 1.19,
   "short": "one size, every day",
   "intro": "a ribbed fisherman beanie with the 3 | 4 | 5 mark embroidered on the cuff. one size, thick enough for real cold, short enough to wear year round.",
   "message": [
@@ -1609,6 +1615,7 @@
   "priceMax": 28,
   "opaque": null,
   "fill": false,
+  "zoom": 1.19,
   "short": "worn in from day one",
   "intro": "a low-profile dad cap with a distressed brim and crown, so it looks lived in from the first wear. the mark embroidered on the front, love yours. on the back.",
   "message": [
@@ -1718,8 +1725,9 @@
   "placement": "embroidered mark on the front, love yours. on the back",
   "price": 28,
   "priceMax": 28,
-  "opaque": "#f4f4f4",
+  "opaque": null,
   "fill": false,
+  "zoom": 1.19,
   "short": "the clean one",
   "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
   "message": [
@@ -1832,6 +1840,7 @@
   "priceMax": 65,
   "opaque": "#1a1a1a",
   "fill": true,
+  "zoom": 1,
   "short": "for the couch, the car, the gift",
   "intro": "fleece on one side, sherpa on the other, 50 by 60 inches. the full message is embroidered on the corner. the piece most often bought as a gift.",
   "message": [

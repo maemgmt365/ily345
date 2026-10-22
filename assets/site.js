@@ -104,15 +104,15 @@
     var front = c.images[0], back = c.images[1];
     var cover = p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '';
     var href = 'product.html?p=' + p.id + (colorName ? '&c=' + encodeURIComponent(c.name) : '');
-    return '<a class="tile reveal" href="' + href + '">' +
-      '<div class="tile-visual' + cover + '">' +
+    return '<a class="tile reveal' + (back ? ' has-alt' : '') + '" href="' + href + '">' +
+      '<div class="tile-visual' + cover + '"' + (p.zoom && p.zoom !== 1 ? ' style="--zoom:' + p.zoom + '"' : '') + '>' +
         '<img src="' + CONFIG.imgGrid(front) + '" alt="' + esc(p.name) + ', ' + esc(c.name) + '" loading="lazy">' +
         (back ? '<img class="alt" src="' + CONFIG.imgGrid(back) + '" alt="" loading="lazy">' : '') +
       '</div>' +
       '<div class="tile-meta">' +
         '<div class="tile-name">' + esc(p.name) + '</div>' +
         '<div class="tile-sub label muted">' +
-          '<span>' + p.colors.length + (p.colors.length === 1 ? ' colour' : ' colours') + '</span>' +
+          '<span>' + p.colors.length + (p.colors.length === 1 ? ' color' : ' colors') + '</span>' +
           (CONFIG.showGridPrice ? '<span>' + priceLabel(p) + '</span>' : '') +
         '</div>' +
       '</div>' +
@@ -170,16 +170,16 @@
     var root = $('#pdp');
     root.innerHTML =
       '<div class="pdp-gallery">' +
-        '<div class="pdp-main' + cover + '"><img id="pdp-img" alt=""></div>' +
+        '<div class="pdp-main' + cover + '"' + (p.zoom && p.zoom !== 1 ? ' style="--zoom:' + p.zoom + '"' : '') + '><img id="pdp-img" alt=""></div>' +
         '<div class="thumbs" id="thumbs"></div>' +
       '</div>' +
       '<div class="pdp-info">' +
         '<div class="pdp-title">' +
-          '<div class="label muted">' + esc(p.short) + '</div>' +
+          '<div class="label accent">' + esc(p.short) + '</div>' +
           '<h1 class="display-sm">' + esc(p.name) + '</h1>' +
           '<div class="pdp-price" id="pdp-price"></div>' +
         '</div>' +
-        '<div class="opt"><div class="opt-head label"><span>colour</span><span class="muted" id="color-name"></span></div><div class="color-list" id="colors"></div></div>' +
+        '<div class="opt"><div class="opt-head label"><span>color</span><span class="muted" id="color-name"></span></div><div class="color-list" id="colors"></div></div>' +
         '<div class="opt" id="size-opt"><div class="opt-head label"><span>size</span><span class="muted" id="fit-hint"></span></div><div class="size-list" id="sizes"></div></div>' +
         '<div class="pdp-actions">' +
           '<button class="btn full" id="add">add to bag</button>' +
