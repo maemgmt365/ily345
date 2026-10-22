@@ -340,10 +340,28 @@ h1, h2, h3, p { margin: 0; }
 }
 @media (max-width: 640px) {
   :root { --gutter: 16px; }
-  .header-row { grid-template-columns: auto 1fr auto; min-height: 56px; }
-  .nav { gap: 16px; }
+  .header-row { grid-template-columns: 1fr auto 1fr; min-height: 56px; }
+  .nav { gap: 14px; }
   .nav.center { justify-content: center; }
   .nav a.hide-sm { display: none; }
+  .wordmark { font-size: 16px; letter-spacing: 0.24em; }
+  /* one piece at a time: each row becomes a swipe strip, one tile per screen */
+  .grid, .grid.four {
+    display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    margin: 0 calc(-1 * var(--gutter)); padding: 0 var(--gutter) 8px; scrollbar-width: none;
+  }
+  .grid::-webkit-scrollbar { display: none; }
+  .grid > .tile { flex: 0 0 calc(100% - 44px); scroll-snap-align: start; }
+  .tile-meta { padding-top: 12px; }
+  .section-head .cat-count::after { content: " · swipe"; }
+  .hero-visual { aspect-ratio: 1 / 1; }
+  .hero-visual img { padding: 4% 6% 14%; }
+  .section-head .label.muted { text-align: right; }
+  .hero-copy-inner .display { font-size: clamp(44px, 14vw, 60px); }
+  .purpose { padding: 56px 0; }
+  .giftnote, .closer { padding: 64px 0; }
+  .stats-band { margin: 40px auto; }
+  .to-top { right: 14px; bottom: 14px; width: 46px; height: 46px; }
   .section { padding: 56px 0; }
   .meaning, .quote, .closer { padding: 64px 0; }
   .bag-line { grid-template-columns: 72px 1fr; }
