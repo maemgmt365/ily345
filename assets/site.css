@@ -363,3 +363,32 @@ h1, h2, h3, p { margin: 0; }
 .stat-card .stat-text { margin: 0; font-size: var(--fs-small); color: var(--muted); line-height: 1.6; }
 @media (max-width: 900px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .stat-grid { grid-template-columns: 1fr; } .stat-card { min-height: 0; } }
+
+/* paint-chip colour fan on grid tiles and the product page */
+.chips { display: inline-flex; align-items: center; gap: 0; }
+.chip-name { margin-right: 10px; }
+.chip {
+  display: inline-block; width: 14px; height: 20px; border-radius: 2px;
+  border: 1px solid rgba(23,23,23,0.18); box-shadow: 0 0 0 1.5px var(--bg);
+  margin-left: -6px; cursor: pointer; position: relative;
+  transition: transform 0.25s var(--ease), margin 0.25s var(--ease);
+}
+.chip:first-of-type { margin-left: 0; }
+.chip:hover, .chip[aria-current="true"] { z-index: 2; transform: translateY(-3px); }
+.chip:hover { transform: translateY(-5px); }
+.chip[aria-current="true"] { border-color: var(--ink); }
+.tile:hover .chip { margin-left: -3px; }
+.tile:hover .chip:first-of-type { margin-left: 0; }
+.color-list { gap: 0; }
+.color-list button {
+  width: 22px; height: 34px; border-radius: 3px; margin-left: -8px;
+  box-shadow: 0 0 0 2px var(--bg); transition: transform 0.25s var(--ease), margin 0.25s var(--ease);
+}
+.color-list button:first-child { margin-left: 0; }
+.color-list:hover button { margin-left: -2px; }
+.color-list button:hover { transform: translateY(-5px); z-index: 2; }
+.color-list button[aria-pressed="true"] { transform: translateY(-3px); z-index: 2; border-color: var(--ink); }
+.color-list button[aria-pressed="true"]::after { display: none; }
+/* while the cursor is on the chips, show the front of the piece in that colour, not the back */
+.tile.has-alt:has(.chips:hover) .tile-visual img:not(.alt) { opacity: 1; }
+.tile.has-alt:has(.chips:hover) .tile-visual img.alt { opacity: 0; }

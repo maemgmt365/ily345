@@ -104,7 +104,11 @@
     var front = c.images[0], back = c.images[1];
     var cover = p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '';
     var href = 'product.html?p=' + p.id + (colorName ? '&c=' + encodeURIComponent(c.name) : '');
-    return '<a class="tile reveal' + (back ? ' has-alt' : '') + '" href="' + href + '">' +
+    var ci = p.colors.indexOf(c);
+    var chips = p.colors.map(function (x, i) {
+      return '<span class="chip" style="background:' + x.hex + '" data-i="' + i + '" title="' + esc(x.name) + '" aria-label="' + esc(x.name) + '"' + (i === ci ? ' aria-current="true"' : '') + '></span>';
+    }).join('');
+    return '<a class="tile reveal' + (back ? ' has-alt' : '') + '" href="' + href + '" data-id="' + p.id + '" data-color="' + ci + '">' +
       '<div class="tile-visual' + cover + '"' + (p.zoom && p.zoom !== 1 ? ' style="--zoom:' + p.zoom + '"' : '') + '>' +
         '<img src="' + CONFIG.imgGrid(front) + '" alt="' + esc(p.name) + ', ' + esc(c.name) + '" loading="lazy">' +
         (back ? '<img class="alt" src="' + CONFIG.imgGrid(back) + '" alt="" loading="lazy">' : '') +
@@ -112,7 +116,7 @@
       '<div class="tile-meta">' +
         '<div class="tile-name">' + esc(p.name) + '</div>' +
         '<div class="tile-sub label muted">' +
-          '<span>' + p.colors.length + (p.colors.length === 1 ? ' color' : ' colors') + '</span>' +
+          '<span class="chips" aria-label="' + p.colors.length + ' colors"><span class="chip-name">' + esc(c.name.toLowerCase()) + '</span>' + chips + '</span>' +
           (CONFIG.showGridPrice ? '<span>' + priceLabel(p) + '</span>' : '') +
         '</div>' +
       '</div>' +
@@ -137,6 +141,36 @@
       }).join('');
     }
     observeReveal();
+    bindChips(list);
+  }
+
+  /* paint chips on the grid: hover brings a colourway forward, click opens it */
+  function bindChips(list) {
+    if (document.body.getAttribute('data-chips')) return;
+    document.body.setAttribute('data-chips', '1');
+    function swap(tile, i) {
+      var p = findProduct(list, tile.getAttribute('data-id')); if (!p) return;
+      var c = p.colors[i]; if (!c) return;
+      var imgs = $$('.tile-visual img', tile);
+      if (imgs[0] && c.images[0]) { imgs[0].src = CONFIG.imgGrid(c.images[0]); imgs[0].alt = p.name + ', ' + c.name; }
+      if (imgs[1]) { if (c.images[1]) imgs[1].src = CONFIG.imgGrid(c.images[1]); else imgs[1].removeAttribute('src'); }
+      var nm = $('.chip-name', tile); if (nm) nm.textContent = c.name.toLowerCase();
+      $$('.chip', tile).forEach(function (ch, k) { if (k === i) ch.setAttribute('aria-current', 'true'); else ch.removeAttribute('aria-current'); });
+      tile.setAttribute('data-color', i);
+      tile.href = 'product.html?p=' + p.id + '&c=' + encodeURIComponent(c.name);
+    }
+    document.addEventListener('mouseover', function (e) {
+      var chip = e.target.closest('.chip'); if (!chip) return;
+      var tile = chip.closest('.tile'); if (!tile) return;
+      swap(tile, +chip.getAttribute('data-i'));
+    });
+    document.addEventListener('click', function (e) {
+      var chip = e.target.closest('.chip'); if (!chip) return;
+      var tile = chip.closest('.tile'); if (!tile) return;
+      e.preventDefault();
+      swap(tile, +chip.getAttribute('data-i'));
+      location.href = tile.href;
+    });
   }
 
   /* ---------- shop ---------- */
@@ -150,6 +184,7 @@
       $$('button', filters).forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-cat') === current ? 'true' : 'false'); });
       observeReveal();
     }
+    bindChips(list);
     filters.innerHTML = ['all'].concat(cats).map(function (c) { return '<button class="label" data-cat="' + c + '">' + c + '</button>'; }).join('');
     filters.addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
