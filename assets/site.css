@@ -457,3 +457,9 @@ h1, h2, h3, p { margin: 0; }
 .hl-dot { color: var(--accent); }
 .hl { color: var(--accent); }
 .purpose .hl, .story-closer .hl, .story-hero .hl { color: var(--accent-soft); }
+
+/* rotating word */
+.rotator { display: inline-block; text-align: left; transition: opacity 0.42s var(--ease), transform 0.42s var(--ease); }
+.rotator.out { opacity: 0; transform: translateY(6px); }
+.rotator-line { line-height: 1.15; text-align: left; width: max-content; max-width: 100%; margin-left: auto; margin-right: auto; }
+.story-closer .rotator-line { margin: 16px auto 0; }

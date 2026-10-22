@@ -95,7 +95,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=d74bc67a').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=ad2fe03b').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -387,6 +387,26 @@
     draw();
   }
 
+  /* ---------- rotating word: one frame, many reasons ---------- */
+  function initRotators() {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    $$('.rotator').forEach(function (el) {
+      var words = (el.getAttribute('data-words') || '').split('|').filter(Boolean);
+      if (words.length < 2) return;
+      if (reduce) { el.textContent = words.slice(0, 3).join(', '); return; }
+      var i = 0;
+      // reserve the width of the longest word so the line never jumps
+      var probe = document.createElement('span'); probe.style.visibility = 'hidden'; probe.style.position = 'absolute'; probe.style.whiteSpace = 'nowrap';
+      el.parentNode.appendChild(probe);
+      var w = 0; words.forEach(function (x) { probe.textContent = x; w = Math.max(w, probe.offsetWidth); });
+      probe.remove(); el.style.minWidth = w + 'px';
+      setInterval(function () {
+        el.classList.add('out');
+        setTimeout(function () { i = (i + 1) % words.length; el.textContent = words[i]; el.classList.remove('out'); }, 420);
+      }, 2600);
+    });
+  }
+
   /* ---------- back to top (appears after the first screen) ---------- */
   function initTop() {
     var b = document.createElement('button'); b.className = 'to-top label'; b.textContent = 'top'; b.setAttribute('aria-label', 'back to top'); b.hidden = true;
@@ -408,6 +428,7 @@
   /* ---------- boot ---------- */
   renderChrome();
   initTop();
+  initRotators();
   observeReveal();
   if (page === 'home') loadProducts(initHome);
   if (page === 'shop') loadProducts(initShop);
