@@ -97,7 +97,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=1e3681e6').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=f91283ec').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -346,7 +346,7 @@
     var btn = $('#checkout'), hint = $('#checkout-hint');
     var items = Bag.read().map(function (i) { return { variant: i.variant, qty: i.qty }; });
     if (!items.length) return;
-    if (CONFIG.checkoutUrl.indexOf('REPLACE-ME') > -1) {
+    if (CONFIG.checkoutUrl.indexOf('ceokrone') > -1) {
       hint.textContent = 'checkout opens shortly. until then, email your bag to ' + CONFIG.supportEmail + ' and we will send a payment link.';
       return;
     }
