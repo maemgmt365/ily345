@@ -97,7 +97,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=9fd03994').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=0069ddc7').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -351,7 +351,7 @@
       e.preventDefault();
       var body = { topic: $('#sup-topic').value, name: $('#sup-name').value.trim(), email: $('#sup-email').value.trim(), order: $('#sup-order').value.trim(), message: $('#sup-message').value.trim(), website: $('#sup-website').value, page: location.href };
       if (!body.name || !body.email || body.email.indexOf('@') < 0 || !body.message) { hint.textContent = 'a name, an email we can answer, and the note itself. that is all we need.'; return; }
-      if (CONFIG.checkoutUrl.indexOf('ceokrone') > -1) { hint.textContent = 'the note could not be sent right now. please try again in a little while.'; return; }
+      if (CONFIG.checkoutUrl.indexOf('REPLACE' + '-ME') > -1) { hint.textContent = 'the note could not be sent right now. please try again in a little while.'; return; }
       btn.disabled = true; btn.textContent = 'sending';
       fetch(CONFIG.checkoutUrl + '/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
         .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || 'could not send'); return d; }); })
@@ -366,7 +366,7 @@
     var btn = $('#checkout'), hint = $('#checkout-hint');
     var items = Bag.read().map(function (i) { return { variant: i.variant, qty: i.qty }; });
     if (!items.length) return;
-    if (CONFIG.checkoutUrl.indexOf('ceokrone') > -1) {
+    if (CONFIG.checkoutUrl.indexOf('REPLACE' + '-ME') > -1) {
       hint.textContent = 'checkout opens shortly. until then, send us a note from the support page and we will send a payment link.';
       return;
     }
