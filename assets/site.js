@@ -12,7 +12,7 @@
     store: 'https://345loveyours.printful.me',
     // The checkout worker (Cloudflare). Set after `wrangler deploy` prints the URL.
     checkoutUrl: 'https://ily345-checkout.ceokrone.workers.dev',
-    supportEmail: 'support345@gmail.com',
+    supportEmail: '345loveyours@gmail.com', // not shown on the site; support goes through support.html
     showGridPrice: true,
     featured: [['hoodie', 'Black'], ['oversized-hoodie', 'Vintage Brown'], ['crewneck', 'Latte']],
     heroImage: '1076503569082fa8eff33', // black hoodie, back (the message)
@@ -82,7 +82,7 @@
             '<a href="send.html">send a 345</a>' +
             '<a href="ledger.html">the ledger</a>' +
             '<a href="index.html#details">good to know</a>' +
-            '<a href="mailto:' + CONFIG.supportEmail + '">' + CONFIG.supportEmail + '</a>' +
+            '<a href="support.html"' + (page === 'support' ? ' aria-current="page"' : '') + '>support</a>' +
           '</nav>' +
           '<div>story first · product second</div>' +
         '</div>';
@@ -97,7 +97,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=f91283ec').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=9fd03994').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -328,8 +328,9 @@
       }
       var rows = list.filter(function (p) { return p.give; });
       var t = $('#ledger-table');
-      t.innerHTML = '<thead><tr><th>piece</th><th>price</th><th>printful</th><th>stripe</th><th>tax</th><th>site 5%</th><th>goes out</th></tr></thead><tbody>' +
-        rows.map(function (p) { var gv = p.give; return '<tr><td>' + esc(p.name) + '</td><td>' + money(gv.price) + '</td><td>' + money(gv.cost) + '</td><td>' + money(gv.stripe) + '</td><td>' + money(gv.tax) + '</td><td>' + money(gv.ops) + '</td><td class="accent">' + money(gv.gives) + '</td></tr>'; }).join('') + '</tbody>';
+      // the four cost columns collapse into one "costs" column on phones (css hides the other set)
+      t.innerHTML = '<thead><tr><th>piece</th><th>price</th><th class="wide">printful</th><th class="wide">stripe</th><th class="wide">tax</th><th class="wide">site 5%</th><th class="narrow">costs</th><th>goes out</th></tr></thead><tbody>' +
+        rows.map(function (p) { var gv = p.give; var costs = gv.cost + gv.stripe + gv.tax + gv.ops; return '<tr><td>' + esc(p.name.replace(/^the (345 )?/, '')) + '</td><td>' + money(gv.price) + '</td><td class="wide">' + money(gv.cost) + '</td><td class="wide">' + money(gv.stripe) + '</td><td class="wide">' + money(gv.tax) + '</td><td class="wide">' + money(gv.ops) + '</td><td class="narrow">' + money(costs) + '</td><td class="accent">' + money(gv.gives) + '</td></tr>'; }).join('') + '</tbody>';
       var vals = rows.map(function (p) { return Math.floor(p.give.gives); });
       $('#glance-range').textContent = '$' + Math.min.apply(null, vals) + ' to $' + Math.max.apply(null, vals);
       $('#ledger-updated').textContent = 'figures as of ' + (g.updated || 'october 2026');
@@ -342,12 +343,31 @@
     });
   }
 
+  /* ---------- support ---------- */
+  function initSupport() {
+    var form = $('#support-form'), hint = $('#sup-hint'), btn = $('#sup-send');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var body = { topic: $('#sup-topic').value, name: $('#sup-name').value.trim(), email: $('#sup-email').value.trim(), order: $('#sup-order').value.trim(), message: $('#sup-message').value.trim(), website: $('#sup-website').value, page: location.href };
+      if (!body.name || !body.email || body.email.indexOf('@') < 0 || !body.message) { hint.textContent = 'a name, an email we can answer, and the note itself. that is all we need.'; return; }
+      if (CONFIG.checkoutUrl.indexOf('ceokrone') > -1) { hint.textContent = 'the note could not be sent right now. please try again in a little while.'; return; }
+      btn.disabled = true; btn.textContent = 'sending';
+      fetch(CONFIG.checkoutUrl + '/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || 'could not send'); return d; }); })
+        .then(function () {
+          form.innerHTML = '<div class="label accent">sent</div><h2 class="display-sm" style="margin:8px 0 12px">got it<span class="hl-dot">.</span></h2><p class="sub">a person will write back to ' + esc(body.email) + ', usually within a day.</p><div class="send-actions"><a class="btn ghost" href="index.html#shop">back to the pieces</a></div>';
+        })
+        .catch(function (e) { btn.disabled = false; btn.textContent = 'send the note'; hint.textContent = 'the note could not be sent (' + e.message + '). please try again in a little while.'; });
+    });
+  }
+
   function startCheckout() {
     var btn = $('#checkout'), hint = $('#checkout-hint');
     var items = Bag.read().map(function (i) { return { variant: i.variant, qty: i.qty }; });
     if (!items.length) return;
     if (CONFIG.checkoutUrl.indexOf('ceokrone') > -1) {
-      hint.textContent = 'checkout opens shortly. until then, email your bag to ' + CONFIG.supportEmail + ' and we will send a payment link.';
+      hint.textContent = 'checkout opens shortly. until then, send us a note from the support page and we will send a payment link.';
       return;
     }
     btn.disabled = true; btn.textContent = 'one moment';
@@ -357,7 +377,7 @@
       .then(function (d) { location.href = d.url; })
       .catch(function (e) {
         btn.disabled = false; btn.textContent = 'checkout';
-        hint.textContent = 'checkout could not start (' + e.message + '). try again, or write to ' + CONFIG.supportEmail + '.';
+        hint.innerHTML = 'checkout could not start (' + e.message + '). try again, or send us a note from the <a href="support.html">support page</a>.';
       });
   }
 
@@ -489,5 +509,6 @@
   if (page === 'bag') loadProducts(function () { loadGiving(initBag); });
   if (page === 'thanks') initThanks();
   if (page === 'send') initSend();
+  if (page === 'support') initSupport();
   if (page === 'story') observeReveal();
 })();

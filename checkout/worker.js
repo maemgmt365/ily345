@@ -8,7 +8,10 @@
                    Printful order for the paid session.
   GET  /health     -> "ok" plus which config is present.
 
-  Secrets (wrangler secret put):  STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTFUL_TOKEN, PROMO_CODE
+  POST /contact    { topic, name, email, order?, message } -> forwards the note to the
+                   CONTACT_URL endpoint (a google apps script on the brand inbox) which emails it.
+
+  Secrets (wrangler secret put):  STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTFUL_TOKEN, PROMO_CODE, CONTACT_URL, CONTACT_KEY
   Vars (wrangler.toml):           SITE_ORIGIN, PRINTFUL_STORE_ID, SUPPORT_EMAIL, STRIPE_TAX ("on"/"off")
 
   Money is handled in integer cents everywhere.
@@ -26,7 +29,10 @@ export default {
 
     try {
       if (url.pathname === '/health') {
-        return json({ ok: true, stripe: !!env.STRIPE_SECRET_KEY, printful: !!env.PRINTFUL_TOKEN, webhook: !!env.STRIPE_WEBHOOK_SECRET, store: env.PRINTFUL_STORE_ID || null }, 200, cors);
+        return json({ ok: true, stripe: !!env.STRIPE_SECRET_KEY, printful: !!env.PRINTFUL_TOKEN, webhook: !!env.STRIPE_WEBHOOK_SECRET, contact: !!env.CONTACT_URL, store: env.PRINTFUL_STORE_ID || null }, 200, cors);
+      }
+      if (url.pathname === '/contact' && request.method === 'POST') {
+        return await sendContact(request, env, cors);
       }
       if (url.pathname === '/checkout' && request.method === 'POST') {
         return await createCheckout(request, env, cors);
@@ -41,6 +47,37 @@ export default {
     }
   }
 };
+
+/* ---------------- support notes ---------------- */
+
+async function sendContact(request, env, cors) {
+  const body = await request.json().catch(() => ({}));
+  const clean = (v, n) => String(v || '').replace(/[\u0000-\u001f]+/g, ' ').trim().slice(0, n);
+  const note = {
+    topic: clean(body.topic, 40) || 'other',
+    name: clean(body.name, 80),
+    email: clean(body.email, 120),
+    order: clean(body.order, 60),
+    message: String(body.message || '').replace(/[\u0000-\u0008\u000b-\u001f]+/g, ' ').trim().slice(0, 1500),
+    page: clean(body.page, 200)
+  };
+  // honeypot: real people never fill the hidden field. pretend it worked.
+  if (clean(body.website, 10)) return json({ ok: true }, 200, cors);
+  if (!note.name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(note.email) || !note.message) return json({ error: 'name, email and the note are needed' }, 400, cors);
+  if (!env.CONTACT_URL) return json({ error: 'support is not wired up yet' }, 503, cors);
+  const r = await fetch(env.CONTACT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ key: env.CONTACT_KEY || '', ...note }),
+    redirect: 'follow'
+  });
+  const text = await r.text();
+  if (!r.ok || !/"ok"\s*:\s*true/.test(text)) {
+    console.error('contact forward failed', r.status, text.slice(0, 300));
+    return json({ error: 'could not send' }, 502, cors);
+  }
+  return json({ ok: true }, 200, cors);
+}
 
 /* ---------------- checkout ---------------- */
 

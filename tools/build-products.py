@@ -219,7 +219,7 @@ GOOD_TO_KNOW = {
     "hat-denim": ["one size, adjustable strap", "pigment dye softens and fades with wear", "spot clean"],
     "blanket": ["50 x 60 inches", "machine wash cold, tumble low", "ships in its own box"],
 }
-SHARED_KNOW = ["made to order, one at a time, by our print partner printful", "ships from the us, usually 5 to 9 business days door to door", "wrong size or a flaw in the print: write to support345@gmail.com within 30 days and we will make it right"]
+SHARED_KNOW = ["made to order, one at a time, by our print partner printful", "ships from the us, usually 5 to 9 business days door to door", "wrong size or a flaw in the print: send us a note from the support page within 30 days and we will make it right"]
 
 # printful's hat mockups sit smaller in their frame than the garments; scale them so every
 # tile reads the same size (measured: garments fill ~95% of the mockup, hats ~79%).

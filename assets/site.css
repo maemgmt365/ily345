@@ -446,7 +446,17 @@ h1, h2, h3, p { margin: 0; }
 .send-preview canvas { width: 100%; max-width: 480px; height: auto; display: block; box-shadow: 0 24px 60px rgba(23,23,23,0.12); }
 .send-foot { margin-top: 72px; }
 .send-foot .sub { color: var(--muted); margin-top: 24px; }
-@media (max-width: 860px) { .send-grid { grid-template-columns: 1fr; gap: 36px; } .send-preview { order: -1; } }
+@media (max-width: 860px) { .send-grid { grid-template-columns: 1fr; gap: 36px; } .send-preview { order: -1; } .support .send-preview { order: 1; } }
+
+/* support */
+.send-textarea { height: auto; padding: 12px 14px; line-height: 1.6; resize: vertical; min-height: 150px; }
+select.send-input { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%238a6a4e' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.support-aside { display: block; }
+.support-answers { display: grid; gap: 0; }
+.support-answers .label.accent { margin-bottom: 10px; }
+.support-answers .fact .label { color: var(--ink); }
+.support .send-actions .btn { min-width: 160px; }
 
 /* back to top */
 .to-top { position: fixed; right: 22px; bottom: 22px; z-index: 30; width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--line-strong); background: var(--bg); color: var(--ink); cursor: pointer; transition: border-color 0.2s var(--ease), color 0.2s var(--ease); }
@@ -463,6 +473,10 @@ h1, h2, h3, p { margin: 0; }
 .rotator.out { opacity: 0; transform: translateY(6px); }
 .rotator-line { line-height: 1.15; text-align: left; width: max-content; max-width: 100%; margin-left: auto; margin-right: auto; }
 .story-closer .rotator-line { margin: 16px auto 0; }
+@media (max-width: 640px) {
+  .rotator-line { width: auto; }
+  .story-closer .rotator { min-width: 0 !important; display: inline; }
+}
 
 /* ticker band under the header: the reason line, cycling */
 .ticker { background: var(--dark); color: var(--dark-ink); }
@@ -488,6 +502,16 @@ h1, h2, h3, p { margin: 0; }
 .ledger-table th:first-child, .ledger-table td:first-child { text-align: left; padding-left: 0; }
 .ledger-table td { text-align: right; padding: 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
 .ledger-table td:last-child { font-weight: 500; }
+.ledger-table .narrow { display: none; }
+.story-grid > * { min-width: 0; }
+@media (max-width: 640px) {
+  .ledger-table .wide { display: none; }
+  .ledger-table .narrow { display: table-cell; }
+  .ledger-table th, .ledger-table td { padding: 9px 6px; }
+  .ledger-table td:first-child { white-space: normal; }
+  .ledger-row { grid-template-columns: auto 1fr auto; }
+  .ledger-row > :nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
+}
 .ledger-totals { margin: 18px 0 8px; font-family: var(--sans); }
 .ledger-totals .fact { border-top: 0; padding-top: 0; }
 .ledger-row { display: grid; grid-template-columns: 1fr 1fr auto auto; gap: 16px; align-items: baseline; padding: 12px 0; border-top: 1px solid var(--line); font-family: var(--sans); font-size: var(--fs-small); }
