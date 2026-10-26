@@ -228,6 +228,21 @@ ZOOM = {"beanie": 1.19, "hat-distressed": 1.19, "hat-denim": 1.19}
 BLEND = {"hat-denim"}
 
 STORE = "https://345loveyours.printful.me"
+# What each piece costs us at Printful (base sizes / plus sizes), from the Oct 2026 pricing audit.
+# Used for the ledger (what goes to the partner) and for the at-cost promo code.
+COST = {
+    "hoodie": (36.83, 40.83), "oversized-hoodie": (42.22, 46.22), "crewneck": (33.23, 37.23),
+    "tee-mens": (24.17, 28.17), "tee-womens": (21.73, 21.73), "beanie": (16.51, 16.51),
+    "hat-distressed": (19.00, 19.00), "hat-denim": (19.86, 19.86), "blanket": (46.82, 46.82),
+}
+GIVE = {"ops": 0.05, "tax": 0.08, "stripe_pct": 0.029, "stripe_fixed": 0.30, "ship": 5.99}
+def give_breakdown(price, cost):
+    stripe = round(GIVE["stripe_pct"] * (price + GIVE["ship"]) + GIVE["stripe_fixed"], 2)
+    tax = round(GIVE["tax"] * cost, 2)
+    ops = round(GIVE["ops"] * price, 2)
+    gives = round(price - cost - stripe - tax - ops, 2)
+    return {"price": price, "cost": cost, "stripe": stripe, "tax": tax, "ops": ops, "gives": gives}
+
 out = []
 for p in PRODUCTS:
     colors = []
@@ -249,7 +264,7 @@ for p in PRODUCTS:
             "listing": src["name"],
             "images": reorder_mocks(src["pid"], c["mocks"]),
             "template": TEMPLATES[src["id"]],
-            "sizes": [{"size": s or "One size", "variant": vid, "catalogVariant": catalog_variant(src["pid"], c["color"], s or "One size"), "price": (p["price"]["plus"] if (s or "") in ("2XL","3XL","4XL") else p["price"]["base"]), "printfulRetail": price} for s, vid, price in c["sizes"]],
+            "sizes": [{"size": s or "One size", "variant": vid, "catalogVariant": catalog_variant(src["pid"], c["color"], s or "One size"), "price": (p["price"]["plus"] if (s or "") in ("2XL","3XL","4XL") else p["price"]["base"]), "cost": (COST[p["id"]][1] if (s or "") in ("2XL","3XL","4XL") else COST[p["id"]][0]), "printfulRetail": price} for s, vid, price in c["sizes"]],
         })
     prices = sorted({s["price"] for c in colors for s in c["sizes"]})
     out.append({
@@ -258,6 +273,7 @@ for p in PRODUCTS:
         "zoom": ZOOM.get(p["id"], 1), "blend": p["id"] in BLEND,
         "short": p["short"], "intro": p["intro"], "message": MESSAGE, "note": p["note"], "details": p["details"],
         "know": GOOD_TO_KNOW[p["id"]] + SHARED_KNOW,
+        "give": give_breakdown(p["price"]["base"], COST[p["id"]][0]),
         "colors": colors,
     })
 

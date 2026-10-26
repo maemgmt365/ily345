@@ -28,7 +28,7 @@
   var page = document.body.getAttribute('data-page') || '';
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
-  var money = function (n) { return '$' + n; };
+  var money = function (n) { return '$' + (Number.isInteger(n) ? n : Number(n).toFixed(2)); };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var priceLabel = function (p) { return p.price === p.priceMax ? money(p.price) : 'from ' + money(p.price); };
 
@@ -61,6 +61,7 @@
             '<a href="index.html#shop"' + (page === 'shop' || page === 'product' ? ' aria-current="page"' : '') + '>shop</a>' +
             '<a href="story.html" class="hide-sm"' + (page === 'story' ? ' aria-current="page"' : '') + '>story</a>' +
             '<a href="send.html" class="hide-sm"' + (page === 'send' ? ' aria-current="page"' : '') + '>send a 345</a>' +
+            '<a href="ledger.html" class="hide-sm"' + (page === 'ledger' ? ' aria-current="page"' : '') + '>the ledger</a>' +
           '</nav>' +
           '<a class="wordmark" href="index.html" aria-label="3 4 5 home">3 | 4 | 5</a>' +
           '<nav class="nav right label" aria-label="bag">' +
@@ -79,6 +80,7 @@
             '<a href="index.html#shop">shop</a>' +
             '<a href="story.html">story</a>' +
             '<a href="send.html">send a 345</a>' +
+            '<a href="ledger.html">the ledger</a>' +
             '<a href="index.html#details">good to know</a>' +
             '<a href="mailto:' + CONFIG.supportEmail + '">' + CONFIG.supportEmail + '</a>' +
           '</nav>' +
@@ -95,7 +97,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=0d9aede1').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=1e3681e6').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -183,6 +185,7 @@
           '<div class="label accent">' + esc(p.short) + '</div>' +
           '<h1 class="display-sm">' + esc(p.name) + '</h1>' +
           '<div class="pdp-price" id="pdp-price"></div>' +
+          (p.give && p.give.gives >= 1 ? '<a class="pdp-gives label accent" href="ledger.html">$' + Math.floor(p.give.gives) + ' of this goes to <span id="gives-partner">' + esc(givePartnerName()) + '</span> · the ledger</a>' : '') +
         '</div>' +
         '<div class="opt"><div class="opt-head label"><span>color</span><span class="muted" id="color-name"></span></div><div class="color-list" id="colors"></div></div>' +
         '<div class="opt" id="size-opt"><div class="opt-head label"><span>size</span><span class="muted" id="fit-hint"></span></div><div class="size-list" id="sizes"></div></div>' +
@@ -279,9 +282,12 @@
         '<div class="sum-row"><span class="muted">items</span><span>' + Bag.count() + '</span></div>' +
         '<div class="sum-row"><span class="muted">shipping</span><span class="muted">at checkout</span></div>' +
         '<div class="sum-row total"><span>subtotal</span><span>' + money(sub) + '</span></div>' +
+        (givesTotal() >= 1 ? '<div class="sum-row"><span class="muted">to ' + esc(givePartnerName()) + '</span><span class="accent">$' + givesTotal() + '</span></div>' : '') +
+        '<div class="promo"><input class="send-input" id="promo" type="text" placeholder="code" autocomplete="off" autocapitalize="none" value="' + esc(Bag.code()) + '"></div>' +
         '<button class="btn full" id="checkout">checkout</button>' +
         '<div class="pdp-hint" id="checkout-hint">secure checkout by stripe. apple pay, google pay and cards. us shipping. sending it as a gift? you can add a note at checkout and we print it inside the box.</div>';
       $('#checkout').addEventListener('click', startCheckout);
+      $('#promo').addEventListener('input', function (e) { Bag.setCode(e.target.value); });
     }
     lines.addEventListener('click', function (e) {
       var b = e.target.closest('button[data-v]'); if (!b) return;
@@ -290,6 +296,50 @@
       Bag.setQty(v, d === -99 ? 0 : item.qty + d); draw();
     });
     draw();
+  }
+
+  Bag.code = function () { try { return (localStorage.getItem(CONFIG.bagKey + '-code') || '').trim(); } catch (e) { return ''; } };
+  Bag.setCode = function (c) { try { localStorage.setItem(CONFIG.bagKey + '-code', (c || '').trim()); } catch (e) {} };
+  function givesTotal() {
+    var list = window.PRODUCTS || []; var t = 0;
+    Bag.read().forEach(function (i) { var p = findProduct(list, i.product); if (p && p.give) t += Math.floor(p.give.gives) * i.qty; });
+    return t;
+  }
+  function givePartnerName() {
+    var g = window.GIVING; if (!g) return 'our partner';
+    return g.partner && g.partner.approved ? g.partner.short : (g.pending_label || 'our partner');
+  }
+  function loadGiving(cb) {
+    if (window.GIVING) return cb(window.GIVING);
+    fetch('data/giving.json').then(function (r) { return r.json(); }).then(function (g) { window.GIVING = g; cb(g); }).catch(function () { cb(null); });
+  }
+
+  /* ---------- the ledger ---------- */
+  function initLedger(list) {
+    loadGiving(function (g) {
+      g = g || { partner: { approved: false }, pending_label: 'a national mental health nonprofit', transfers: [] };
+      var pc = $('#partner-card'); var pt = $('#partner-title');
+      if (g.partner && g.partner.approved) {
+        pt.textContent = g.partner.short;
+        pc.innerHTML = '<div class="partner-name">' + esc(g.partner.name) + '</div><p>' + esc(g.partner.blurb) + '</p><div class="label muted">501(c)(3) · ein ' + esc(g.partner.ein) + ' · <a class="link-u" href="' + esc(g.partner.url) + '" target="_blank" rel="noopener">their site</a> · <a class="link-u" href="' + esc(g.partner.donate) + '" target="_blank" rel="noopener">give to them directly</a></div>';
+      } else {
+        pt.textContent = g.pending_label || 'the partner';
+        pc.innerHTML = '<div class="partner-name">approval in progress</div><p>we have chosen a national 501(c)(3) that works on mental illness, the support around it, and the families living with it. we are finalizing their written approval to be named here. as soon as it is signed, their name, ein and a direct giving link go on this page.</p>';
+      }
+      var rows = list.filter(function (p) { return p.give; });
+      var t = $('#ledger-table');
+      t.innerHTML = '<thead><tr><th>piece</th><th>price</th><th>printful</th><th>stripe</th><th>tax</th><th>site 5%</th><th>goes out</th></tr></thead><tbody>' +
+        rows.map(function (p) { var gv = p.give; return '<tr><td>' + esc(p.name) + '</td><td>' + money(gv.price) + '</td><td>' + money(gv.cost) + '</td><td>' + money(gv.stripe) + '</td><td>' + money(gv.tax) + '</td><td>' + money(gv.ops) + '</td><td class="accent">' + money(gv.gives) + '</td></tr>'; }).join('') + '</tbody>';
+      var vals = rows.map(function (p) { return Math.floor(p.give.gives); });
+      $('#glance-range').textContent = '$' + Math.min.apply(null, vals) + ' to $' + Math.max.apply(null, vals);
+      $('#ledger-updated').textContent = 'figures as of ' + (g.updated || 'october 2026');
+      var sent = (g.transfers || []).reduce(function (a, x) { return a + (x.amount || 0); }, 0);
+      $('#ledger-totals').innerHTML = '<div class="fact"><div class="label accent">sent so far</div><div class="stat-num">' + money(sent) + '</div><p class="stat-text">' + (g.transfers && g.transfers.length ? 'across ' + g.transfers.length + (g.transfers.length === 1 ? ' transfer.' : ' transfers.') : 'first transfer: ' + esc(g.first_transfer || 'december') + '.') + '</p></div>';
+      $('#ledger-log').innerHTML = (g.transfers || []).map(function (x) {
+        return '<div class="ledger-row"><span>' + esc(x.date) + '</span><span>' + esc(x.to) + '</span><span class="accent">' + money(x.amount) + '</span>' + (x.receipt ? '<a class="label link-u" href="' + esc(x.receipt) + '" target="_blank" rel="noopener">receipt</a>' : '<span class="label muted">receipt soon</span>') + '</div>';
+      }).join('');
+      observeReveal();
+    });
   }
 
   function startCheckout() {
@@ -301,7 +351,8 @@
       return;
     }
     btn.disabled = true; btn.textContent = 'one moment';
-    fetch(CONFIG.checkoutUrl + '/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ items: items }) })
+    var code = Bag.code();
+    fetch(CONFIG.checkoutUrl + '/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ items: items, code: code || undefined }) })
       .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || 'checkout failed'); return d; }); })
       .then(function (d) { location.href = d.url; })
       .catch(function (e) {
@@ -314,6 +365,7 @@
   function initThanks() {
     var sid = new URLSearchParams(location.search).get('session_id');
     if (sid) { try { localStorage.removeItem(CONFIG.bagKey); } catch (e) {} renderBagCount(); }
+    var g = $('#thanks-gives'); if (g) loadGiving(function () { g.innerHTML = 'part of every piece goes to ' + esc(givePartnerName()) + '. <a class="link-u" href="ledger.html">the ledger</a> shows how much and when.'; });
   }
 
   /* ---------- send a 345: a card drawn on canvas, shareable by link or image ---------- */
@@ -432,8 +484,9 @@
   observeReveal();
   if (page === 'home') loadProducts(initHome);
   if (page === 'shop') loadProducts(initShop);
-  if (page === 'product') loadProducts(initProduct);
-  if (page === 'bag') initBag();
+  if (page === 'product') loadProducts(function (l) { loadGiving(function () { initProduct(l); }); });
+  if (page === 'ledger') loadProducts(initLedger);
+  if (page === 'bag') loadProducts(function () { loadGiving(initBag); });
   if (page === 'thanks') initThanks();
   if (page === 'send') initSend();
   if (page === 'story') observeReveal();

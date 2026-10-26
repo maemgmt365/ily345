@@ -8,7 +8,7 @@
                    Printful order for the paid session.
   GET  /health     -> "ok" plus which config is present.
 
-  Secrets (wrangler secret put):  STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTFUL_TOKEN
+  Secrets (wrangler secret put):  STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTFUL_TOKEN, PROMO_CODE
   Vars (wrangler.toml):           SITE_ORIGIN, PRINTFUL_STORE_ID, SUPPORT_EMAIL, STRIPE_TAX ("on"/"off")
 
   Money is handled in integer cents everywhere.
@@ -51,12 +51,18 @@ async function createCheckout(request, env, cors) {
 
   // Price every line from the site's own catalog, never from the client.
   const catalog = await loadCatalog(env);
+  // Friends-and-family code: the piece goes out at what it costs us (printful + tax on the blank
+  // + the card fee), nothing to the site and nothing to the partner. The code lives in a secret.
+  const code = String(body.code || '').trim().toLowerCase();
+  const atCost = !!(code && env.PROMO_CODE && code === String(env.PROMO_CODE).trim().toLowerCase());
   const lines = [];
   for (const w of wanted) {
     const v = catalog.byVariant[String(w.variant)];
     const qty = Math.max(1, Math.min(10, parseInt(w.qty, 10) || 1));
     if (!v) return json({ error: 'unknown item ' + w.variant }, 400, cors);
-    lines.push({ ...v, qty });
+    const line = { ...v, qty };
+    if (atCost && v.costCents) line.priceCents = Math.round(v.costCents * 1.08 / (1 - 0.029)) + 30;
+    lines.push(line);
   }
 
   // Real Printful shipping rate for a US address (Printful's US rates are flat by product).
@@ -110,6 +116,8 @@ async function createCheckout(request, env, cors) {
   form.set('metadata[items]', JSON.stringify(lines.map(l => [l.catalogVariant, l.qty, l.template])));
   form.set('metadata[shipping_cents]', String(shipping.cents));
   form.set('metadata[source]', 'ily345.com');
+  form.set('metadata[at_cost]', atCost ? '1' : '0');
+  form.set('metadata[gives_cents]', String(atCost ? 0 : lines.reduce((a, l) => a + (l.givesCents || 0) * l.qty, 0)));
 
   const session = await stripe(env, 'POST', '/checkout/sessions', form);
   return json({ url: session.url, id: session.id }, 200, cors);
@@ -216,6 +224,8 @@ async function loadCatalog(env) {
     byVariant[String(s.variant)] = {
       variant: s.variant, catalogVariant: s.catalogVariant, template: c.template, name: p.name, color: c.name, size: s.size === 'One size' ? '' : s.size,
       priceCents: Math.round(s.price * 100),
+      costCents: Math.round((s.cost || 0) * 100),
+      givesCents: Math.round(Math.max(0, Math.floor((p.give && p.give.gives) || 0)) * 100),
       image: 'https://cdn.printful.me/t/quick-stores/variants/' + c.images[0]
     };
   }

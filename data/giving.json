@@ -1,0 +1,17 @@
+{
+  "partner": {
+    "approved": false,
+    "name": "NAMI, the national alliance on mental illness",
+    "short": "NAMI",
+    "url": "https://www.nami.org/",
+    "donate": "https://www.nami.org/donate/",
+    "ein": "43-1201653",
+    "blurb": "free support groups, education and a helpline for people living with mental illness and the families around them, in every state."
+  },
+  "pending_label": "a national mental health nonprofit",
+  "ops_share": 0.05,
+  "cadence": "once a year, in december",
+  "first_transfer": "december 2026",
+  "transfers": [],
+  "notes": "site costs (domain, email, tools) come out of the 5%. anything the 5% does not spend is added to the december transfer."
+}

@@ -7,6 +7,7 @@ OUT = ROOT / 'previews'; OUT.mkdir(exist_ok=True)
 css = (ROOT/'assets/site.css').read_text()
 js = (ROOT/'assets/site.js').read_text()
 products = (ROOT/'data/products.json').read_text()
+giving = (ROOT/'data/giving.json').read_text()
 import base64
 def _bake(path):
     """captured tiles are jpgs on the tile colour; knock that colour out from the edges so they behave like printful's transparent pngs."""
@@ -68,13 +69,14 @@ pages = {
   'thanks.html': ('PREVIEW-thanks.html', ''),
   'story.html': ('PREVIEW-story.html', ''),
   'send.html': ('PREVIEW-send.html', ''),
+  'ledger.html': ('PREVIEW-ledger.html', ''),
 }
 for src, (dst, seed) in pages.items():
     html = (ROOT/src.split('#')[0]).read_text()
     html = re.sub(r'<link rel="stylesheet" href="assets/site.css(\?v=[0-9a-f]+)?">', lambda m: '<style>\n'+css+'\n</style>', html)
     html = html.replace('<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">', f'<link rel="icon" href="data:image/svg+xml,{fav}">')
     html = html.replace('<base href="/">', '')
-    html = re.sub(r'<script src="assets/site.js(\?v=[0-9a-f]+)?"></script>', lambda m: '<script>window.PRODUCTS='+products+';window.PREVIEW_IMG='+json.dumps(needed(src, seed))+';'+seed+'</script>\n<script>\n'+js+'\n</script>', html)
+    html = re.sub(r'<script src="assets/site.js(\?v=[0-9a-f]+)?"></script>', lambda m: '<script>window.PRODUCTS='+products+';window.GIVING='+giving+';window.PREVIEW_IMG='+json.dumps(needed(src, seed))+';'+seed+'</script>\n<script>\n'+js+'\n</script>', html)
     # relative links point at the live site so nav works from the preview
     html = re.sub(r'href="(index|shop|product|bag)\.html', r'href="https://ily345.com/\1.html', html)
     html = html.replace("href=\"shop.html", "href=\"https://ily345.com/shop.html")
