@@ -87,7 +87,7 @@
           '</nav>' +
           '<div>story first · product second</div>' +
         '</div>' +
-        '<div class="wrap footer-legal label muted">© 2026 <span class="nowrap">3 | 4 | 5™</span>. all rights reserved.</div>';
+        '<div class="wrap footer-legal label muted">© 2026 <span class="nowrap">3 | 4 | 5™</span> · <span class="nowrap">love yours.™</span><span class="legal-sep"> · </span><span class="legal-rights">all rights reserved.</span></div>';
     }
     renderBagCount();
   }
@@ -99,7 +99,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=2329866f').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=d71d81ae').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }

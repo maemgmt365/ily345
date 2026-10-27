@@ -371,6 +371,8 @@ h1, h2, h3, p { margin: 0; }
   .stats-band { margin: 40px auto; }
   .to-top { right: 14px; bottom: 14px; width: 46px; height: 46px; }
   .site-footer { padding-bottom: 80px; } /* room for the top button at the very bottom */
+  .footer-legal .legal-sep { display: none; }
+  .footer-legal .legal-rights { display: block; margin-top: 6px; }
   .section { padding: 56px 0; }
   .meaning, .quote, .closer { padding: 64px 0; }
   .bag-line { grid-template-columns: 72px 1fr; }
