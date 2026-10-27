@@ -407,6 +407,12 @@ h1, h2, h3, p { margin: 0; }
 .color-list button:hover { transform: translateY(-4px); z-index: 4; }
 .color-list button[aria-pressed="true"] { transform: translateY(-4px); z-index: 3; border-color: var(--ink); }
 .color-list button[aria-pressed="true"]::after { display: none; }
+@media (max-width: 640px) {
+  /* phones: no overlap, every chip is its own tap target */
+  .color-list { gap: 8px; flex-wrap: wrap; }
+  .color-list button { margin-left: 0; width: 28px; height: 36px; }
+  .color-list button:hover, .color-list button[aria-pressed="true"] { transform: none; }
+}
 
 /* ---------- story page ---------- */
 .story-hero { background: var(--dark); color: var(--dark-ink); padding: 80px 0 64px; overflow: hidden; }
