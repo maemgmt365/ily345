@@ -29,6 +29,7 @@
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
   var money = function (n) { return '$' + (Number.isInteger(n) ? n : Number(n).toFixed(2)); };
+  var cents = function (n) { return '$' + Number(n).toFixed(2); }; // fixed cents, for columns of costs
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var priceLabel = function (p) { return p.price === p.priceMax ? money(p.price) : 'from ' + money(p.price); };
 
@@ -63,7 +64,7 @@
             '<a href="send.html" class="hide-sm"' + (page === 'send' ? ' aria-current="page"' : '') + '>send a 345</a>' +
             '<a href="ledger.html" class="hide-sm"' + (page === 'ledger' ? ' aria-current="page"' : '') + '>the ledger</a>' +
           '</nav>' +
-          '<a class="wordmark" href="index.html" aria-label="3 4 5 home">3 | 4 | 5</a>' +
+          '<a class="wordmark" href="index.html" aria-label="3 4 5 home">3 | 4 | 5<span class="tm" aria-hidden="true">™</span></a>' +
           '<nav class="nav right label" aria-label="bag">' +
             '<a href="index.html#details" class="hide-sm">good to know</a>' +
             '<a href="bag.html"' + (page === 'bag' ? ' aria-current="page"' : '') + '>bag <span class="bag-count" id="bag-count">(0)</span></a>' +
@@ -85,7 +86,8 @@
             '<a href="support.html"' + (page === 'support' ? ' aria-current="page"' : '') + '>support</a>' +
           '</nav>' +
           '<div>story first · product second</div>' +
-        '</div>';
+        '</div>' +
+        '<div class="wrap footer-legal label muted">© 2026 <span class="nowrap">3 | 4 | 5™</span>. all rights reserved.</div>';
     }
     renderBagCount();
   }
@@ -97,7 +99,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=0069ddc7').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=2329866f').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -330,7 +332,7 @@
       var t = $('#ledger-table');
       // the four cost columns collapse into one "costs" column on phones (css hides the other set)
       t.innerHTML = '<thead><tr><th>piece</th><th>price</th><th class="wide">printful</th><th class="wide">stripe</th><th class="wide">tax</th><th class="wide">site 5%</th><th class="narrow">costs</th><th>goes out</th></tr></thead><tbody>' +
-        rows.map(function (p) { var gv = p.give; var costs = gv.cost + gv.stripe + gv.tax + gv.ops; return '<tr><td>' + esc(p.name.replace(/^the (345 )?/, '')) + '</td><td>' + money(gv.price) + '</td><td class="wide">' + money(gv.cost) + '</td><td class="wide">' + money(gv.stripe) + '</td><td class="wide">' + money(gv.tax) + '</td><td class="wide">' + money(gv.ops) + '</td><td class="narrow">' + money(costs) + '</td><td class="accent">' + money(gv.gives) + '</td></tr>'; }).join('') + '</tbody>';
+        rows.map(function (p) { var gv = p.give; var costs = gv.cost + gv.stripe + gv.tax + gv.ops; return '<tr><td>' + esc(p.name.replace(/^the (345 )?/, '')) + '</td><td>' + money(gv.price) + '</td><td class="wide">' + cents(gv.cost) + '</td><td class="wide">' + cents(gv.stripe) + '</td><td class="wide">' + cents(gv.tax) + '</td><td class="wide">' + cents(gv.ops) + '</td><td class="narrow">' + cents(costs) + '</td><td class="accent">' + cents(gv.gives) + '</td></tr>'; }).join('') + '</tbody>';
       var vals = rows.map(function (p) { return Math.floor(p.give.gives); });
       $('#glance-range').textContent = '$' + Math.min.apply(null, vals) + ' to $' + Math.max.apply(null, vals);
       $('#ledger-updated').textContent = 'figures as of ' + (g.updated || 'october 2026');
@@ -465,7 +467,7 @@
     $$('.rotator').forEach(function (el) {
       var words = (el.getAttribute('data-words') || '').split('|').filter(Boolean);
       if (words.length < 2) return;
-      if (reduce) { el.textContent = words.slice(0, 3).join(', '); return; }
+      if (reduce) { el.textContent = words[0]; return; } // reduced motion: hold the first line, no rotation
       var i = 0;
       // reserve the width of the longest word so the line never jumps
       var probe = document.createElement('span'); probe.style.visibility = 'hidden'; probe.style.position = 'absolute'; probe.style.whiteSpace = 'nowrap';
