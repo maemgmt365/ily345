@@ -205,7 +205,12 @@ h1, h2, h3, p { margin: 0; }
 .story-text .label { font-family: var(--sans); }
 
 /* ---------- catalog by category ---------- */
-.cat { padding: 0 0 84px; }
+.section.shop { padding-bottom: 0; }
+.shop-head { margin-bottom: 0; }
+.cat { padding: 48px 0 48px; }
+.cat:first-child { padding-top: 36px; }
+.cat:first-child .section-head { border-top: 0; padding-top: 0; }
+.cat:last-child { padding-bottom: 84px; }
 .cat .section-head { border-top: 1px solid var(--line); padding-top: 22px; }
 .cat-count { color: var(--muted); }
 

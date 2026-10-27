@@ -204,7 +204,7 @@ async function handleWebhook(request, env, ctx) {
   const details = session.customer_details || {};
 
   const order = {
-    external_id: session.id,
+    external_id: session.id.slice(-32), // printful caps external ids at 32 chars; the tail of a session id is still unique
     shipping: 'STANDARD',
     recipient: {
       name: ship.name || details.name || 'ily345 customer',

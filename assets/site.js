@@ -14,7 +14,6 @@
     checkoutUrl: 'https://ily345-checkout.ceokrone.workers.dev',
     supportEmail: '345loveyours@gmail.com', // not shown on the site; support goes through support.html
     showGridPrice: true,
-    featured: [['hoodie', 'Black'], ['oversized-hoodie', 'Vintage Brown'], ['crewneck', 'Latte']],
     heroImage: '1076503569082fa8eff33', // black hoodie, back (the message)
     groups: [
       { title: 'hoodies and sweatshirts', cats: ['hoodies', 'sweatshirts'] },
@@ -99,7 +98,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=d71d81ae').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=aa37fbc6').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -130,8 +129,6 @@
 
   /* ---------- home ---------- */
   function initHome(list) {
-    var grid = $('#featured');
-    if (grid) grid.innerHTML = CONFIG.featured.map(function (f) { var p = findProduct(list, f[0]); return p ? tileHTML(p, f[1]) : ''; }).join('');
     var hero = $('#hero-img');
     if (hero) { hero.src = CONFIG.imgFull(CONFIG.heroImage); hero.alt = 'the 345 hoodie, back: i love you. i believe in you. i am proud of you.'; }
     var cat = $('#catalog');
