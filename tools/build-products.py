@@ -32,6 +32,10 @@ TEMPLATES = {  # printful listing id -> product template id (same colour set)
     1207687: 109487564, 1207690: 109487578, 1207698: 109487581, 1207703: 109487592, 1207711: 109487595,
     # corduroy cap (Big Accessories BA703): classic, dot, roman
     1207549: 109491295, 1207546: 109491351, 1207734: 109491369,
+    # sweats, mark on the left thigh: Cotton Heritage M7580 (white thread on dark, black on white)
+    1207790: 109495174, 1207793: 109495179, 1207801: 109495184, 1207781: 109495153, 1207785: 109495166, 1207787: 109495169,
+    # oversized sweats, Bella + Canvas 4737 (white thread on black and asphalt, black on dust)
+    1207813: 109495539, 1207818: 109495543, 1207824: 109495545, 1207804: 109495522, 1207807: 109495531, 1207827: 109495533,
 }
 # which mockup is the real back view (with the message) per Printful catalog product:
 # the first listings (oct 2026) came out front, left, right, back for tees and sweatshirts.
@@ -191,6 +195,68 @@ PRODUCTS = [
                 ("the-345-crewneck-roman-png", "Vintage Black"),
                 ("the-345-crewneck-roman-png", "Latte"),
                 ("the-345-crewneck-white-roman-png", "White"),
+            ],
+        },
+    },
+    {
+        "id": "sweats",
+        "name": "the 345 sweats",
+        "short": "the everyday pair",
+        "price": {"base": 46, "plus": 46},
+        "category": "sweats",
+        "placement": "embroidered mark on the left thigh",
+        "intro": "fleece sweatpants with cuffed ankles and a soft, brushed inside. the 3 | 4 | 5 mark sits small on the left thigh, the same mark as the chest, so they pair with any of the tops.",
+        "note": LOGO_NOTE,
+        "details": ["100% cotton face", "65% cotton, 35% polyester (charcoal heather is 55% cotton, 45% polyester)", "tightly knit 3-end fleece", "cuffed and side-seamed legs", "elastic waistband with flat drawstrings", "2 front pockets, 1 back patch pocket"],
+        "colors": [
+            ("the-345-sweats", "Black"),
+            ("the-345-sweats", "Charcoal Heather"),
+            ("the-345-sweats-white", "White"),
+            ("the-345-sweats", "Maroon"),
+            ("the-345-sweats", "Dusty Rose"),
+        ],
+        "styles": {
+            "dot": [
+                ("the-345-sweats-dot", "Black"),
+                ("the-345-sweats-dot", "Charcoal Heather"),
+                ("the-345-sweats-white-dot", "White"),
+                ("the-345-sweats-dot", "Maroon"),
+                ("the-345-sweats-dot", "Dusty Rose"),
+            ],
+            "roman": [
+                ("the-345-sweats-roman", "Black"),
+                ("the-345-sweats-roman", "Charcoal Heather"),
+                ("the-345-sweats-white-roman", "White"),
+                ("the-345-sweats-roman", "Maroon"),
+                ("the-345-sweats-roman", "Dusty Rose"),
+            ],
+        },
+    },
+    {
+        "id": "oversized-sweats",
+        "name": "the oversized sweats",
+        "short": "heavier, roomier, a 90s cut",
+        "price": {"base": 58, "plus": 58},
+        "category": "sweats",
+        "placement": "embroidered mark on the left thigh",
+        "intro": "heavyweight sweatpants with a relaxed, boxy fit and brushed fleece inside. deep side pockets and elastic cuffs. the mark sits small on the left thigh. made to go with the oversized hoodie.",
+        "note": LOGO_NOTE,
+        "details": ["60% cotton, 40% polyester fleece", "10 oz/yd² (339 g/m²)", "relaxed, boxy fit", "deep side pockets, elastic cuffs, interior drawcord", "soft brushed fleece inside"],
+        "colors": [
+            ("the-345-sweats-oversized", "Black"),
+            ("the-345-sweats-oversized", "Asphalt"),
+            ("the-345-sweats-oversized-dust", "Dust"),
+        ],
+        "styles": {
+            "dot": [
+                ("the-345-sweats-oversized-dot", "Black"),
+                ("the-345-sweats-oversized-dot", "Asphalt"),
+                ("the-345-sweats-oversized-dust-dot", "Dust"),
+            ],
+            "roman": [
+                ("the-345-sweats-oversized-roman", "Black"),
+                ("the-345-sweats-oversized-roman", "Asphalt"),
+                ("the-345-sweats-oversized-dust-roman", "Dust"),
             ],
         },
     },
@@ -392,6 +458,8 @@ GOOD_TO_KNOW = {
     "hoodie": ["unisex fit, true to size", "machine wash cold, hang dry to protect the embroidery"],
     "oversized-hoodie": ["oversized by design: size down for a regular fit", "machine wash cold, hang dry"],
     "crewneck": ["runs small: order one size up", "machine wash cold, hang dry"],
+    "sweats": ["unisex fit, true to size", "sizes xs to 2xl", "machine wash cold, hang dry to protect the embroidery"],
+    "oversized-sweats": ["relaxed fit by design: size down for a closer fit", "sizes s to 3xl", "machine wash cold, hang dry"],
     "tee-mens": ["regular to boxy fit, true to size", "machine wash cold, tumble low"],
     "tee-womens": ["longline fit, sizes S to L only", "machine wash cold, tumble low"],
     "beanie": ["one size fits most", "hand wash, lay flat to dry"],
@@ -413,6 +481,7 @@ STORE = "https://345loveyours.printful.me"
 # Used for the ledger (what goes to the partner) and for the at-cost promo code.
 COST = {
     "hoodie": (36.83, 40.83), "oversized-hoodie": (42.22, 46.22), "crewneck": (33.23, 37.23),
+    "sweats": (30.04, 32.04), "oversized-sweats": (39.27, 43.27),
     "tee-mens": (24.17, 28.17), "tee-womens": (21.73, 21.73), "beanie": (16.51, 16.51),
     "hat-distressed": (19.00, 19.00), "hat-denim": (19.86, 19.86), "hat-corduroy": (19.26, 19.26),
     "blanket": (46.82, 46.82),
