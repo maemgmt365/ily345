@@ -4136,6 +4136,1766 @@
   ]
  },
  {
+  "id": "sweats",
+  "name": "the 345 sweats",
+  "category": "sweats",
+  "placement": "embroidered mark on the left thigh",
+  "price": 46,
+  "priceMax": 46,
+  "opaque": null,
+  "fill": false,
+  "zoom": 1,
+  "blend": false,
+  "short": "the everyday pair",
+  "intro": "fleece sweatpants with cuffed ankles and a soft, brushed inside. the 3 | 4 | 5 mark sits small on the left thigh, the same mark as the chest, so they pair with any of the tops.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+  "details": [
+   "100% cotton face",
+   "65% cotton, 35% polyester (charcoal heather is 55% cotton, 45% polyester)",
+   "tightly knit 3-end fleece",
+   "cuffed and side-seamed legs",
+   "elastic waistband with flat drawstrings",
+   "2 front pockets, 1 back patch pocket"
+  ],
+  "know": [
+   "unisex fit, true to size",
+   "sizes xs to 2xl",
+   "machine wash cold, hang dry to protect the embroidery",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: send us a note from the support page within 30 days and we will make it right"
+  ],
+  "give": {
+   "price": 46,
+   "cost": 30.04,
+   "stripe": 1.81,
+   "tax": 2.4,
+   "ops": 2.3,
+   "gives": 9.45
+  },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "fleece sweatpants with cuffed ankles and a soft, brushed inside. the 3 | 4 | 5 mark sits small on the left thigh, the same mark as the chest, so they pair with any of the tops.",
+    "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the left thigh"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "fleece sweatpants with cuffed ankles and a soft, brushed inside. the 3 · 4 · 5 mark sits small on the left thigh, the same mark as the chest, so they pair with any of the tops.",
+    "note": "the 3 · 4 · 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the left thigh"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "fleece sweatpants with cuffed ankles and a soft, brushed inside. the III · IV · V mark sits small on the left thigh, the same mark as the chest, so they pair with any of the tops.",
+    "note": "the III · IV · V mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the left thigh"
+   }
+  },
+  "colors": [
+   {
+    "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#141414",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats",
+    "listing": "the-345-sweats",
+    "images": [
+     "192928356ae237d9bbe60",
+     "192928356ae237d9d49fb",
+     "192928356ae237d9eab01",
+     "192928356ae237da0d4dc",
+     "192928356ae237da1fa72"
+    ],
+    "template": 109495174,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292835,
+      "catalogVariant": 11265,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292836,
+      "catalogVariant": 11266,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292837,
+      "catalogVariant": 11267,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292838,
+      "catalogVariant": 11268,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292839,
+      "catalogVariant": 11269,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292840,
+      "catalogVariant": 11270,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Heather",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#3a3a38",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats",
+    "listing": "the-345-sweats",
+    "images": [
+     "192928476ae237dfe66d0",
+     "192928476ae237e013afd",
+     "192928476ae237e03172c",
+     "192928476ae237e04ce10",
+     "192928476ae237e068c46"
+    ],
+    "template": 109495174,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292847,
+      "catalogVariant": 11283,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292848,
+      "catalogVariant": 11284,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292849,
+      "catalogVariant": 11285,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292850,
+      "catalogVariant": 11286,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292851,
+      "catalogVariant": 11287,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292852,
+      "catalogVariant": 11288,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-white",
+    "listing": "the-345-sweats-white",
+    "images": [
+     "192927216ae236bd80e77",
+     "192927216ae236bda99db",
+     "192927216ae236bdc6168",
+     "192927216ae236bddff5f",
+     "192927216ae236be02af7"
+    ],
+    "template": 109495153,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292721,
+      "catalogVariant": 11271,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292722,
+      "catalogVariant": 11272,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292723,
+      "catalogVariant": 11273,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292724,
+      "catalogVariant": 11274,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292725,
+      "catalogVariant": 11275,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292726,
+      "catalogVariant": 11276,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Maroon",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#691723",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats",
+    "listing": "the-345-sweats",
+    "images": [
+     "192928416ae237dc84046",
+     "192928416ae237dc9acac",
+     "192928416ae237dcb2cb6",
+     "192928416ae237dccb45e",
+     "192928416ae237dce27ba"
+    ],
+    "template": 109495174,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292841,
+      "catalogVariant": 13839,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292842,
+      "catalogVariant": 13840,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292843,
+      "catalogVariant": 13841,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292844,
+      "catalogVariant": 13842,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292845,
+      "catalogVariant": 13843,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292846,
+      "catalogVariant": 13844,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dusty Rose",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#f59382",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats",
+    "listing": "the-345-sweats",
+    "images": [
+     "192928536ae237e336c4a",
+     "192928536ae237e34bd68",
+     "192928536ae237e36418c",
+     "192928536ae237e379a40",
+     "192928536ae237e396a5f"
+    ],
+    "template": 109495174,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292853,
+      "catalogVariant": 13833,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292854,
+      "catalogVariant": 13834,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292855,
+      "catalogVariant": 13835,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292856,
+      "catalogVariant": 13836,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292857,
+      "catalogVariant": 13837,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292858,
+      "catalogVariant": 13838,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#141414",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-dot",
+    "listing": "the-345-sweats-dot",
+    "images": [
+     "192928736ae23848220f0",
+     "192928736ae238483fa9a",
+     "192928736ae2384855683",
+     "192928736ae23848701e2",
+     "192928736ae2384887aac"
+    ],
+    "template": 109495179,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292873,
+      "catalogVariant": 11265,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292874,
+      "catalogVariant": 11266,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292875,
+      "catalogVariant": 11267,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292876,
+      "catalogVariant": 11268,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292877,
+      "catalogVariant": 11269,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292878,
+      "catalogVariant": 11270,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Heather",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#3a3a38",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-dot",
+    "listing": "the-345-sweats-dot",
+    "images": [
+     "192928856ae2384ea3fa7",
+     "192928856ae2384ec0b67",
+     "192928856ae2384edd9ed",
+     "192928856ae2384f01e03",
+     "192928856ae2384f1e665"
+    ],
+    "template": 109495179,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292885,
+      "catalogVariant": 11283,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292886,
+      "catalogVariant": 11284,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292887,
+      "catalogVariant": 11285,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292888,
+      "catalogVariant": 11286,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292889,
+      "catalogVariant": 11287,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292890,
+      "catalogVariant": 11288,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-white-dot",
+    "listing": "the-345-sweats-white-dot",
+    "images": [
+     "192927486ae23715dc668",
+     "192927486ae23716103d3",
+     "192927486ae23716295ce",
+     "192927486ae237164c780",
+     "192927486ae23716620ca"
+    ],
+    "template": 109495166,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292748,
+      "catalogVariant": 11271,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292749,
+      "catalogVariant": 11272,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292750,
+      "catalogVariant": 11273,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292751,
+      "catalogVariant": 11274,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292752,
+      "catalogVariant": 11275,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292753,
+      "catalogVariant": 11276,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Maroon",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#691723",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-dot",
+    "listing": "the-345-sweats-dot",
+    "images": [
+     "192928796ae2384b390f8",
+     "192928796ae2384b55db4",
+     "192928796ae2384b6eced",
+     "192928796ae2384b8e13a",
+     "192928796ae2384ba80cc"
+    ],
+    "template": 109495179,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292879,
+      "catalogVariant": 13839,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292880,
+      "catalogVariant": 13840,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292881,
+      "catalogVariant": 13841,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292882,
+      "catalogVariant": 13842,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292883,
+      "catalogVariant": 13843,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292884,
+      "catalogVariant": 13844,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dusty Rose",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#f59382",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-dot",
+    "listing": "the-345-sweats-dot",
+    "images": [
+     "192928916ae2385242385",
+     "192928916ae238525e116",
+     "192928916ae238527590d",
+     "192928916ae238528f8c1",
+     "192928916ae23852a6697"
+    ],
+    "template": 109495179,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292891,
+      "catalogVariant": 13833,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292892,
+      "catalogVariant": 13834,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292893,
+      "catalogVariant": 13835,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292894,
+      "catalogVariant": 13836,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292895,
+      "catalogVariant": 13837,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292896,
+      "catalogVariant": 13838,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#141414",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-roman",
+    "listing": "the-345-sweats-roman",
+    "images": [
+     "192930416ae238b62e430",
+     "192930416ae238b6491e1",
+     "192930416ae238b66e84b",
+     "192930416ae238b688cb8",
+     "192930416ae238b69ecaf"
+    ],
+    "template": 109495184,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19293041,
+      "catalogVariant": 11265,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19293042,
+      "catalogVariant": 11266,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293043,
+      "catalogVariant": 11267,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293044,
+      "catalogVariant": 11268,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293045,
+      "catalogVariant": 11269,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293046,
+      "catalogVariant": 11270,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Heather",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#3a3a38",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-roman",
+    "listing": "the-345-sweats-roman",
+    "images": [
+     "192930536ae238bcd04ed",
+     "192930536ae238bce6ec3",
+     "192930536ae238bd0896a",
+     "192930536ae238bd26db4",
+     "192930536ae238bd4ce4e"
+    ],
+    "template": 109495184,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19293053,
+      "catalogVariant": 11283,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19293054,
+      "catalogVariant": 11284,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293055,
+      "catalogVariant": 11285,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293056,
+      "catalogVariant": 11286,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293057,
+      "catalogVariant": 11287,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293058,
+      "catalogVariant": 11288,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-white-roman",
+    "listing": "the-345-sweats-white-roman",
+    "images": [
+     "192927606ae23767b39f9",
+     "192927606ae23767d6154",
+     "192927606ae23767eea7c",
+     "192927606ae23768125e1",
+     "192927606ae237682a468"
+    ],
+    "template": 109495169,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19292760,
+      "catalogVariant": 11271,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19292761,
+      "catalogVariant": 11272,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19292762,
+      "catalogVariant": 11273,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19292763,
+      "catalogVariant": 11274,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19292764,
+      "catalogVariant": 11275,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19292765,
+      "catalogVariant": 11276,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Maroon",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#691723",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-roman",
+    "listing": "the-345-sweats-roman",
+    "images": [
+     "192930476ae238b9711a4",
+     "192930476ae238b985f09",
+     "192930476ae238b99df65",
+     "192930476ae238b9b66d3",
+     "192930476ae238b9d200b"
+    ],
+    "template": 109495184,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19293047,
+      "catalogVariant": 13839,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19293048,
+      "catalogVariant": 13840,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293049,
+      "catalogVariant": 13841,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293050,
+      "catalogVariant": 13842,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293051,
+      "catalogVariant": 13843,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293052,
+      "catalogVariant": 13844,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dusty Rose",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#f59382",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-roman",
+    "listing": "the-345-sweats-roman",
+    "images": [
+     "192930596ae238c030364",
+     "192930596ae238c0453c4",
+     "192930596ae238c062fe5",
+     "192930596ae238c07d474",
+     "192930596ae238c096335"
+    ],
+    "template": 109495184,
+    "sizes": [
+     {
+      "size": "XS",
+      "variant": 19293059,
+      "catalogVariant": 13833,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "S",
+      "variant": 19293060,
+      "catalogVariant": 13834,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293061,
+      "catalogVariant": 13835,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293062,
+      "catalogVariant": 13836,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293063,
+      "catalogVariant": 13837,
+      "price": 46,
+      "cost": 30.04,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293064,
+      "catalogVariant": 13838,
+      "price": 46,
+      "cost": 32.04,
+      "printfulRetail": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "oversized-sweats",
+  "name": "the oversized sweats",
+  "category": "sweats",
+  "placement": "embroidered mark on the left thigh",
+  "price": 58,
+  "priceMax": 58,
+  "opaque": null,
+  "fill": false,
+  "zoom": 1,
+  "blend": false,
+  "short": "heavier, roomier, a 90s cut",
+  "intro": "heavyweight sweatpants with a relaxed, boxy fit and brushed fleece inside. deep side pockets and elastic cuffs. the mark sits small on the left thigh. made to go with the oversized hoodie.",
+  "message": [
+   "3 | 4 | 5 is more than clothing. it is a message.",
+   "for the moments when words go unsaid, this is a way to say: i love you. i believe in you. i am proud of you.",
+   "a quiet reminder that someone is thinking of you, or a daily nudge to speak what we often keep inside.",
+   "love yours."
+  ],
+  "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+  "details": [
+   "60% cotton, 40% polyester fleece",
+   "10 oz/yd² (339 g/m²)",
+   "relaxed, boxy fit",
+   "deep side pockets, elastic cuffs, interior drawcord",
+   "soft brushed fleece inside"
+  ],
+  "know": [
+   "relaxed fit by design: size down for a closer fit",
+   "sizes s to 3xl",
+   "machine wash cold, hang dry",
+   "made to order, one at a time, by our print partner printful",
+   "ships from the us, usually 5 to 9 business days door to door",
+   "wrong size or a flaw in the print: send us a note from the support page within 30 days and we will make it right"
+  ],
+  "give": {
+   "price": 58,
+   "cost": 39.27,
+   "stripe": 2.16,
+   "tax": 3.14,
+   "ops": 2.9,
+   "gives": 10.53
+  },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "heavyweight sweatpants with a relaxed, boxy fit and brushed fleece inside. deep side pockets and elastic cuffs. the mark sits small on the left thigh. made to go with the oversized hoodie.",
+    "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the left thigh"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "heavyweight sweatpants with a relaxed, boxy fit and brushed fleece inside. deep side pockets and elastic cuffs. the mark sits small on the left thigh. made to go with the oversized hoodie.",
+    "note": "the 3 · 4 · 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the left thigh"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "heavyweight sweatpants with a relaxed, boxy fit and brushed fleece inside. deep side pockets and elastic cuffs. the mark sits small on the left thigh. made to go with the oversized hoodie.",
+    "note": "the III · IV · V mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the left thigh"
+   }
+  },
+  "colors": [
+   {
+    "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#0e0b0b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized",
+    "listing": "the-345-sweats-oversized",
+    "images": [
+     "192932566ae23aa7611f7",
+     "192932566ae23aa78559c",
+     "192932566ae23aa7a5c9a",
+     "192932566ae23aa7c1a53"
+    ],
+    "template": 109495539,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293256,
+      "catalogVariant": 23110,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293257,
+      "catalogVariant": 23114,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293258,
+      "catalogVariant": 23118,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293259,
+      "catalogVariant": 23122,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293260,
+      "catalogVariant": 23126,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293261,
+      "catalogVariant": 23130,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Asphalt",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#716b63",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized",
+    "listing": "the-345-sweats-oversized",
+    "images": [
+     "192932626ae23aa9f2b06",
+     "192932626ae23aaa19bc0",
+     "192932626ae23aaa2d82b",
+     "192932626ae23aaa463dc"
+    ],
+    "template": 109495539,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293262,
+      "catalogVariant": 23103,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293263,
+      "catalogVariant": 23104,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293264,
+      "catalogVariant": 23105,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293265,
+      "catalogVariant": 23106,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293266,
+      "catalogVariant": 23108,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293267,
+      "catalogVariant": 23107,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dust",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#f4e7d6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-dust",
+    "listing": "the-345-sweats-oversized-dust",
+    "images": [
+     "192930756ae239255ff7c",
+     "192930756ae2392589f1f",
+     "192930756ae23925a1bba",
+     "192930756ae23925bb881"
+    ],
+    "template": 109495522,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293075,
+      "catalogVariant": 23111,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293076,
+      "catalogVariant": 23115,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293077,
+      "catalogVariant": 23119,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293078,
+      "catalogVariant": 23123,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293079,
+      "catalogVariant": 23127,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293080,
+      "catalogVariant": 23131,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#0e0b0b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-dot",
+    "listing": "the-345-sweats-oversized-dot",
+    "images": [
+     "192933006ae23b3a24fed",
+     "192933006ae23b3a4ed6e",
+     "192933006ae23b3a6ad6c",
+     "192933006ae23b3a84481"
+    ],
+    "template": 109495543,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293300,
+      "catalogVariant": 23110,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293301,
+      "catalogVariant": 23114,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293302,
+      "catalogVariant": 23118,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293303,
+      "catalogVariant": 23122,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293304,
+      "catalogVariant": 23126,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293305,
+      "catalogVariant": 23130,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Asphalt",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#716b63",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-dot",
+    "listing": "the-345-sweats-oversized-dot",
+    "images": [
+     "192933066ae23b3cc3864",
+     "192933066ae23b3cd9faa",
+     "192933066ae23b3cf2601",
+     "192933066ae23b3d11d7e"
+    ],
+    "template": 109495543,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293306,
+      "catalogVariant": 23103,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293307,
+      "catalogVariant": 23104,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293308,
+      "catalogVariant": 23105,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293309,
+      "catalogVariant": 23106,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293310,
+      "catalogVariant": 23108,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293311,
+      "catalogVariant": 23107,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dust",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#f4e7d6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-dust-dot",
+    "listing": "the-345-sweats-oversized-dust-dot",
+    "images": [
+     "192932016ae239a486166",
+     "192932016ae239a4a0211",
+     "192932016ae239a4ba528",
+     "192932016ae239a4d5fc1"
+    ],
+    "template": 109495531,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293201,
+      "catalogVariant": 23111,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293202,
+      "catalogVariant": 23115,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293203,
+      "catalogVariant": 23119,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293204,
+      "catalogVariant": 23123,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293205,
+      "catalogVariant": 23127,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293206,
+      "catalogVariant": 23131,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#0e0b0b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-roman",
+    "listing": "the-345-sweats-oversized-roman",
+    "images": [
+     "192933946ae23bdc02020",
+     "192933946ae23bdc2255c",
+     "192933946ae23bdc38f7b",
+     "192933946ae23bdc51ff6"
+    ],
+    "template": 109495545,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293394,
+      "catalogVariant": 23110,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293395,
+      "catalogVariant": 23114,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293396,
+      "catalogVariant": 23118,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293397,
+      "catalogVariant": 23122,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293398,
+      "catalogVariant": 23126,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293399,
+      "catalogVariant": 23130,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Asphalt",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#716b63",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-roman",
+    "listing": "the-345-sweats-oversized-roman",
+    "images": [
+     "192934006ae23bde7f7da",
+     "192934006ae23bde950f4",
+     "192934006ae23bdeaf095",
+     "192934006ae23bdecbf13"
+    ],
+    "template": 109495545,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293400,
+      "catalogVariant": 23103,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293401,
+      "catalogVariant": 23104,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293402,
+      "catalogVariant": 23105,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293403,
+      "catalogVariant": 23106,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293404,
+      "catalogVariant": 23108,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293405,
+      "catalogVariant": 23107,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dust",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#f4e7d6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-sweats-oversized-dust-roman",
+    "listing": "the-345-sweats-oversized-dust-roman",
+    "images": [
+     "192934796ae23c8622c08",
+     "192934796ae23c8639ba5",
+     "192934796ae23c8652620",
+     "192934796ae23c8669d3b"
+    ],
+    "template": 109495533,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19293479,
+      "catalogVariant": 23111,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19293480,
+      "catalogVariant": 23115,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19293481,
+      "catalogVariant": 23119,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19293482,
+      "catalogVariant": 23123,
+      "price": 58,
+      "cost": 39.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19293483,
+      "catalogVariant": 23127,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19293484,
+      "catalogVariant": 23131,
+      "price": 58,
+      "cost": 43.27,
+      "printfulRetail": null
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "tee-mens",
   "name": "the heavyweight tee",
   "category": "tees",
