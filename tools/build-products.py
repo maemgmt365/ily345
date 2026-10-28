@@ -20,19 +20,18 @@ TEMPLATES = {  # printful listing id -> product template id (same colour set)
     659103: 95280297, 659081: 95253882, 659079: 95253842, 659101: 95254482, 659099: 95254467,
     659088: 95254210, 659086: 95254203, 659084: 95254159, 659047: 95253239, 659001: 95253329,
     658998: 95253432, 658997: 95253561,
-    # 28 oct 2026: the black and white 345 hoodie went from mark size 1.80 to 2.00, so they were
-    # republished (these replace 659079 and 659081), and charcoal heather / dust were added.
-    1207351: 95253842, 1207360: 95253882, 1206867: 95253329,
-    # dot style
-    1207354: 109467030, 1207363: 109467665, 1206712: 109467836, 1206724: 109468016, 1206734: 109468030,
-    1206852: 109468331, 1206854: 109468347, 1206858: 109468368, 1206861: 109468379,
-    1207395: 109488438, 1207407: 109488451, 1207436: 109487533, 1207448: 109487548,
-    1207459: 109487560, 1207467: 109487578, 1207478: 109487592,
-    # roman style (sized so it spans the same width as 3 | 4 | 5)
-    1207358: 109467363, 1207367: 109467749, 1207371: 109467853, 1207376: 109468018, 1207381: 109468040,
-    1207341: 109468336, 1207343: 109468357, 1207344: 109468372, 1207346: 109468389,
-    1207399: 109488442, 1207412: 109488463, 1207443: 109487538, 1207456: 109487554,
-    1207464: 109487564, 1207474: 109487581, 1207479: 109487595,
+    # 28 oct 2026: the dot and roman styles, the black and white 345 hoodie at mark size 2.00 with
+    # charcoal heather, and dust on the oversized hoodie. Republished the same day with PNG mockups
+    # (the first pass came out as JPG on a white background, which showed as a white box on the tile).
+    1207559: 95253842, 1207561: 95253882, 1207565: 109467030, 1207569: 109467665, 1207576: 109467836,
+    1207578: 109467363, 1207580: 109467749, 1207584: 109467853, 1207586: 109488438, 1207598: 109488451,
+    1207601: 109488442, 1207607: 109488463, 1207611: 95253329, 1207616: 109468016, 1207619: 109468030,
+    1207621: 109468018, 1207626: 109468040, 1207630: 109468331, 1207631: 109468347, 1207633: 109468336,
+    1207636: 109468357, 1207639: 109468379, 1207643: 109468368, 1207647: 109468389, 1207657: 109468372,
+    1207662: 109487533, 1207669: 109487538, 1207673: 109487548, 1207678: 109487554, 1207683: 109487560,
+    1207687: 109487564, 1207690: 109487578, 1207698: 109487581, 1207703: 109487592, 1207711: 109487595,
+    # corduroy cap (Big Accessories BA703): classic, dot, roman
+    1207549: 109491295, 1207546: 109491351, 1207734: 109491369,
 }
 # which mockup is the real back view (with the message) per Printful catalog product:
 # the first listings (oct 2026) came out front, left, right, back for tees and sweatshirts.
@@ -89,11 +88,11 @@ PRODUCTS = [
         "note": BACK_NOTE,
         "details": ["100% cotton face", "65% ring-spun cotton, 35% polyester", "front pouch pocket", "self-fabric patch on the back", "matching flat drawstrings", "3-panel hood", "unisex fit"],
         "colors": [
-            ("the-345-hoodie-classic", "Black"),
-            ("the-345-hoodie-classic", "Vintage Black"),
-            ("the-345-hoodie-classic", "Charcoal Heather"),
-            ("the-345-hoodie-classic", "Latte"),
-            ("the-345-hoodie-white-classic", "White"),
+            ("the-345-hoodie-classic-png", "Black"),
+            ("the-345-hoodie-classic-png", "Vintage Black"),
+            ("the-345-hoodie-classic-png", "Charcoal Heather"),
+            ("the-345-hoodie-classic-png", "Latte"),
+            ("the-345-hoodie-white-classic-png", "White"),
             ("limited-color-hoodie-white-logo", "Maroon", "limited"),
             ("limited-color-hoodie-white-logo", "Forest Green", "limited"),
             ("limited-color-hoodie-white-logo", "Adobe", "limited"),
@@ -103,30 +102,30 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-hoodie-dot-v2", "Black"),
-                ("the-345-hoodie-dot-v2", "Vintage Black"),
-                ("the-345-hoodie-dot-v2", "Charcoal Heather"),
-                ("the-345-hoodie-dot-v2", "Latte"),
-                ("the-345-hoodie-white-dot-v2", "White"),
-                ("the-345-hoodie-colors-dot", "Maroon", "limited"),
-                ("the-345-hoodie-colors-dot", "Forest Green", "limited"),
-                ("the-345-hoodie-colors-dot", "Adobe", "limited"),
-                ("the-345-hoodie-colors-dot", "Dusty Rose", "limited"),
-                ("the-345-hoodie-colors-dot", "Team Gold", "limited"),
-                ("the-345-hoodie-colors-dot", "Carolina Blue", "limited"),
+                ("the-345-hoodie-dot-png", "Black"),
+                ("the-345-hoodie-dot-png", "Vintage Black"),
+                ("the-345-hoodie-dot-png", "Charcoal Heather"),
+                ("the-345-hoodie-dot-png", "Latte"),
+                ("the-345-hoodie-white-dot-png", "White"),
+                ("the-345-hoodie-colors-dot-png", "Maroon", "limited"),
+                ("the-345-hoodie-colors-dot-png", "Forest Green", "limited"),
+                ("the-345-hoodie-colors-dot-png", "Adobe", "limited"),
+                ("the-345-hoodie-colors-dot-png", "Dusty Rose", "limited"),
+                ("the-345-hoodie-colors-dot-png", "Team Gold", "limited"),
+                ("the-345-hoodie-colors-dot-png", "Carolina Blue", "limited"),
             ],
             "roman": [
-                ("the-345-hoodie-roman-v2", "Black"),
-                ("the-345-hoodie-roman-v2", "Vintage Black"),
-                ("the-345-hoodie-roman-v2", "Charcoal Heather"),
-                ("the-345-hoodie-roman-v2", "Latte"),
-                ("the-345-hoodie-white-roman-v2", "White"),
-                ("the-345-hoodie-colors-roman-v2", "Maroon", "limited"),
-                ("the-345-hoodie-colors-roman-v2", "Forest Green", "limited"),
-                ("the-345-hoodie-colors-roman-v2", "Adobe", "limited"),
-                ("the-345-hoodie-colors-roman-v2", "Dusty Rose", "limited"),
-                ("the-345-hoodie-colors-roman-v2", "Team Gold", "limited"),
-                ("the-345-hoodie-colors-roman-v2", "Carolina Blue", "limited"),
+                ("the-345-hoodie-roman-png", "Black"),
+                ("the-345-hoodie-roman-png", "Vintage Black"),
+                ("the-345-hoodie-roman-png", "Charcoal Heather"),
+                ("the-345-hoodie-roman-png", "Latte"),
+                ("the-345-hoodie-white-roman-png", "White"),
+                ("the-345-hoodie-colors-roman-png", "Maroon", "limited"),
+                ("the-345-hoodie-colors-roman-png", "Forest Green", "limited"),
+                ("the-345-hoodie-colors-roman-png", "Adobe", "limited"),
+                ("the-345-hoodie-colors-roman-png", "Dusty Rose", "limited"),
+                ("the-345-hoodie-colors-roman-png", "Team Gold", "limited"),
+                ("the-345-hoodie-colors-roman-png", "Carolina Blue", "limited"),
             ],
         },
     },
@@ -145,22 +144,22 @@ PRODUCTS = [
             ("oversized-hoodie", "Asphalt"),
             ("oversized-hoodie", "Vintage Brown"),
             ("love-yours-oversized-logo-hoodie", "White"),
-            ("the-345-hoodie-oversized-dust", "Dust"),
+            ("the-345-hoodie-oversized-dust-png", "Dust"),
         ],
         "styles": {
             "dot": [
-                ("the-345-hoodie-oversized-dot", "Vintage Black"),
-                ("the-345-hoodie-oversized-dot", "Asphalt"),
-                ("the-345-hoodie-oversized-dot", "Vintage Brown"),
-                ("the-345-hoodie-oversized-white-dust-dot", "White"),
-                ("the-345-hoodie-oversized-white-dust-dot", "Dust"),
+                ("the-345-hoodie-oversized-dot-png", "Vintage Black"),
+                ("the-345-hoodie-oversized-dot-png", "Asphalt"),
+                ("the-345-hoodie-oversized-dot-png", "Vintage Brown"),
+                ("the-345-hoodie-oversized-white-dust-dot-png", "White"),
+                ("the-345-hoodie-oversized-white-dust-dot-png", "Dust"),
             ],
             "roman": [
-                ("the-345-hoodie-oversized-roman", "Vintage Black"),
-                ("the-345-hoodie-oversized-roman", "Asphalt"),
-                ("the-345-hoodie-oversized-roman", "Vintage Brown"),
-                ("the-345-hoodie-oversized-white-dust-roman", "White"),
-                ("the-345-hoodie-oversized-white-dust-roman", "Dust"),
+                ("the-345-hoodie-oversized-roman-png", "Vintage Black"),
+                ("the-345-hoodie-oversized-roman-png", "Asphalt"),
+                ("the-345-hoodie-oversized-roman-png", "Vintage Brown"),
+                ("the-345-hoodie-oversized-white-dust-roman-png", "White"),
+                ("the-345-hoodie-oversized-white-dust-roman-png", "Dust"),
             ],
         },
     },
@@ -182,16 +181,16 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-crewneck-dot", "Black"),
-                ("the-345-crewneck-dot", "Vintage Black"),
-                ("the-345-crewneck-dot", "Latte"),
-                ("the-345-crewneck-white-dot", "White"),
+                ("the-345-crewneck-dot-png", "Black"),
+                ("the-345-crewneck-dot-png", "Vintage Black"),
+                ("the-345-crewneck-dot-png", "Latte"),
+                ("the-345-crewneck-white-dot-png", "White"),
             ],
             "roman": [
-                ("the-345-crewneck-roman-v2", "Black"),
-                ("the-345-crewneck-roman-v2", "Vintage Black"),
-                ("the-345-crewneck-roman-v2", "Latte"),
-                ("the-345-crewneck-white-roman-v2", "White"),
+                ("the-345-crewneck-roman-png", "Black"),
+                ("the-345-crewneck-roman-png", "Vintage Black"),
+                ("the-345-crewneck-roman-png", "Latte"),
+                ("the-345-crewneck-white-roman-png", "White"),
             ],
         },
     },
@@ -211,12 +210,12 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-tee-mens-dot", "Black"),
-                ("the-345-tee-mens-white-dot", "White"),
+                ("the-345-tee-mens-dot-png", "Black"),
+                ("the-345-tee-mens-white-dot-png", "White"),
             ],
             "roman": [
-                ("the-345-tee-mens-roman", "Black"),
-                ("the-345-tee-mens-white-roman", "White"),
+                ("the-345-tee-mens-roman-png", "Black"),
+                ("the-345-tee-mens-white-roman-png", "White"),
             ],
         },
     },
@@ -238,16 +237,16 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-tee-womens-dot", "Black"),
-                ("the-345-tee-womens-dot", "Vintage Black"),
-                ("the-345-tee-womens-dot", "Latte"),
-                ("the-345-tee-womens-white-dot", "White"),
+                ("the-345-tee-womens-dot-png", "Black"),
+                ("the-345-tee-womens-dot-png", "Vintage Black"),
+                ("the-345-tee-womens-dot-png", "Latte"),
+                ("the-345-tee-womens-white-dot-png", "White"),
             ],
             "roman": [
-                ("the-345-tee-womens-roman", "Black"),
-                ("the-345-tee-womens-roman", "Vintage Black"),
-                ("the-345-tee-womens-roman", "Latte"),
-                ("the-345-tee-womens-white-roman", "White"),
+                ("the-345-tee-womens-roman-png", "Black"),
+                ("the-345-tee-womens-roman-png", "Vintage Black"),
+                ("the-345-tee-womens-roman-png", "Latte"),
+                ("the-345-tee-womens-white-roman-png", "White"),
             ],
         },
     },
@@ -269,16 +268,16 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-beanie-white-logo-dot", "Black"),
-                ("the-345-beanie-white-logo-dot", "Walnut"),
-                ("the-345-beanie-black-logo-dot", "Athletic Heather"),
-                ("the-345-beanie-black-logo-dot", "Ecru"),
+                ("the-345-beanie-white-logo-dot-png", "Black"),
+                ("the-345-beanie-white-logo-dot-png", "Walnut"),
+                ("the-345-beanie-black-logo-dot-png", "Athletic Heather"),
+                ("the-345-beanie-black-logo-dot-png", "Ecru"),
             ],
             "roman": [
-                ("the-345-beanie-white-logo-roman", "Black"),
-                ("the-345-beanie-white-logo-roman", "Walnut"),
-                ("the-345-beanie-black-logo-roman", "Athletic Heather"),
-                ("the-345-beanie-black-logo-roman", "Ecru"),
+                ("the-345-beanie-white-logo-roman-png", "Black"),
+                ("the-345-beanie-white-logo-roman-png", "Walnut"),
+                ("the-345-beanie-black-logo-roman-png", "Athletic Heather"),
+                ("the-345-beanie-black-logo-roman-png", "Ecru"),
             ],
         },
     },
@@ -299,14 +298,14 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-hat-distressed-black-charcoal-dot", "Black"),
-                ("the-345-hat-distressed-black-charcoal-dot", "Charcoal Grey"),
-                ("the-345-hat-distressed-khaki-dot", "Khaki"),
+                ("the-345-hat-distressed-black-charcoal-dot-png", "Black"),
+                ("the-345-hat-distressed-black-charcoal-dot-png", "Charcoal Grey"),
+                ("the-345-hat-distressed-khaki-dot-png", "Khaki"),
             ],
             "roman": [
-                ("the-345-hat-distressed-black-charcoal-roman", "Black"),
-                ("the-345-hat-distressed-black-charcoal-roman", "Charcoal Grey"),
-                ("the-345-hat-distressed-khaki-roman", "Khaki"),
+                ("the-345-hat-distressed-black-charcoal-roman-png", "Black"),
+                ("the-345-hat-distressed-black-charcoal-roman-png", "Charcoal Grey"),
+                ("the-345-hat-distressed-khaki-roman-png", "Khaki"),
             ],
         },
     },
@@ -317,7 +316,7 @@ PRODUCTS = [
         "price": {"base": 28, "plus": 28},
         "category": "hats",
         "placement": "embroidered mark on the front, love yours. on the back",
-        "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
+        "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the caps.",
         "note": LOGO_NOTE,
         "details": ["100% cotton", "6-panel unstructured cap, low profile", "soft crown", "4 rows of visible stitching on the visor", "adjustable strap", "head circumference 21.65″ to 25.19″"],
         "colors": [
@@ -327,14 +326,45 @@ PRODUCTS = [
         ],
         "styles": {
             "dot": [
-                ("the-345-hat-denim-dot", "Black"),
-                ("the-345-hat-denim-dot", "Blue"),
-                ("the-345-hat-denim-dot", "Light Blue"),
+                ("the-345-hat-denim-dot-png", "Black"),
+                ("the-345-hat-denim-dot-png", "Blue"),
+                ("the-345-hat-denim-dot-png", "Light Blue"),
             ],
             "roman": [
-                ("the-345-hat-denim-roman", "Black"),
-                ("the-345-hat-denim-roman", "Blue"),
-                ("the-345-hat-denim-roman", "Light Blue"),
+                ("the-345-hat-denim-roman-png", "Black"),
+                ("the-345-hat-denim-roman-png", "Blue"),
+                ("the-345-hat-denim-roman-png", "Light Blue"),
+            ],
+        },
+    },
+    {
+        "id": "hat-corduroy",
+        "name": "the corduroy cap",
+        "short": "soft, warm, a little vintage",
+        "price": {"base": 28, "plus": 28},
+        "category": "hats",
+        "placement": "embroidered mark on the front, love yours. on the back",
+        "intro": "a vintage corduroy cap, six panels, unstructured, with an adjustable strap and a gold-colored buckle. the mark on the front, love yours. on the back. the warmest of the caps, and it pairs with the browns and creams.",
+        "note": LOGO_NOTE,
+        "details": ["100% cotton corduroy", "6-panel unstructured cap, low profile", "cotton twill sweatband and taping", "6 embroidered eyelets", "adjustable strap with a gold-colored metal buckle", "head circumference 20″ to 22″"],
+        "colors": [
+            ("the-345-hat-corduroy", "Black"),
+            ("the-345-hat-corduroy", "Brown"),
+            ("the-345-hat-corduroy", "Burgundy"),
+            ("the-345-hat-corduroy", "Olive"),
+        ],
+        "styles": {
+            "dot": [
+                ("the-345-hat-corduroy-dot", "Black"),
+                ("the-345-hat-corduroy-dot", "Brown"),
+                ("the-345-hat-corduroy-dot", "Burgundy"),
+                ("the-345-hat-corduroy-dot", "Olive"),
+            ],
+            "roman": [
+                ("the-345-hat-corduroy-roman-png", "Black"),
+                ("the-345-hat-corduroy-roman-png", "Brown"),
+                ("the-345-hat-corduroy-roman-png", "Burgundy"),
+                ("the-345-hat-corduroy-roman-png", "Olive"),
             ],
         },
     },
@@ -367,13 +397,14 @@ GOOD_TO_KNOW = {
     "beanie": ["one size fits most", "hand wash, lay flat to dry"],
     "hat-distressed": ["one size, adjustable hook and loop closure", "distressing varies piece to piece, that is the point", "spot clean"],
     "hat-denim": ["one size, adjustable strap", "pigment dye softens and fades with wear", "spot clean"],
+    "hat-corduroy": ["one size, adjustable strap with a metal buckle", "fits heads 20 to 22 inches", "spot clean"],
     "blanket": ["50 x 60 inches", "machine wash cold, tumble low", "ships in its own box"],
 }
 SHARED_KNOW = ["made to order, one at a time, by our print partner printful", "ships from the us, usually 5 to 9 business days door to door", "wrong size or a flaw in the print: send us a note from the support page within 30 days and we will make it right"]
 
 # printful's hat mockups sit smaller in their frame than the garments; scale them so every
 # tile reads the same size (measured: garments fill ~95% of the mockup, hats ~79%).
-ZOOM = {"beanie": 1.19, "hat-distressed": 1.19, "hat-denim": 1.19}
+ZOOM = {"beanie": 1.19, "hat-distressed": 1.19, "hat-denim": 1.19, "hat-corduroy": 1.19}
 # mockups that are not transparent: blend their near-white background into the tile
 BLEND = {"hat-denim"}
 
@@ -383,7 +414,8 @@ STORE = "https://345loveyours.printful.me"
 COST = {
     "hoodie": (36.83, 40.83), "oversized-hoodie": (42.22, 46.22), "crewneck": (33.23, 37.23),
     "tee-mens": (24.17, 28.17), "tee-womens": (21.73, 21.73), "beanie": (16.51, 16.51),
-    "hat-distressed": (19.00, 19.00), "hat-denim": (19.86, 19.86), "blanket": (46.82, 46.82),
+    "hat-distressed": (19.00, 19.00), "hat-denim": (19.86, 19.86), "hat-corduroy": (19.26, 19.26),
+    "blanket": (46.82, 46.82),
 }
 GIVE = {"ops": 0.05, "tax": 0.08, "stripe_pct": 0.029, "stripe_fixed": 0.30, "ship": 5.99}
 def give_breakdown(price, cost):
