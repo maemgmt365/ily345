@@ -20,12 +20,27 @@ TEMPLATES = {  # printful listing id -> product template id (same colour set)
     659103: 95280297, 659081: 95253882, 659079: 95253842, 659101: 95254482, 659099: 95254467,
     659088: 95254210, 659086: 95254203, 659084: 95254159, 659047: 95253239, 659001: 95253329,
     658998: 95253432, 658997: 95253561,
+    # 28 oct 2026: the black and white 345 hoodie went from mark size 1.80 to 2.00, so they were
+    # republished (these replace 659079 and 659081), and charcoal heather / dust were added.
+    1207351: 95253842, 1207360: 95253882, 1206867: 95253329,
+    # dot style
+    1207354: 109467030, 1207363: 109467665, 1206712: 109467836, 1206724: 109468016, 1206734: 109468030,
+    1206852: 109468331, 1206854: 109468347, 1206858: 109468368, 1206861: 109468379,
+    1207395: 109488438, 1207407: 109488451, 1207436: 109487533, 1207448: 109487548,
+    1207459: 109487560, 1207467: 109487578, 1207478: 109487592,
+    # roman style (sized so it spans the same width as 3 | 4 | 5)
+    1207358: 109467363, 1207367: 109467749, 1207371: 109467853, 1207376: 109468018, 1207381: 109468040,
+    1207341: 109468336, 1207343: 109468357, 1207344: 109468372, 1207346: 109468389,
+    1207399: 109488442, 1207412: 109488463, 1207443: 109487538, 1207456: 109487554,
+    1207464: 109487564, 1207474: 109487581, 1207479: 109487595,
 }
 # which mockup is the real back view (with the message) per Printful catalog product:
-# printful's mock order is front, left, right, back for tees and sweatshirts.
+# the first listings (oct 2026) came out front, left, right, back for tees and sweatshirts.
+# Listings published from 28 oct put the back second already, so only the originals are reordered.
 BACK_INDEX = {508: 2, 411: 3}
-def reorder_mocks(pid, mocks):
-    i = BACK_INDEX.get(pid)
+ORIGINAL_LISTINGS = {659109, 659082, 659099, 659101}
+def reorder_mocks(pid, mocks, listing=None):
+    i = BACK_INDEX.get(pid) if listing in ORIGINAL_LISTINGS else None
     if i is None or i >= len(mocks):
         return mocks
     return [mocks[0], mocks[i]] + [m for j, m in enumerate(mocks) if j not in (0, i)]
@@ -48,6 +63,19 @@ BACK_NOTE = "this piece carries the 3 | 4 | 5 message on the back, a way to say 
 SLEEVE_NOTE = "this piece has a blank back. \"love yours.\" is embroidered on the sleeve instead, a more subtle, everyday reminder. the hope is that one day 3 | 4 | 5 speaks loud enough on its own that we won't need to print the message at all."
 LOGO_NOTE = "the 3 | 4 | 5 mark, embroidered. small on purpose."
 
+# Styles: the same garment and colours with a different mark. "classic" lives in each product's
+# "colors"; the other styles live in its "styles" dict, one list of (printful slug, colour) per style,
+# each pointing at the Printful listing that carries that mark. A style with no listings yet is
+# simply left out, so the site only offers what can be ordered.
+STYLES = [("classic", "3 | 4 | 5"), ("dot", "3 · 4 · 5"), ("roman", "III · IV · V")]
+STYLE_LINE = {
+    "classic": "the original mark: 3 | 4 | 5, with the pipes.",
+    "dot": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "roman": "the same three numbers, written the old way: III · IV · V.",
+}
+def restyle(text, label):
+    return text.replace("the 3 | 4 | 5 mark", f"the {label} mark")
+
 # Order here is the order on the site. Each colour points at the Printful listing it lives in.
 PRODUCTS = [
     {
@@ -61,10 +89,11 @@ PRODUCTS = [
         "note": BACK_NOTE,
         "details": ["100% cotton face", "65% ring-spun cotton, 35% polyester", "front pouch pocket", "self-fabric patch on the back", "matching flat drawstrings", "3-panel hood", "unisex fit"],
         "colors": [
-            ("hoodie-345-message", "Black"),
-            ("hoodie-345-message", "Vintage Black"),
-            ("hoodie-345-message", "Latte"),
-            ("hoodie-345-message-6908305645ab5", "White"),
+            ("the-345-hoodie-classic", "Black"),
+            ("the-345-hoodie-classic", "Vintage Black"),
+            ("the-345-hoodie-classic", "Charcoal Heather"),
+            ("the-345-hoodie-classic", "Latte"),
+            ("the-345-hoodie-white-classic", "White"),
             ("limited-color-hoodie-white-logo", "Maroon", "limited"),
             ("limited-color-hoodie-white-logo", "Forest Green", "limited"),
             ("limited-color-hoodie-white-logo", "Adobe", "limited"),
@@ -72,6 +101,34 @@ PRODUCTS = [
             ("limited-color-hoodie-white-logo", "Team Gold", "limited"),
             ("limited-color-hoodie-white-logo", "Carolina Blue", "limited"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-hoodie-dot-v2", "Black"),
+                ("the-345-hoodie-dot-v2", "Vintage Black"),
+                ("the-345-hoodie-dot-v2", "Charcoal Heather"),
+                ("the-345-hoodie-dot-v2", "Latte"),
+                ("the-345-hoodie-white-dot-v2", "White"),
+                ("the-345-hoodie-colors-dot", "Maroon", "limited"),
+                ("the-345-hoodie-colors-dot", "Forest Green", "limited"),
+                ("the-345-hoodie-colors-dot", "Adobe", "limited"),
+                ("the-345-hoodie-colors-dot", "Dusty Rose", "limited"),
+                ("the-345-hoodie-colors-dot", "Team Gold", "limited"),
+                ("the-345-hoodie-colors-dot", "Carolina Blue", "limited"),
+            ],
+            "roman": [
+                ("the-345-hoodie-roman-v2", "Black"),
+                ("the-345-hoodie-roman-v2", "Vintage Black"),
+                ("the-345-hoodie-roman-v2", "Charcoal Heather"),
+                ("the-345-hoodie-roman-v2", "Latte"),
+                ("the-345-hoodie-white-roman-v2", "White"),
+                ("the-345-hoodie-colors-roman-v2", "Maroon", "limited"),
+                ("the-345-hoodie-colors-roman-v2", "Forest Green", "limited"),
+                ("the-345-hoodie-colors-roman-v2", "Adobe", "limited"),
+                ("the-345-hoodie-colors-roman-v2", "Dusty Rose", "limited"),
+                ("the-345-hoodie-colors-roman-v2", "Team Gold", "limited"),
+                ("the-345-hoodie-colors-roman-v2", "Carolina Blue", "limited"),
+            ],
+        },
     },
     {
         "id": "oversized-hoodie",
@@ -88,7 +145,24 @@ PRODUCTS = [
             ("oversized-hoodie", "Asphalt"),
             ("oversized-hoodie", "Vintage Brown"),
             ("love-yours-oversized-logo-hoodie", "White"),
+            ("the-345-hoodie-oversized-dust", "Dust"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-hoodie-oversized-dot", "Vintage Black"),
+                ("the-345-hoodie-oversized-dot", "Asphalt"),
+                ("the-345-hoodie-oversized-dot", "Vintage Brown"),
+                ("the-345-hoodie-oversized-white-dust-dot", "White"),
+                ("the-345-hoodie-oversized-white-dust-dot", "Dust"),
+            ],
+            "roman": [
+                ("the-345-hoodie-oversized-roman", "Vintage Black"),
+                ("the-345-hoodie-oversized-roman", "Asphalt"),
+                ("the-345-hoodie-oversized-roman", "Vintage Brown"),
+                ("the-345-hoodie-oversized-white-dust-roman", "White"),
+                ("the-345-hoodie-oversized-white-dust-roman", "Dust"),
+            ],
+        },
     },
     {
         "id": "crewneck",
@@ -106,6 +180,20 @@ PRODUCTS = [
             ("crewneck-345-meaning", "Latte"),
             ("crewneck-345-meaning-690836b5d8a89", "White"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-crewneck-dot", "Black"),
+                ("the-345-crewneck-dot", "Vintage Black"),
+                ("the-345-crewneck-dot", "Latte"),
+                ("the-345-crewneck-white-dot", "White"),
+            ],
+            "roman": [
+                ("the-345-crewneck-roman-v2", "Black"),
+                ("the-345-crewneck-roman-v2", "Vintage Black"),
+                ("the-345-crewneck-roman-v2", "Latte"),
+                ("the-345-crewneck-white-roman-v2", "White"),
+            ],
+        },
     },
     {
         "id": "tee-mens",
@@ -121,6 +209,16 @@ PRODUCTS = [
             ("t-shirt-345-message", "Black"),
             ("t-shirt-black-logo-embroidered", "White"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-tee-mens-dot", "Black"),
+                ("the-345-tee-mens-white-dot", "White"),
+            ],
+            "roman": [
+                ("the-345-tee-mens-roman", "Black"),
+                ("the-345-tee-mens-white-roman", "White"),
+            ],
+        },
     },
     {
         "id": "tee-womens",
@@ -138,6 +236,20 @@ PRODUCTS = [
             ("t-shirt-345-message-69083f03d15f5", "Latte"),
             ("t-shirt-345-message-69083f32eb958", "White"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-tee-womens-dot", "Black"),
+                ("the-345-tee-womens-dot", "Vintage Black"),
+                ("the-345-tee-womens-dot", "Latte"),
+                ("the-345-tee-womens-white-dot", "White"),
+            ],
+            "roman": [
+                ("the-345-tee-womens-roman", "Black"),
+                ("the-345-tee-womens-roman", "Vintage Black"),
+                ("the-345-tee-womens-roman", "Latte"),
+                ("the-345-tee-womens-white-roman", "White"),
+            ],
+        },
     },
     {
         "id": "beanie",
@@ -155,6 +267,20 @@ PRODUCTS = [
             ("hipster-beanie-black-logo", "Athletic Heather"),
             ("hipster-beanie-black-logo", "Ecru"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-beanie-white-logo-dot", "Black"),
+                ("the-345-beanie-white-logo-dot", "Walnut"),
+                ("the-345-beanie-black-logo-dot", "Athletic Heather"),
+                ("the-345-beanie-black-logo-dot", "Ecru"),
+            ],
+            "roman": [
+                ("the-345-beanie-white-logo-roman", "Black"),
+                ("the-345-beanie-white-logo-roman", "Walnut"),
+                ("the-345-beanie-black-logo-roman", "Athletic Heather"),
+                ("the-345-beanie-black-logo-roman", "Ecru"),
+            ],
+        },
     },
     {
         "id": "hat-distressed",
@@ -171,6 +297,18 @@ PRODUCTS = [
             ("love-yours-distressed-hat-69081cf23bb9d", "Charcoal Grey"),
             ("love-yours-distressed-hat", "Khaki"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-hat-distressed-black-charcoal-dot", "Black"),
+                ("the-345-hat-distressed-black-charcoal-dot", "Charcoal Grey"),
+                ("the-345-hat-distressed-khaki-dot", "Khaki"),
+            ],
+            "roman": [
+                ("the-345-hat-distressed-black-charcoal-roman", "Black"),
+                ("the-345-hat-distressed-black-charcoal-roman", "Charcoal Grey"),
+                ("the-345-hat-distressed-khaki-roman", "Khaki"),
+            ],
+        },
     },
     {
         "id": "hat-denim",
@@ -187,6 +325,18 @@ PRODUCTS = [
             ("denim-hat-white-logo", "Blue"),
             ("denim-hat-white-logo", "Light Blue"),
         ],
+        "styles": {
+            "dot": [
+                ("the-345-hat-denim-dot", "Black"),
+                ("the-345-hat-denim-dot", "Blue"),
+                ("the-345-hat-denim-dot", "Light Blue"),
+            ],
+            "roman": [
+                ("the-345-hat-denim-roman", "Black"),
+                ("the-345-hat-denim-roman", "Blue"),
+                ("the-345-hat-denim-roman", "Light Blue"),
+            ],
+        },
     },
     {
         "id": "blanket",
@@ -246,8 +396,8 @@ def give_breakdown(price, cost):
 out = []
 for p in PRODUCTS:
     colors = []
-    base_pf = min(pr for e in p["colors"] for pr in [sz[2] for sz in raw[e[0]]["colors"][[c["color"] for c in raw[e[0]]["colors"]].index(e[1])]["sizes"]])
-    for entry in p["colors"]:
+    style_entries = [("classic", e) for e in p["colors"]] + [(sid, e) for sid, _ in STYLES[1:] for e in p.get("styles", {}).get(sid, [])]
+    for sid, entry in style_entries:
         slug, cname = entry[0], entry[1]
         tag = entry[2] if len(entry) > 2 else None
         src = raw.get(slug)
@@ -258,11 +408,13 @@ for p in PRODUCTS:
             sys.exit(f"colour {cname} not in {slug}")
         colors.append({
             "name": c["color"],
+            "style": sid,
+            "styleLabel": dict(STYLES)[sid],
             "hex": c["hex"],
             "tag": tag,
             "printful": f"{STORE}/product/{slug}",
             "listing": src["name"],
-            "images": reorder_mocks(src["pid"], c["mocks"]),
+            "images": reorder_mocks(src["pid"], c["mocks"], src["id"]),
             "template": TEMPLATES[src["id"]],
             "sizes": [{"size": s or "One size", "variant": vid, "catalogVariant": catalog_variant(src["pid"], c["color"], s or "One size"), "price": (p["price"]["plus"] if (s or "") in ("2XL","3XL","4XL") else p["price"]["base"]), "cost": (COST[p["id"]][1] if (s or "") in ("2XL","3XL","4XL") else COST[p["id"]][0]), "printfulRetail": price} for s, vid, price in c["sizes"]],
         })
@@ -274,6 +426,9 @@ for p in PRODUCTS:
         "short": p["short"], "intro": p["intro"], "message": MESSAGE, "note": p["note"], "details": p["details"],
         "know": GOOD_TO_KNOW[p["id"]] + SHARED_KNOW,
         "give": give_breakdown(p["price"]["base"], COST[p["id"]][0]),
+        "styles": [{"id": sid, "label": label} for sid, label in STYLES if any(c["style"] == sid for c in colors)],
+        "styleCopy": {sid: {"line": STYLE_LINE[sid], "intro": restyle(p["intro"], label), "note": restyle(p["note"], label), "placement": restyle(p["placement"], label)}
+                      for sid, label in STYLES if any(c["style"] == sid for c in colors)},
         "colors": colors,
     })
 
