@@ -4140,8 +4140,8 @@
   "name": "the 345 sweats",
   "category": "sweats",
   "placement": "embroidered mark on the left thigh",
-  "price": 46,
-  "priceMax": 46,
+  "price": 44,
+  "priceMax": 44,
   "opaque": null,
   "fill": false,
   "zoom": 1,
@@ -4172,12 +4172,12 @@
    "wrong size or a flaw in the print: send us a note from the support page within 30 days and we will make it right"
   ],
   "give": {
-   "price": 46,
+   "price": 44,
    "cost": 30.04,
-   "stripe": 1.81,
+   "stripe": 1.75,
    "tax": 2.4,
-   "ops": 2.3,
-   "gives": 9.45
+   "ops": 2.2,
+   "gives": 7.61
   },
   "styles": [
    {
@@ -4235,7 +4235,7 @@
       "size": "XS",
       "variant": 19292835,
       "catalogVariant": 11265,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4243,7 +4243,7 @@
       "size": "S",
       "variant": 19292836,
       "catalogVariant": 11266,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4251,7 +4251,7 @@
       "size": "M",
       "variant": 19292837,
       "catalogVariant": 11267,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4259,7 +4259,7 @@
       "size": "L",
       "variant": 19292838,
       "catalogVariant": 11268,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4267,7 +4267,7 @@
       "size": "XL",
       "variant": 19292839,
       "catalogVariant": 11269,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4275,7 +4275,7 @@
       "size": "2XL",
       "variant": 19292840,
       "catalogVariant": 11270,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4302,7 +4302,7 @@
       "size": "XS",
       "variant": 19292847,
       "catalogVariant": 11283,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4310,7 +4310,7 @@
       "size": "S",
       "variant": 19292848,
       "catalogVariant": 11284,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4318,7 +4318,7 @@
       "size": "M",
       "variant": 19292849,
       "catalogVariant": 11285,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4326,7 +4326,7 @@
       "size": "L",
       "variant": 19292850,
       "catalogVariant": 11286,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4334,7 +4334,7 @@
       "size": "XL",
       "variant": 19292851,
       "catalogVariant": 11287,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4342,7 +4342,7 @@
       "size": "2XL",
       "variant": 19292852,
       "catalogVariant": 11288,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4369,7 +4369,7 @@
       "size": "XS",
       "variant": 19292721,
       "catalogVariant": 11271,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4377,7 +4377,7 @@
       "size": "S",
       "variant": 19292722,
       "catalogVariant": 11272,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4385,7 +4385,7 @@
       "size": "M",
       "variant": 19292723,
       "catalogVariant": 11273,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4393,7 +4393,7 @@
       "size": "L",
       "variant": 19292724,
       "catalogVariant": 11274,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4401,7 +4401,7 @@
       "size": "XL",
       "variant": 19292725,
       "catalogVariant": 11275,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4409,7 +4409,7 @@
       "size": "2XL",
       "variant": 19292726,
       "catalogVariant": 11276,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4436,7 +4436,7 @@
       "size": "XS",
       "variant": 19292841,
       "catalogVariant": 13839,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4444,7 +4444,7 @@
       "size": "S",
       "variant": 19292842,
       "catalogVariant": 13840,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4452,7 +4452,7 @@
       "size": "M",
       "variant": 19292843,
       "catalogVariant": 13841,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4460,7 +4460,7 @@
       "size": "L",
       "variant": 19292844,
       "catalogVariant": 13842,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4468,7 +4468,7 @@
       "size": "XL",
       "variant": 19292845,
       "catalogVariant": 13843,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4476,7 +4476,7 @@
       "size": "2XL",
       "variant": 19292846,
       "catalogVariant": 13844,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4503,7 +4503,7 @@
       "size": "XS",
       "variant": 19292853,
       "catalogVariant": 13833,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4511,7 +4511,7 @@
       "size": "S",
       "variant": 19292854,
       "catalogVariant": 13834,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4519,7 +4519,7 @@
       "size": "M",
       "variant": 19292855,
       "catalogVariant": 13835,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4527,7 +4527,7 @@
       "size": "L",
       "variant": 19292856,
       "catalogVariant": 13836,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4535,7 +4535,7 @@
       "size": "XL",
       "variant": 19292857,
       "catalogVariant": 13837,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4543,7 +4543,7 @@
       "size": "2XL",
       "variant": 19292858,
       "catalogVariant": 13838,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4570,7 +4570,7 @@
       "size": "XS",
       "variant": 19292873,
       "catalogVariant": 11265,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4578,7 +4578,7 @@
       "size": "S",
       "variant": 19292874,
       "catalogVariant": 11266,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4586,7 +4586,7 @@
       "size": "M",
       "variant": 19292875,
       "catalogVariant": 11267,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4594,7 +4594,7 @@
       "size": "L",
       "variant": 19292876,
       "catalogVariant": 11268,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4602,7 +4602,7 @@
       "size": "XL",
       "variant": 19292877,
       "catalogVariant": 11269,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4610,7 +4610,7 @@
       "size": "2XL",
       "variant": 19292878,
       "catalogVariant": 11270,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4637,7 +4637,7 @@
       "size": "XS",
       "variant": 19292885,
       "catalogVariant": 11283,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4645,7 +4645,7 @@
       "size": "S",
       "variant": 19292886,
       "catalogVariant": 11284,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4653,7 +4653,7 @@
       "size": "M",
       "variant": 19292887,
       "catalogVariant": 11285,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4661,7 +4661,7 @@
       "size": "L",
       "variant": 19292888,
       "catalogVariant": 11286,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4669,7 +4669,7 @@
       "size": "XL",
       "variant": 19292889,
       "catalogVariant": 11287,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4677,7 +4677,7 @@
       "size": "2XL",
       "variant": 19292890,
       "catalogVariant": 11288,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4704,7 +4704,7 @@
       "size": "XS",
       "variant": 19292748,
       "catalogVariant": 11271,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4712,7 +4712,7 @@
       "size": "S",
       "variant": 19292749,
       "catalogVariant": 11272,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4720,7 +4720,7 @@
       "size": "M",
       "variant": 19292750,
       "catalogVariant": 11273,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4728,7 +4728,7 @@
       "size": "L",
       "variant": 19292751,
       "catalogVariant": 11274,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4736,7 +4736,7 @@
       "size": "XL",
       "variant": 19292752,
       "catalogVariant": 11275,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4744,7 +4744,7 @@
       "size": "2XL",
       "variant": 19292753,
       "catalogVariant": 11276,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4771,7 +4771,7 @@
       "size": "XS",
       "variant": 19292879,
       "catalogVariant": 13839,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4779,7 +4779,7 @@
       "size": "S",
       "variant": 19292880,
       "catalogVariant": 13840,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4787,7 +4787,7 @@
       "size": "M",
       "variant": 19292881,
       "catalogVariant": 13841,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4795,7 +4795,7 @@
       "size": "L",
       "variant": 19292882,
       "catalogVariant": 13842,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4803,7 +4803,7 @@
       "size": "XL",
       "variant": 19292883,
       "catalogVariant": 13843,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4811,7 +4811,7 @@
       "size": "2XL",
       "variant": 19292884,
       "catalogVariant": 13844,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4838,7 +4838,7 @@
       "size": "XS",
       "variant": 19292891,
       "catalogVariant": 13833,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4846,7 +4846,7 @@
       "size": "S",
       "variant": 19292892,
       "catalogVariant": 13834,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4854,7 +4854,7 @@
       "size": "M",
       "variant": 19292893,
       "catalogVariant": 13835,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4862,7 +4862,7 @@
       "size": "L",
       "variant": 19292894,
       "catalogVariant": 13836,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4870,7 +4870,7 @@
       "size": "XL",
       "variant": 19292895,
       "catalogVariant": 13837,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4878,7 +4878,7 @@
       "size": "2XL",
       "variant": 19292896,
       "catalogVariant": 13838,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4905,7 +4905,7 @@
       "size": "XS",
       "variant": 19293041,
       "catalogVariant": 11265,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4913,7 +4913,7 @@
       "size": "S",
       "variant": 19293042,
       "catalogVariant": 11266,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4921,7 +4921,7 @@
       "size": "M",
       "variant": 19293043,
       "catalogVariant": 11267,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4929,7 +4929,7 @@
       "size": "L",
       "variant": 19293044,
       "catalogVariant": 11268,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4937,7 +4937,7 @@
       "size": "XL",
       "variant": 19293045,
       "catalogVariant": 11269,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4945,7 +4945,7 @@
       "size": "2XL",
       "variant": 19293046,
       "catalogVariant": 11270,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -4972,7 +4972,7 @@
       "size": "XS",
       "variant": 19293053,
       "catalogVariant": 11283,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4980,7 +4980,7 @@
       "size": "S",
       "variant": 19293054,
       "catalogVariant": 11284,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4988,7 +4988,7 @@
       "size": "M",
       "variant": 19293055,
       "catalogVariant": 11285,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -4996,7 +4996,7 @@
       "size": "L",
       "variant": 19293056,
       "catalogVariant": 11286,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5004,7 +5004,7 @@
       "size": "XL",
       "variant": 19293057,
       "catalogVariant": 11287,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5012,7 +5012,7 @@
       "size": "2XL",
       "variant": 19293058,
       "catalogVariant": 11288,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -5039,7 +5039,7 @@
       "size": "XS",
       "variant": 19292760,
       "catalogVariant": 11271,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5047,7 +5047,7 @@
       "size": "S",
       "variant": 19292761,
       "catalogVariant": 11272,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5055,7 +5055,7 @@
       "size": "M",
       "variant": 19292762,
       "catalogVariant": 11273,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5063,7 +5063,7 @@
       "size": "L",
       "variant": 19292763,
       "catalogVariant": 11274,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5071,7 +5071,7 @@
       "size": "XL",
       "variant": 19292764,
       "catalogVariant": 11275,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5079,7 +5079,7 @@
       "size": "2XL",
       "variant": 19292765,
       "catalogVariant": 11276,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -5106,7 +5106,7 @@
       "size": "XS",
       "variant": 19293047,
       "catalogVariant": 13839,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5114,7 +5114,7 @@
       "size": "S",
       "variant": 19293048,
       "catalogVariant": 13840,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5122,7 +5122,7 @@
       "size": "M",
       "variant": 19293049,
       "catalogVariant": 13841,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5130,7 +5130,7 @@
       "size": "L",
       "variant": 19293050,
       "catalogVariant": 13842,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5138,7 +5138,7 @@
       "size": "XL",
       "variant": 19293051,
       "catalogVariant": 13843,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5146,7 +5146,7 @@
       "size": "2XL",
       "variant": 19293052,
       "catalogVariant": 13844,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -5173,7 +5173,7 @@
       "size": "XS",
       "variant": 19293059,
       "catalogVariant": 13833,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5181,7 +5181,7 @@
       "size": "S",
       "variant": 19293060,
       "catalogVariant": 13834,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5189,7 +5189,7 @@
       "size": "M",
       "variant": 19293061,
       "catalogVariant": 13835,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5197,7 +5197,7 @@
       "size": "L",
       "variant": 19293062,
       "catalogVariant": 13836,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5205,7 +5205,7 @@
       "size": "XL",
       "variant": 19293063,
       "catalogVariant": 13837,
-      "price": 46,
+      "price": 44,
       "cost": 30.04,
       "printfulRetail": null
      },
@@ -5213,7 +5213,7 @@
       "size": "2XL",
       "variant": 19293064,
       "catalogVariant": 13838,
-      "price": 46,
+      "price": 44,
       "cost": 32.04,
       "printfulRetail": null
      }
@@ -8170,19 +8170,19 @@
     "styleLabel": "3 | 4 | 5",
     "hex": "#181818",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy",
-    "listing": "the-345-hat-corduroy",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-v2",
+    "listing": "the-345-hat-corduroy-v2",
     "images": [
-     "192883166ae22285b1140",
-     "192883166ae22285d4ffc",
-     "192883166ae22285ed3b0",
-     "192883166ae222861a5c7"
+     "193020336ae277233796f",
+     "193020336ae277235ac99",
+     "193020336ae2772375bd4",
+     "193020336ae27723956fd"
     ],
     "template": 109491295,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288316,
+      "variant": 19302033,
       "catalogVariant": 16416,
       "price": 28,
       "cost": 19.26,
@@ -8196,19 +8196,19 @@
     "styleLabel": "3 | 4 | 5",
     "hex": "#70453b",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy",
-    "listing": "the-345-hat-corduroy",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-v2",
+    "listing": "the-345-hat-corduroy-v2",
     "images": [
-     "192883176ae2228632bd4",
-     "192883176ae2228654926",
-     "192883176ae22286722cb",
-     "192883176ae222868de7b"
+     "193020346ae27723b23a0",
+     "193020346ae27723d3341",
+     "193020346ae27724181ff",
+     "193020346ae2772450e96"
     ],
     "template": 109491295,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288317,
+      "variant": 19302034,
       "catalogVariant": 16418,
       "price": 28,
       "cost": 19.26,
@@ -8222,19 +8222,19 @@
     "styleLabel": "3 | 4 | 5",
     "hex": "#b94a44",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy",
-    "listing": "the-345-hat-corduroy",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-v2",
+    "listing": "the-345-hat-corduroy-v2",
     "images": [
-     "192883196ae222872e4bf",
-     "192883196ae2228755bf5",
-     "192883196ae222877714d",
-     "192883196ae222878fac1"
+     "193020366ae2772506b37",
+     "193020366ae27725261ef",
+     "193020366ae2772542067",
+     "193020366ae277255dfde"
     ],
     "template": 109491295,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288319,
+      "variant": 19302036,
       "catalogVariant": 16419,
       "price": 28,
       "cost": 19.26,
@@ -8248,19 +8248,19 @@
     "styleLabel": "3 | 4 | 5",
     "hex": "#5e5a4f",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy",
-    "listing": "the-345-hat-corduroy",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-v2",
+    "listing": "the-345-hat-corduroy-v2",
     "images": [
-     "192883186ae22286b4e15",
-     "192883186ae22286d37d7",
-     "192883186ae22286f0e3b",
-     "192883186ae2228718815"
+     "193020356ae2772472c19",
+     "193020356ae27724a151e",
+     "193020356ae27724baf61",
+     "193020356ae27724db92e"
     ],
     "template": 109491295,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288318,
+      "variant": 19302035,
       "catalogVariant": 16420,
       "price": 28,
       "cost": 19.26,
@@ -8274,19 +8274,19 @@
     "styleLabel": "3 · 4 · 5",
     "hex": "#181818",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot",
-    "listing": "the-345-hat-corduroy-dot",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot-v2",
+    "listing": "the-345-hat-corduroy-dot-v2",
     "images": [
-     "192882746ae222437422c",
-     "192882746ae2224389651",
-     "192882746ae22243a3cb6",
-     "192882746ae22243c0974"
+     "193020666ae27797df832",
+     "193020666ae277980564f",
+     "193020666ae277981cb27",
+     "193020666ae277983317d"
     ],
     "template": 109491351,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288274,
+      "variant": 19302066,
       "catalogVariant": 16416,
       "price": 28,
       "cost": 19.26,
@@ -8300,19 +8300,19 @@
     "styleLabel": "3 · 4 · 5",
     "hex": "#70453b",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot",
-    "listing": "the-345-hat-corduroy-dot",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot-v2",
+    "listing": "the-345-hat-corduroy-dot-v2",
     "images": [
-     "192882756ae22243d89c2",
-     "192882756ae22243f010d",
-     "192882756ae22244166f5",
-     "192882756ae22244369b3"
+     "193020676ae277984896a",
+     "193020676ae277986d562",
+     "193020676ae27798839e0",
+     "193020676ae277989c3b6"
     ],
     "template": 109491351,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288275,
+      "variant": 19302067,
       "catalogVariant": 16418,
       "price": 28,
       "cost": 19.26,
@@ -8326,19 +8326,19 @@
     "styleLabel": "3 · 4 · 5",
     "hex": "#b94a44",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot",
-    "listing": "the-345-hat-corduroy-dot",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot-v2",
+    "listing": "the-345-hat-corduroy-dot-v2",
     "images": [
-     "192882776ae22244c2d1f",
-     "192882776ae22244de7d8",
-     "192882776ae2224506686",
-     "192882776ae222452430a"
+     "193020696ae277992d40f",
+     "193020696ae2779955f6a",
+     "193020696ae277997183a",
+     "193020696ae277998e4f5"
     ],
     "template": 109491351,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288277,
+      "variant": 19302069,
       "catalogVariant": 16419,
       "price": 28,
       "cost": 19.26,
@@ -8352,19 +8352,19 @@
     "styleLabel": "3 · 4 · 5",
     "hex": "#5e5a4f",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot",
-    "listing": "the-345-hat-corduroy-dot",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-dot-v2",
+    "listing": "the-345-hat-corduroy-dot-v2",
     "images": [
-     "192882766ae22244526d9",
-     "192882766ae222446e405",
-     "192882766ae222448be44",
-     "192882766ae22244a7ea2"
+     "193020686ae27798b7905",
+     "193020686ae27798d5084",
+     "193020686ae27798ef6bd",
+     "193020686ae27799150a9"
     ],
     "template": 109491351,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19288276,
+      "variant": 19302068,
       "catalogVariant": 16420,
       "price": 28,
       "cost": 19.26,
@@ -8378,19 +8378,19 @@
     "styleLabel": "III · IV · V",
     "hex": "#181818",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-png",
-    "listing": "the-345-hat-corduroy-roman-png",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-v2",
+    "listing": "the-345-hat-corduroy-roman-v2",
     "images": [
-     "192916916ae2315011993",
-     "192916916ae2315035a07",
-     "192916916ae231504d742",
-     "192916916ae2315064c2f"
+     "193021586ae2783352545",
+     "193021586ae278336d61e",
+     "193021586ae2783387f9e",
+     "193021586ae27833a51b5"
     ],
     "template": 109491369,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19291691,
+      "variant": 19302158,
       "catalogVariant": 16416,
       "price": 28,
       "cost": 19.26,
@@ -8404,19 +8404,19 @@
     "styleLabel": "III · IV · V",
     "hex": "#70453b",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-png",
-    "listing": "the-345-hat-corduroy-roman-png",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-v2",
+    "listing": "the-345-hat-corduroy-roman-v2",
     "images": [
-     "192916926ae231507da5f",
-     "192916926ae2315097ed8",
-     "192916926ae23150af340",
-     "192916926ae23150e6d07"
+     "193021596ae27833cbe68",
+     "193021596ae27833f2ac6",
+     "193021596ae2783418bd2",
+     "193021596ae278343fb34"
     ],
     "template": 109491369,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19291692,
+      "variant": 19302159,
       "catalogVariant": 16418,
       "price": 28,
       "cost": 19.26,
@@ -8430,19 +8430,19 @@
     "styleLabel": "III · IV · V",
     "hex": "#b94a44",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-png",
-    "listing": "the-345-hat-corduroy-roman-png",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-v2",
+    "listing": "the-345-hat-corduroy-roman-v2",
     "images": [
-     "192916946ae2315188722",
-     "192916946ae23151af46a",
-     "192916946ae23151c7c6e",
-     "192916946ae23151eec99"
+     "193021616ae27834d7f7d",
+     "193021616ae27835014d9",
+     "193021616ae278351ebf7",
+     "193021616ae2783545258"
     ],
     "template": 109491369,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19291694,
+      "variant": 19302161,
       "catalogVariant": 16419,
       "price": 28,
       "cost": 19.26,
@@ -8456,19 +8456,19 @@
     "styleLabel": "III · IV · V",
     "hex": "#5e5a4f",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-png",
-    "listing": "the-345-hat-corduroy-roman-png",
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-corduroy-roman-v2",
+    "listing": "the-345-hat-corduroy-roman-v2",
     "images": [
-     "192916936ae2315111b83",
-     "192916936ae231512dee5",
-     "192916936ae23151509f3",
-     "192916936ae2315170eff"
+     "193021606ae2783459d3a",
+     "193021606ae2783478469",
+     "193021606ae2783496c12",
+     "193021606ae27834b4803"
     ],
     "template": 109491369,
     "sizes": [
      {
       "size": "One size",
-      "variant": 19291693,
+      "variant": 19302160,
       "catalogVariant": 16420,
       "price": 28,
       "cost": 19.26,
