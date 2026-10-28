@@ -98,18 +98,21 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=b0056442').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=c9953e03').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
 
   function tileHTML(p, colorName) {
     if (typeof colorName !== 'string') colorName = null;
-    var c = p.colors.filter(function (x) { return x.name === colorName; })[0] || p.colors[0];
+    var base = p.colors.filter(function (x) { return (x.style || 'classic') === 'classic'; });
+    if (!base.length) base = p.colors;
+    var c = base.filter(function (x) { return x.name === colorName; })[0] || base[0];
+    var nStyles = (p.styles && p.styles.length) || 1;
     var front = c.images[0], back = c.images[1];
     var cover = (p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '') + (p.blend ? ' blend' : '');
     var href = 'product.html?p=' + p.id + (colorName ? '&c=' + encodeURIComponent(c.name) : '');
-    var chips = p.colors.map(function (x) {
+    var chips = base.map(function (x) {
       return '<span class="chip" style="background:' + x.hex + '" title="' + esc(x.name) + '"></span>';
     }).join('');
     return '<a class="tile reveal' + (back ? ' has-alt' : '') + '" href="' + href + '">' +
@@ -120,7 +123,8 @@
       '<div class="tile-meta">' +
         '<div class="tile-name">' + esc(p.name) + '</div>' +
         '<div class="tile-sub label muted">' +
-          '<span class="chips" title="' + p.colors.length + (p.colors.length === 1 ? ' color' : ' colors') + '" aria-label="' + p.colors.length + ' colors">' + chips + '</span>' +
+          '<span class="tile-left"><span class="chips" title="' + base.length + (base.length === 1 ? ' color' : ' colors') + '" aria-label="' + base.length + ' colors">' + chips + '</span>' +
+          (nStyles > 1 ? '<span class="tile-styles">' + nStyles + ' styles</span>' : '') + '</span>' +
           (CONFIG.showGridPrice ? '<span>' + priceLabel(p) + '</span>' : '') +
         '</div>' +
       '</div>' +
@@ -168,9 +172,17 @@
   function initProduct(list) {
     var id = new URLSearchParams(location.search).get('p') || window.PREVIEW_PRODUCT;
     var p = findProduct(list, id) || list[0];
-    var state = { color: 0, size: null, image: 0 };
-    var ci = new URLSearchParams(location.search).get('c');
-    if (ci) { var idx = p.colors.map(function (c) { return c.name.toLowerCase(); }).indexOf(ci.toLowerCase()); if (idx >= 0) state.color = idx; }
+    var styles = (p.styles && p.styles.length) ? p.styles : [{ id: 'classic', label: '3 | 4 | 5' }];
+    var qs = new URLSearchParams(location.search);
+    var state = { style: styles[0].id, color: 0, size: null, image: 0 };
+    var si = qs.get('s');
+    if (si && styles.some(function (x) { return x.id === si; })) state.style = si;
+    // colourways for the chosen style; every style carries the same colours, in the same order
+    function styleColors() { return p.colors.filter(function (c) { return (c.style || 'classic') === state.style; }); }
+    function styleLabel(id) { return (styles.filter(function (x) { return x.id === id; })[0] || styles[0]).label; }
+    function copy() { return (p.styleCopy && p.styleCopy[state.style]) || { intro: p.intro, note: p.note, line: '' }; }
+    var ci = qs.get('c');
+    if (ci) { var idx = styleColors().map(function (c) { return c.name.toLowerCase(); }).indexOf(ci.toLowerCase()); if (idx >= 0) state.color = idx; }
     document.title = p.name + ' · 3 | 4 | 5';
     var cover = (p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '') + (p.blend ? ' blend' : '');
     var root = $('#pdp');
@@ -187,13 +199,14 @@
           (p.give && p.give.gives >= 1 ? '<a class="pdp-gives label accent" href="ledger.html">$' + Math.floor(p.give.gives) + ' of this goes to <span id="gives-partner">' + esc(givePartnerName()) + '</span> · the ledger</a>' : '') +
         '</div>' +
         '<div class="opt"><div class="opt-head label"><span>color</span><span class="muted" id="color-name"></span></div><div class="color-list" id="colors"></div></div>' +
+        '<div class="opt" id="style-opt"' + (styles.length > 1 ? '' : ' hidden') + '><div class="opt-head label"><span>style</span><span class="muted" id="style-name"></span></div><div class="size-list style-list" id="styles"></div></div>' +
         '<div class="opt" id="size-opt"><div class="opt-head label"><span>size</span><span class="muted" id="fit-hint"></span></div><div class="size-list" id="sizes"></div></div>' +
         '<div class="pdp-actions">' +
           '<button class="btn full" id="add">add to bag</button>' +
           '<div class="pdp-hint">made to order and shipped from the us, usually 5 to 9 business days. secure checkout by stripe.</div>' +
         '</div>' +
         '<div class="acc">' +
-          '<details open><summary class="label">about</summary><div class="acc-body prose"><p>' + esc(p.intro) + '</p><p>' + esc(p.note) + '</p></div></details>' +
+          '<details open><summary class="label">about</summary><div class="acc-body prose" id="about"></div></details>' +
           '<details><summary class="label">the message</summary><div class="acc-body prose">' + p.message.map(function (m) { return '<p>' + esc(m) + '</p>'; }).join('') + '</div></details>' +
           '<details><summary class="label">materials</summary><div class="acc-body"><ul>' + p.details.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul></div></details>' +
           '<details><summary class="label">good to know</summary><div class="acc-body"><ul class="know">' + p.know.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul></div></details>' +
@@ -202,9 +215,22 @@
 
     var img = $('#pdp-img'), thumbs = $('#thumbs'), colors = $('#colors'), sizes = $('#sizes'), price = $('#pdp-price');
     $('#fit-hint').textContent = (p.know && p.know[0]) ? p.know[0] : '';
-    function color() { return p.colors[state.color]; }
+    function color() { var l = styleColors(); return l[Math.min(state.color, l.length - 1)]; }
+    function drawAbout() {
+      var cp = copy();
+      $('#about').innerHTML = (styles.length > 1 && cp.line ? '<p>' + esc(cp.line) + '</p>' : '') + '<p>' + esc(cp.intro) + '</p><p>' + esc(cp.note) + '</p>';
+    }
+    function drawStyles() {
+      $('#styles').innerHTML = styles.map(function (x) {
+        return '<button aria-pressed="' + (x.id === state.style) + '" data-style="' + x.id + '">' + esc(x.label) + '</button>';
+      }).join('');
+      $('#style-name').textContent = '';
+    }
+    function syncUrl() {
+      history.replaceState(null, '', '?p=' + p.id + '&c=' + encodeURIComponent(color().name) + (styles.length > 1 ? '&s=' + state.style : ''));
+    }
     function drawColors() {
-      colors.innerHTML = p.colors.map(function (c, i) {
+      colors.innerHTML = styleColors().map(function (c, i) {
         return '<button style="background:' + c.hex + '" title="' + esc(c.name) + (c.tag ? ' (' + c.tag + ')' : '') + '" aria-label="' + esc(c.name) + '" aria-pressed="' + (i === state.color) + '" data-i="' + i + '"></button>';
       }).join('');
       $('#color-name').textContent = color().name.toLowerCase() + (color().tag ? ' · ' + color().tag : '');
@@ -235,7 +261,20 @@
       var keep = color().sizes.some(function (s) { return s.size === state.size; });
       if (!keep) state.size = null;
       drawColors(); drawImages(); drawSizes();
-      history.replaceState(null, '', '?p=' + p.id + '&c=' + encodeURIComponent(color().name));
+      syncUrl();
+    });
+    $('#styles').addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-style]'); if (!b) return;
+      var name = color().name;
+      state.style = b.getAttribute('data-style');
+      // keep the same colour when the new style has it, otherwise fall back to the first
+      var idx = styleColors().map(function (c) { return c.name; }).indexOf(name);
+      state.color = idx >= 0 ? idx : 0;
+      var keep = color().sizes.some(function (s) { return s.size === state.size; });
+      if (!keep) state.size = null;
+      state.image = 0;
+      drawStyles(); drawColors(); drawImages(); drawSizes(); drawAbout();
+      syncUrl();
     });
     thumbs.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; state.image = +b.getAttribute('data-i'); drawImages(); });
     sizes.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; state.size = b.getAttribute('data-size'); drawSizes(); });
@@ -243,10 +282,10 @@
       var c = color();
       if (!state.size) { sizes.style.outline = '1px solid var(--ink)'; sizes.style.outlineOffset = '6px'; setTimeout(function () { sizes.style.outline = ''; }, 1200); return; }
       var s = c.sizes.filter(function (x) { return x.size === state.size; })[0];
-      Bag.add({ variant: s.variant, product: p.id, name: p.name, color: c.name, size: s.size, price: s.price, qty: 1, image: c.images[0], printful: c.printful, listing: c.listing, cover: p.opaque || false, fill: !!p.fill });
+      Bag.add({ variant: s.variant, product: p.id, name: p.name, color: c.name, style: c.style || 'classic', styleLabel: styles.length > 1 ? styleLabel(c.style || 'classic') : '', size: s.size, price: s.price, qty: 1, image: c.images[0], printful: c.printful, listing: c.listing, cover: p.opaque || false, fill: !!p.fill });
       var btn = $('#add'); btn.textContent = 'added · view bag'; btn.onclick = function () { location.href = 'bag.html'; };
     });
-    drawColors(); drawImages(); drawSizes();
+    drawStyles(); drawColors(); drawImages(); drawSizes(); drawAbout();
 
     var more = $('#more');
     if (more) more.innerHTML = list.filter(function (x) { return x.id !== p.id; }).slice(0, 4).map(tileHTML).join('');
@@ -263,10 +302,11 @@
       if (!has) return;
       lines.innerHTML = items.map(function (i) {
         return '<div class="bag-line">' +
-          '<a class="bag-thumb' + (i.cover ? (i.fill ? ' cover' : ' flat') + '" style="background:' + i.cover : '') + '" href="product.html?p=' + i.product + '&c=' + encodeURIComponent(i.color) + '"><img src="' + CONFIG.imgGrid(i.image) + '" alt=""></a>' +
+          '<a class="bag-thumb' + (i.cover ? (i.fill ? ' cover' : ' flat') + '" style="background:' + i.cover : '') + '" href="product.html?p=' + i.product + '&c=' + encodeURIComponent(i.color) + (i.style && i.styleLabel ? '&s=' + i.style : '') + '"><img src="' + CONFIG.imgGrid(i.image) + '" alt=""></a>' +
           '<div class="bag-info">' +
             '<div class="small">' + esc(i.name) + '</div>' +
             '<div class="label muted">' + esc(i.color.toLowerCase()) + (i.size && i.size !== 'One size' ? ' · ' + esc(i.size) : '') + '</div>' +
+            (i.styleLabel ? '<div class="label muted bag-style">style: ' + esc(i.styleLabel) + '</div>' : '') +
             '<div class="qty"><button data-v="' + i.variant + '" data-d="-1" aria-label="less">–</button><span>' + i.qty + '</span><button data-v="' + i.variant + '" data-d="1" aria-label="more">+</button></div>' +
           '</div>' +
           '<div class="bag-right">' +
