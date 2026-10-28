@@ -43,257 +43,365 @@
    "ops": 2.7,
    "gives": 9.48
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "the first 345 piece and still the one most people reach for. a classic heavyweight hoodie, cotton-faced and soft inside, with the 3 | 4 | 5 mark small on the chest and the full message across the back.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "the first 345 piece and still the one most people reach for. a classic heavyweight hoodie, cotton-faced and soft inside, with the 3 · 4 · 5 mark small on the chest and the full message across the back.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "the first 345 piece and still the one most people reach for. a classic heavyweight hoodie, cotton-faced and soft inside, with the III · IV · V mark small on the chest and the full message across the back.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#080808",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/hoodie-345-message",
-    "listing": "the 345 hoodie",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-classic",
+    "listing": "the-345-hoodie-classic",
     "images": [
-     "1076503569082fa8c6b7b",
-     "1076503569082fa8eff33"
+     "192852686ae20c0b7dc93",
+     "192852686ae20c0ba61c0"
     ],
     "template": 95253842,
     "sizes": [
      {
       "size": "S",
-      "variant": 10765035,
+      "variant": 19285268,
       "catalogVariant": 10779,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "M",
-      "variant": 10765036,
+      "variant": 19285269,
       "catalogVariant": 10780,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "L",
-      "variant": 10765037,
+      "variant": 19285270,
       "catalogVariant": 10781,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "XL",
-      "variant": 10765038,
+      "variant": 19285271,
       "catalogVariant": 10782,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "2XL",
-      "variant": 10765039,
+      "variant": 19285272,
       "catalogVariant": 10783,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      },
      {
       "size": "3XL",
-      "variant": 10765040,
+      "variant": 19285273,
       "catalogVariant": 13416,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      }
     ]
    },
    {
     "name": "Vintage Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#43413D",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/hoodie-345-message",
-    "listing": "the 345 hoodie",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-classic",
+    "listing": "the-345-hoodie-classic",
     "images": [
-     "1076504169082faa5014f",
-     "1076504169082faa72965"
+     "192852806ae20c0de1c0a",
+     "192852806ae20c0e041fb"
     ],
     "template": 95253842,
     "sizes": [
      {
       "size": "S",
-      "variant": 10765041,
+      "variant": 19285280,
       "catalogVariant": 20272,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "M",
-      "variant": 10765042,
+      "variant": 19285281,
       "catalogVariant": 20273,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "L",
-      "variant": 10765043,
+      "variant": 19285282,
       "catalogVariant": 20274,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "XL",
-      "variant": 10765044,
+      "variant": 19285283,
       "catalogVariant": 20275,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "2XL",
-      "variant": 10765045,
+      "variant": 19285284,
       "catalogVariant": 20276,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      },
      {
       "size": "3XL",
-      "variant": 10765046,
+      "variant": 19285285,
       "catalogVariant": 20277,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Heather",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#463e3d",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-classic",
+    "listing": "the-345-hoodie-classic",
+    "images": [
+     "192852746ae20c0ca52c0",
+     "192852746ae20c0cc0813"
+    ],
+    "template": 95253842,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285274,
+      "catalogVariant": 11481,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285275,
+      "catalogVariant": 11482,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285276,
+      "catalogVariant": 11483,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285277,
+      "catalogVariant": 11484,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285278,
+      "catalogVariant": 11485,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285279,
+      "catalogVariant": 13419,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
      }
     ]
    },
    {
     "name": "Latte",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#b28a68",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/hoodie-345-message",
-    "listing": "the 345 hoodie",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-classic",
+    "listing": "the-345-hoodie-classic",
     "images": [
-     "1076504769082fac39dc4",
-     "1076504769082fac60dcd"
+     "192852866ae20c0f05c63",
+     "192852866ae20c0f1ab45"
     ],
     "template": 95253842,
     "sizes": [
      {
       "size": "S",
-      "variant": 10765047,
+      "variant": 19285286,
       "catalogVariant": 24981,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "M",
-      "variant": 10765048,
+      "variant": 19285287,
       "catalogVariant": 24982,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "L",
-      "variant": 10765049,
+      "variant": 19285288,
       "catalogVariant": 24983,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "XL",
-      "variant": 10765050,
+      "variant": 19285289,
       "catalogVariant": 24984,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "2XL",
-      "variant": 10765051,
+      "variant": 19285290,
       "catalogVariant": 24985,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      },
      {
       "size": "3XL",
-      "variant": 10765052,
+      "variant": 19285291,
       "catalogVariant": 24986,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      }
     ]
    },
    {
     "name": "White",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#ffffff",
     "tag": null,
-    "printful": "https://345loveyours.printful.me/product/hoodie-345-message-6908305645ab5",
-    "listing": "the 345 hoodie",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-white-classic",
+    "listing": "the-345-hoodie-white-classic",
     "images": [
-     "10765114690830566637c",
-     "1076511469083056abb20"
+     "192855356ae20da29ee53",
+     "192855356ae20da2c01fc"
     ],
     "template": 95253882,
     "sizes": [
      {
       "size": "S",
-      "variant": 10765114,
+      "variant": 19285535,
       "catalogVariant": 10774,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "M",
-      "variant": 10765115,
+      "variant": 19285536,
       "catalogVariant": 10775,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "L",
-      "variant": 10765116,
+      "variant": 19285537,
       "catalogVariant": 10776,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "XL",
-      "variant": 10765117,
+      "variant": 19285538,
       "catalogVariant": 10777,
       "price": 54,
       "cost": 36.83,
-      "printfulRetail": 40
+      "printfulRetail": null
      },
      {
       "size": "2XL",
-      "variant": 10765118,
+      "variant": 19285539,
       "catalogVariant": 10778,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      },
      {
       "size": "3XL",
-      "variant": 10765119,
+      "variant": 19285540,
       "catalogVariant": 13421,
       "price": 54,
       "cost": 40.83,
-      "printfulRetail": 42
+      "printfulRetail": null
      }
     ]
    },
    {
     "name": "Maroon",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#7d263a",
     "tag": "limited",
     "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
@@ -356,6 +464,8 @@
    },
    {
     "name": "Forest Green",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#335231",
     "tag": "limited",
     "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
@@ -418,6 +528,8 @@
    },
    {
     "name": "Adobe",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#d06e26",
     "tag": "limited",
     "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
@@ -480,6 +592,8 @@
    },
    {
     "name": "Dusty Rose",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#d27e6f",
     "tag": "limited",
     "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
@@ -542,6 +656,8 @@
    },
    {
     "name": "Team Gold",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#ffa912",
     "tag": "limited",
     "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
@@ -604,6 +720,8 @@
    },
    {
     "name": "Carolina Blue",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#98b7ee",
     "tag": "limited",
     "printful": "https://345loveyours.printful.me/product/limited-color-hoodie-white-logo",
@@ -663,6 +781,1414 @@
       "printfulRetail": 42
      }
     ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#080808",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-dot-v2",
+    "listing": "the-345-hoodie-dot-v2",
+    "images": [
+     "192853676ae20ca0568b5",
+     "192853676ae20ca0720f0"
+    ],
+    "template": 109467030,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285367,
+      "catalogVariant": 10779,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285368,
+      "catalogVariant": 10780,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285369,
+      "catalogVariant": 10781,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285370,
+      "catalogVariant": 10782,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285371,
+      "catalogVariant": 10783,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285372,
+      "catalogVariant": 13416,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#43413D",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-dot-v2",
+    "listing": "the-345-hoodie-dot-v2",
+    "images": [
+     "192853796ae20ca2a75de",
+     "192853796ae20ca2bc7e9"
+    ],
+    "template": 109467030,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285379,
+      "catalogVariant": 20272,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285380,
+      "catalogVariant": 20273,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285381,
+      "catalogVariant": 20274,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285382,
+      "catalogVariant": 20275,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285383,
+      "catalogVariant": 20276,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285384,
+      "catalogVariant": 20277,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Heather",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#463e3d",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-dot-v2",
+    "listing": "the-345-hoodie-dot-v2",
+    "images": [
+     "192853736ae20ca16f6dc",
+     "192853736ae20ca1963e0"
+    ],
+    "template": 109467030,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285373,
+      "catalogVariant": 11481,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285374,
+      "catalogVariant": 11482,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285375,
+      "catalogVariant": 11483,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285376,
+      "catalogVariant": 11484,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285377,
+      "catalogVariant": 11485,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285378,
+      "catalogVariant": 13419,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#b28a68",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-dot-v2",
+    "listing": "the-345-hoodie-dot-v2",
+    "images": [
+     "192853856ae20ca3bc4ff",
+     "192853856ae20ca3d2f10"
+    ],
+    "template": 109467030,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285385,
+      "catalogVariant": 24981,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285386,
+      "catalogVariant": 24982,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285387,
+      "catalogVariant": 24983,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285388,
+      "catalogVariant": 24984,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285389,
+      "catalogVariant": 24985,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285390,
+      "catalogVariant": 24986,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-white-dot-v2",
+    "listing": "the-345-hoodie-white-dot-v2",
+    "images": [
+     "192855586ae20e24e07a3",
+     "192855586ae20e251a1d4"
+    ],
+    "template": 109467665,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285558,
+      "catalogVariant": 10774,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285559,
+      "catalogVariant": 10775,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285560,
+      "catalogVariant": 10776,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285561,
+      "catalogVariant": 10777,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285562,
+      "catalogVariant": 10778,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285563,
+      "catalogVariant": 13421,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Maroon",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#7d263a",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-dot",
+    "listing": "the-345-hoodie-colors-dot",
+    "images": [
+     "192765856ae156e704592",
+     "192765856ae156e71e952"
+    ],
+    "template": 109467836,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276585,
+      "catalogVariant": 11486,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276586,
+      "catalogVariant": 11487,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276587,
+      "catalogVariant": 11488,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276588,
+      "catalogVariant": 11489,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276589,
+      "catalogVariant": 11490,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276590,
+      "catalogVariant": 13418,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Forest Green",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#335231",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-dot",
+    "listing": "the-345-hoodie-colors-dot",
+    "images": [
+     "192765916ae156e82bf74",
+     "192765916ae156e8430d1"
+    ],
+    "template": 109467836,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276591,
+      "catalogVariant": 16162,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276592,
+      "catalogVariant": 16163,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276593,
+      "catalogVariant": 16164,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276594,
+      "catalogVariant": 16165,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276595,
+      "catalogVariant": 16166,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276596,
+      "catalogVariant": 16167,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Adobe",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#d06e26",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-dot",
+    "listing": "the-345-hoodie-colors-dot",
+    "images": [
+     "192765976ae156e94d3d8",
+     "192765976ae156e963fde"
+    ],
+    "template": 109467836,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276597,
+      "catalogVariant": 24987,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276598,
+      "catalogVariant": 24988,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276599,
+      "catalogVariant": 24989,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276600,
+      "catalogVariant": 24990,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276601,
+      "catalogVariant": 24991,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276602,
+      "catalogVariant": 24992,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dusty Rose",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#d27e6f",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-dot",
+    "listing": "the-345-hoodie-colors-dot",
+    "images": [
+     "192766036ae156ea6e66e",
+     "192766036ae156ea84df8"
+    ],
+    "template": 109467836,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276603,
+      "catalogVariant": 13887,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276604,
+      "catalogVariant": 13888,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276605,
+      "catalogVariant": 13889,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276606,
+      "catalogVariant": 13890,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276607,
+      "catalogVariant": 13891,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276608,
+      "catalogVariant": 13892,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Team Gold",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffa912",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-dot",
+    "listing": "the-345-hoodie-colors-dot",
+    "images": [
+     "192766096ae156eb8fd00",
+     "192766096ae156eba3ae2"
+    ],
+    "template": 109467836,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276609,
+      "catalogVariant": 24999,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276610,
+      "catalogVariant": 25000,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276611,
+      "catalogVariant": 25001,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276612,
+      "catalogVariant": 25002,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276613,
+      "catalogVariant": 25003,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276614,
+      "catalogVariant": 25004,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Carolina Blue",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#98b7ee",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-dot",
+    "listing": "the-345-hoodie-colors-dot",
+    "images": [
+     "192766156ae156ecc0b94",
+     "192766156ae156ecd5786"
+    ],
+    "template": 109467836,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276615,
+      "catalogVariant": 11496,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276616,
+      "catalogVariant": 11497,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276617,
+      "catalogVariant": 11498,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276618,
+      "catalogVariant": 11499,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276619,
+      "catalogVariant": 11500,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276620,
+      "catalogVariant": 13422,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#080808",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-roman-v2",
+    "listing": "the-345-hoodie-roman-v2",
+    "images": [
+     "192855066ae20d284a064",
+     "192855066ae20d2865e49"
+    ],
+    "template": 109467363,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285506,
+      "catalogVariant": 10779,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285507,
+      "catalogVariant": 10780,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285508,
+      "catalogVariant": 10781,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285509,
+      "catalogVariant": 10782,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285510,
+      "catalogVariant": 10783,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285511,
+      "catalogVariant": 13416,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#43413D",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-roman-v2",
+    "listing": "the-345-hoodie-roman-v2",
+    "images": [
+     "192855186ae20d2aa6415",
+     "192855186ae20d2abe2e1"
+    ],
+    "template": 109467363,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285518,
+      "catalogVariant": 20272,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285519,
+      "catalogVariant": 20273,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285520,
+      "catalogVariant": 20274,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285521,
+      "catalogVariant": 20275,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285522,
+      "catalogVariant": 20276,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285523,
+      "catalogVariant": 20277,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Heather",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#463e3d",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-roman-v2",
+    "listing": "the-345-hoodie-roman-v2",
+    "images": [
+     "192855126ae20d296121b",
+     "192855126ae20d297705e"
+    ],
+    "template": 109467363,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285512,
+      "catalogVariant": 11481,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285513,
+      "catalogVariant": 11482,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285514,
+      "catalogVariant": 11483,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285515,
+      "catalogVariant": 11484,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285516,
+      "catalogVariant": 11485,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285517,
+      "catalogVariant": 13419,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#b28a68",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-roman-v2",
+    "listing": "the-345-hoodie-roman-v2",
+    "images": [
+     "192855246ae20d2bc5c11",
+     "192855246ae20d2bdde77"
+    ],
+    "template": 109467363,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285524,
+      "catalogVariant": 24981,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285525,
+      "catalogVariant": 24982,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285526,
+      "catalogVariant": 24983,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285527,
+      "catalogVariant": 24984,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285528,
+      "catalogVariant": 24985,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285529,
+      "catalogVariant": 24986,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-white-roman-v2",
+    "listing": "the-345-hoodie-white-roman-v2",
+    "images": [
+     "192855866ae20ea6dc13d",
+     "192855866ae20ea703a3c"
+    ],
+    "template": 109467749,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285586,
+      "catalogVariant": 10774,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285587,
+      "catalogVariant": 10775,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285588,
+      "catalogVariant": 10776,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285589,
+      "catalogVariant": 10777,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285590,
+      "catalogVariant": 10778,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285591,
+      "catalogVariant": 13421,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Maroon",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#7d263a",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-roman-v2",
+    "listing": "the-345-hoodie-colors-roman-v2",
+    "images": [
+     "192856666ae20f2a4d6b4",
+     "192856666ae20f2a6e626"
+    ],
+    "template": 109467853,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285666,
+      "catalogVariant": 11486,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285667,
+      "catalogVariant": 11487,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285668,
+      "catalogVariant": 11488,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285669,
+      "catalogVariant": 11489,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285670,
+      "catalogVariant": 11490,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285671,
+      "catalogVariant": 13418,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Forest Green",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#335231",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-roman-v2",
+    "listing": "the-345-hoodie-colors-roman-v2",
+    "images": [
+     "192856726ae20f2b66b8c",
+     "192856726ae20f2b7f96f"
+    ],
+    "template": 109467853,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285672,
+      "catalogVariant": 16162,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285673,
+      "catalogVariant": 16163,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285674,
+      "catalogVariant": 16164,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285675,
+      "catalogVariant": 16165,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285676,
+      "catalogVariant": 16166,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285677,
+      "catalogVariant": 16167,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Adobe",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#d06e26",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-roman-v2",
+    "listing": "the-345-hoodie-colors-roman-v2",
+    "images": [
+     "192856786ae20f2c6e7be",
+     "192856786ae20f2c81cb9"
+    ],
+    "template": 109467853,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285678,
+      "catalogVariant": 24987,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285679,
+      "catalogVariant": 24988,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285680,
+      "catalogVariant": 24989,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285681,
+      "catalogVariant": 24990,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285682,
+      "catalogVariant": 24991,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285683,
+      "catalogVariant": 24992,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dusty Rose",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#d27e6f",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-roman-v2",
+    "listing": "the-345-hoodie-colors-roman-v2",
+    "images": [
+     "192856846ae20f2d80ab5",
+     "192856846ae20f2d98e60"
+    ],
+    "template": 109467853,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285684,
+      "catalogVariant": 13887,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285685,
+      "catalogVariant": 13888,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285686,
+      "catalogVariant": 13889,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285687,
+      "catalogVariant": 13890,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285688,
+      "catalogVariant": 13891,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285689,
+      "catalogVariant": 13892,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Team Gold",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffa912",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-roman-v2",
+    "listing": "the-345-hoodie-colors-roman-v2",
+    "images": [
+     "192856906ae20f2e824e1",
+     "192856906ae20f2e98448"
+    ],
+    "template": 109467853,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285690,
+      "catalogVariant": 24999,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285691,
+      "catalogVariant": 25000,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285692,
+      "catalogVariant": 25001,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285693,
+      "catalogVariant": 25002,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285694,
+      "catalogVariant": 25003,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285695,
+      "catalogVariant": 25004,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Carolina Blue",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#98b7ee",
+    "tag": "limited",
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-colors-roman-v2",
+    "listing": "the-345-hoodie-colors-roman-v2",
+    "images": [
+     "192856966ae20f2f9c237",
+     "192856966ae20f2fb1a9f"
+    ],
+    "template": 109467853,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285696,
+      "catalogVariant": 11496,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285697,
+      "catalogVariant": 11497,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285698,
+      "catalogVariant": 11498,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285699,
+      "catalogVariant": 11499,
+      "price": 54,
+      "cost": 36.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285700,
+      "catalogVariant": 11500,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285701,
+      "catalogVariant": 13422,
+      "price": 54,
+      "cost": 40.83,
+      "printfulRetail": null
+     }
+    ]
    }
   ]
  },
@@ -709,9 +2235,45 @@
    "ops": 3.1,
    "gives": 11.03
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "thicker, roomier and quieter than the original. brushed fleece, dropped shoulders, no drawcords. the mark sits on the chest and love yours. runs down the sleeve, so the back stays clean.",
+    "note": "this piece has a blank back. \"love yours.\" is embroidered on the sleeve instead, a more subtle, everyday reminder. the hope is that one day 3 | 4 | 5 speaks loud enough on its own that we won't need to print the message at all.",
+    "placement": "front chest mark, love yours. on the sleeve, blank back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "thicker, roomier and quieter than the original. brushed fleece, dropped shoulders, no drawcords. the mark sits on the chest and love yours. runs down the sleeve, so the back stays clean.",
+    "note": "this piece has a blank back. \"love yours.\" is embroidered on the sleeve instead, a more subtle, everyday reminder. the hope is that one day 3 | 4 | 5 speaks loud enough on its own that we won't need to print the message at all.",
+    "placement": "front chest mark, love yours. on the sleeve, blank back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "thicker, roomier and quieter than the original. brushed fleece, dropped shoulders, no drawcords. the mark sits on the chest and love yours. runs down the sleeve, so the back stays clean.",
+    "note": "this piece has a blank back. \"love yours.\" is embroidered on the sleeve instead, a more subtle, everyday reminder. the hope is that one day 3 | 4 | 5 speaks loud enough on its own that we won't need to print the message at all.",
+    "placement": "front chest mark, love yours. on the sleeve, blank back"
+   }
+  },
   "colors": [
    {
     "name": "Vintage Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#161816",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/oversized-hoodie",
@@ -776,6 +2338,8 @@
    },
    {
     "name": "Asphalt",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#716b63",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/oversized-hoodie",
@@ -840,6 +2404,8 @@
    },
    {
     "name": "Vintage Brown",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#9e7551",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/oversized-hoodie",
@@ -904,6 +2470,8 @@
    },
    {
     "name": "White",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#ffffff",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/love-yours-oversized-logo-hoodie",
@@ -965,6 +2533,732 @@
       "printfulRetail": 52
      }
     ]
+   },
+   {
+    "name": "Dust",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
+    "hex": "#f4e7d6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-dust",
+    "listing": "the-345-hoodie-oversized-dust",
+    "images": [
+     "192789946ae1710ac2ec3",
+     "192789946ae1710ad7828",
+     "192789946ae1710aeb759",
+     "192789946ae1710b168ad"
+    ],
+    "template": 95253329,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278994,
+      "catalogVariant": 22969,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278995,
+      "catalogVariant": 22971,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278996,
+      "catalogVariant": 22973,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278997,
+      "catalogVariant": 22975,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19278998,
+      "catalogVariant": 22977,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19278999,
+      "catalogVariant": 22979,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#161816",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-dot",
+    "listing": "the-345-hoodie-oversized-dot",
+    "images": [
+     "192859856ae211971e784",
+     "192859856ae2119740845",
+     "192859856ae2119756acb",
+     "192859856ae211976b3de"
+    ],
+    "template": 109488438,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285985,
+      "catalogVariant": 22993,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285986,
+      "catalogVariant": 22994,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285987,
+      "catalogVariant": 22995,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285988,
+      "catalogVariant": 22996,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285989,
+      "catalogVariant": 22997,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285990,
+      "catalogVariant": 22998,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Asphalt",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#716b63",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-dot",
+    "listing": "the-345-hoodie-oversized-dot",
+    "images": [
+     "192859916ae211994d1d4",
+     "192859916ae2119962111",
+     "192859916ae2119977df9",
+     "192859916ae211998d63d"
+    ],
+    "template": 109488438,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285991,
+      "catalogVariant": 22951,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285992,
+      "catalogVariant": 22952,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285993,
+      "catalogVariant": 22953,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285994,
+      "catalogVariant": 22954,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285995,
+      "catalogVariant": 22955,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285996,
+      "catalogVariant": 22956,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Brown",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#9e7551",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-dot",
+    "listing": "the-345-hoodie-oversized-dot",
+    "images": [
+     "192859976ae2119b6be5b",
+     "192859976ae2119b8029f",
+     "192859976ae2119b95420",
+     "192859976ae2119ba9df3"
+    ],
+    "template": 109488438,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285997,
+      "catalogVariant": 22999,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285998,
+      "catalogVariant": 23000,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285999,
+      "catalogVariant": 23001,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286000,
+      "catalogVariant": 23002,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286001,
+      "catalogVariant": 23003,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286002,
+      "catalogVariant": 23004,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-white-dust-dot",
+    "listing": "the-345-hoodie-oversized-white-dust-dot",
+    "images": [
+     "192861656ae212ba75295",
+     "192861656ae212ba8c483",
+     "192861656ae212baa10ce",
+     "192861656ae212bab4fe2"
+    ],
+    "template": 109488451,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286165,
+      "catalogVariant": 23005,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286166,
+      "catalogVariant": 23006,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286167,
+      "catalogVariant": 23007,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286168,
+      "catalogVariant": 23008,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286169,
+      "catalogVariant": 23009,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286170,
+      "catalogVariant": 23010,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dust",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#f4e7d6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-white-dust-dot",
+    "listing": "the-345-hoodie-oversized-white-dust-dot",
+    "images": [
+     "192861596ae212b85729d",
+     "192861596ae212b879cdd",
+     "192861596ae212b88d487",
+     "192861596ae212b8a3cb7"
+    ],
+    "template": 109488451,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286159,
+      "catalogVariant": 22969,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286160,
+      "catalogVariant": 22971,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286161,
+      "catalogVariant": 22973,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286162,
+      "catalogVariant": 22975,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286163,
+      "catalogVariant": 22977,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286164,
+      "catalogVariant": 22979,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#161816",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-roman",
+    "listing": "the-345-hoodie-oversized-roman",
+    "images": [
+     "192860746ae21226d4308",
+     "192860746ae21226f2d83",
+     "192860746ae21227144b9",
+     "192860746ae2122726d5e"
+    ],
+    "template": 109488442,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286074,
+      "catalogVariant": 22993,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286075,
+      "catalogVariant": 22994,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286076,
+      "catalogVariant": 22995,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286077,
+      "catalogVariant": 22996,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286078,
+      "catalogVariant": 22997,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286079,
+      "catalogVariant": 22998,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Asphalt",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#716b63",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-roman",
+    "listing": "the-345-hoodie-oversized-roman",
+    "images": [
+     "192860806ae2122902306",
+     "192860806ae21229152eb",
+     "192860806ae212292963d",
+     "192860806ae212293d00a"
+    ],
+    "template": 109488442,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286080,
+      "catalogVariant": 22951,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286081,
+      "catalogVariant": 22952,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286082,
+      "catalogVariant": 22953,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286083,
+      "catalogVariant": 22954,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286084,
+      "catalogVariant": 22955,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286085,
+      "catalogVariant": 22956,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Brown",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#9e7551",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-roman",
+    "listing": "the-345-hoodie-oversized-roman",
+    "images": [
+     "192860866ae2122b02d3a",
+     "192860866ae2122b15b9f",
+     "192860866ae2122b2b6f2",
+     "192860866ae2122b4056a"
+    ],
+    "template": 109488442,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286086,
+      "catalogVariant": 22999,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286087,
+      "catalogVariant": 23000,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286088,
+      "catalogVariant": 23001,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286089,
+      "catalogVariant": 23002,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286090,
+      "catalogVariant": 23003,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286091,
+      "catalogVariant": 23004,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-white-dust-roman",
+    "listing": "the-345-hoodie-oversized-white-dust-roman",
+    "images": [
+     "192862306ae213473fe03",
+     "192862306ae2134755552",
+     "192862306ae213476abe0",
+     "192862306ae213477e87a"
+    ],
+    "template": 109488463,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286230,
+      "catalogVariant": 23005,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286231,
+      "catalogVariant": 23006,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286232,
+      "catalogVariant": 23007,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286233,
+      "catalogVariant": 23008,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286234,
+      "catalogVariant": 23009,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286235,
+      "catalogVariant": 23010,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Dust",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#f4e7d6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hoodie-oversized-white-dust-roman",
+    "listing": "the-345-hoodie-oversized-white-dust-roman",
+    "images": [
+     "192862246ae2134514d4f",
+     "192862246ae2134539565",
+     "192862246ae2134550458",
+     "192862246ae2134566712"
+    ],
+    "template": 109488463,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19286224,
+      "catalogVariant": 22969,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19286225,
+      "catalogVariant": 22971,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19286226,
+      "catalogVariant": 22973,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19286227,
+      "catalogVariant": 22975,
+      "price": 62,
+      "cost": 42.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19286228,
+      "catalogVariant": 22977,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19286229,
+      "catalogVariant": 22979,
+      "price": 62,
+      "cost": 46.22,
+      "printfulRetail": null
+     }
+    ]
    }
   ]
  },
@@ -1012,9 +3306,45 @@
    "ops": 2.5,
    "gives": 9.69
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "a straight crewneck sweatshirt with a ribbed collar and cuffs, soft fleece inside. the mark on the chest, the message on the back. it runs small, so size up.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "a straight crewneck sweatshirt with a ribbed collar and cuffs, soft fleece inside. the mark on the chest, the message on the back. it runs small, so size up.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "a straight crewneck sweatshirt with a ribbed collar and cuffs, soft fleece inside. the mark on the chest, the message on the back. it runs small, so size up.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#101010",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning",
@@ -1079,6 +3409,8 @@
    },
    {
     "name": "Vintage Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#43413D",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning",
@@ -1143,6 +3475,8 @@
    },
    {
     "name": "Latte",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#b28a68",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning",
@@ -1207,6 +3541,8 @@
    },
    {
     "name": "White",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#ffffff",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/crewneck-345-meaning-690836b5d8a89",
@@ -1268,6 +3604,534 @@
       "printfulRetail": 37
      }
     ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#101010",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-dot",
+    "listing": "the-345-crewneck-dot",
+    "images": [
+     "192767176ae1581b35126",
+     "192767176ae1581b59c15",
+     "192767176ae1581b74925",
+     "192767176ae1581b8a980"
+    ],
+    "template": 109468016,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276717,
+      "catalogVariant": 11254,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276718,
+      "catalogVariant": 11255,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276719,
+      "catalogVariant": 11256,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276720,
+      "catalogVariant": 11257,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276721,
+      "catalogVariant": 11258,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276722,
+      "catalogVariant": 13258,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#43413D",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-dot",
+    "listing": "the-345-crewneck-dot",
+    "images": [
+     "192767236ae1581d82b06",
+     "192767236ae1581d99238",
+     "192767236ae1581db0414",
+     "192767236ae1581dc7712"
+    ],
+    "template": 109468016,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276723,
+      "catalogVariant": 20363,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276724,
+      "catalogVariant": 20362,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276725,
+      "catalogVariant": 20361,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276726,
+      "catalogVariant": 20360,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276727,
+      "catalogVariant": 20359,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276728,
+      "catalogVariant": 20358,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#b28a68",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-dot",
+    "listing": "the-345-crewneck-dot",
+    "images": [
+     "192767296ae1581fb7cf1",
+     "192767296ae1581fd2742",
+     "192767296ae1581fea110",
+     "192767296ae158200e568"
+    ],
+    "template": 109468016,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276729,
+      "catalogVariant": 25526,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276730,
+      "catalogVariant": 25527,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276731,
+      "catalogVariant": 25528,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276732,
+      "catalogVariant": 25529,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276733,
+      "catalogVariant": 25530,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276734,
+      "catalogVariant": 25531,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-white-dot",
+    "listing": "the-345-crewneck-white-dot",
+    "images": [
+     "192768996ae158e09df41",
+     "192768996ae158e0bb9db",
+     "192768996ae158e0d1226",
+     "192768996ae158e0e481e"
+    ],
+    "template": 109468030,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19276899,
+      "catalogVariant": 11249,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19276900,
+      "catalogVariant": 11250,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19276901,
+      "catalogVariant": 11251,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19276902,
+      "catalogVariant": 11252,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19276903,
+      "catalogVariant": 11253,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19276904,
+      "catalogVariant": 13261,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#101010",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-roman-v2",
+    "listing": "the-345-crewneck-roman-v2",
+    "images": [
+     "192857776ae20fb738d15",
+     "192857776ae20fb75d128",
+     "192857776ae20fb77c6fd",
+     "192857776ae20fb792a4d"
+    ],
+    "template": 109468018,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285777,
+      "catalogVariant": 11254,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285778,
+      "catalogVariant": 11255,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285779,
+      "catalogVariant": 11256,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285780,
+      "catalogVariant": 11257,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285781,
+      "catalogVariant": 11258,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285782,
+      "catalogVariant": 13258,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#43413D",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-roman-v2",
+    "listing": "the-345-crewneck-roman-v2",
+    "images": [
+     "192857836ae20fb96c48e",
+     "192857836ae20fb982e23",
+     "192857836ae20fb997331",
+     "192857836ae20fb9aa3ba"
+    ],
+    "template": 109468018,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285783,
+      "catalogVariant": 20363,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285784,
+      "catalogVariant": 20362,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285785,
+      "catalogVariant": 20361,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285786,
+      "catalogVariant": 20360,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285787,
+      "catalogVariant": 20359,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285788,
+      "catalogVariant": 20358,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#b28a68",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-roman-v2",
+    "listing": "the-345-crewneck-roman-v2",
+    "images": [
+     "192857896ae20fbb86cdf",
+     "192857896ae20fbba19bb",
+     "192857896ae20fbbbb73c",
+     "192857896ae20fbbd671a"
+    ],
+    "template": 109468018,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285789,
+      "catalogVariant": 25526,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285790,
+      "catalogVariant": 25527,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285791,
+      "catalogVariant": 25528,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285792,
+      "catalogVariant": 25529,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285793,
+      "catalogVariant": 25530,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285794,
+      "catalogVariant": 25531,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-crewneck-white-roman-v2",
+    "listing": "the-345-crewneck-white-roman-v2",
+    "images": [
+     "192858456ae21052d3e7f",
+     "192858456ae21052eef1f",
+     "192858456ae210530f524",
+     "192858456ae2105323e2a"
+    ],
+    "template": 109468040,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285845,
+      "catalogVariant": 11249,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285846,
+      "catalogVariant": 11250,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285847,
+      "catalogVariant": 11251,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285848,
+      "catalogVariant": 11252,
+      "price": 50,
+      "cost": 33.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285849,
+      "catalogVariant": 11253,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285850,
+      "catalogVariant": 13261,
+      "price": 50,
+      "cost": 37.23,
+      "printfulRetail": null
+     }
+    ]
    }
   ]
  },
@@ -1313,9 +4177,45 @@
    "ops": 1.9,
    "gives": 8.42
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "a heavyweight tee with a structured, slightly boxy fit that holds its shape. the mark sits small on the left chest and the message runs across the back.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "a heavyweight tee with a structured, slightly boxy fit that holds its shape. the mark sits small on the left chest and the message runs across the back.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "a heavyweight tee with a structured, slightly boxy fit that holds its shape. the mark sits small on the left chest and the message runs across the back.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#151515",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/t-shirt-345-message",
@@ -1388,6 +4288,8 @@
    },
    {
     "name": "White",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#ffffff",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/t-shirt-black-logo-embroidered",
@@ -1457,6 +4359,302 @@
       "printfulRetail": 32
      }
     ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#151515",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-mens-dot",
+    "listing": "the-345-tee-mens-dot",
+    "images": [
+     "192788276ae16f1aba254",
+     "192788276ae16f1adac8f",
+     "192788276ae16f1af1361",
+     "192788276ae16f1b117fb"
+    ],
+    "template": 109468331,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278827,
+      "catalogVariant": 12756,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278828,
+      "catalogVariant": 12757,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278829,
+      "catalogVariant": 12758,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278830,
+      "catalogVariant": 12759,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19278831,
+      "catalogVariant": 12760,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19278832,
+      "catalogVariant": 12766,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "4XL",
+      "variant": 19278833,
+      "catalogVariant": 13065,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-mens-white-dot",
+    "listing": "the-345-tee-mens-white-dot",
+    "images": [
+     "192788356ae16f7190b2d",
+     "192788356ae16f71b3136",
+     "192788356ae16f71cf397",
+     "192788356ae16f71e7639"
+    ],
+    "template": 109468347,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278835,
+      "catalogVariant": 12761,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278836,
+      "catalogVariant": 12762,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278837,
+      "catalogVariant": 12763,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278838,
+      "catalogVariant": 12764,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19278839,
+      "catalogVariant": 12765,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19278840,
+      "catalogVariant": 12767,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "4XL",
+      "variant": 19278841,
+      "catalogVariant": 13071,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#151515",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-mens-roman",
+    "listing": "the-345-tee-mens-roman",
+    "images": [
+     "192850646ae208e8baef8",
+     "192850646ae208e8daf2b",
+     "192850646ae208e8f34e4",
+     "192850646ae208e9133e8"
+    ],
+    "template": 109468336,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285064,
+      "catalogVariant": 12756,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285065,
+      "catalogVariant": 12757,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285066,
+      "catalogVariant": 12758,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285067,
+      "catalogVariant": 12759,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285068,
+      "catalogVariant": 12760,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285069,
+      "catalogVariant": 12766,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "4XL",
+      "variant": 19285070,
+      "catalogVariant": 13065,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-mens-white-roman",
+    "listing": "the-345-tee-mens-white-roman",
+    "images": [
+     "192850766ae2097acb65d",
+     "192850766ae2097aea201",
+     "192850766ae2097b09825",
+     "192850766ae2097b1c9a4"
+    ],
+    "template": 109468357,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285076,
+      "catalogVariant": 12761,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285077,
+      "catalogVariant": 12762,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285078,
+      "catalogVariant": 12763,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285079,
+      "catalogVariant": 12764,
+      "price": 38,
+      "cost": 24.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "2XL",
+      "variant": 19285080,
+      "catalogVariant": 12765,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "3XL",
+      "variant": 19285081,
+      "catalogVariant": 12767,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     },
+     {
+      "size": "4XL",
+      "variant": 19285082,
+      "catalogVariant": 13071,
+      "price": 38,
+      "cost": 28.17,
+      "printfulRetail": null
+     }
+    ]
    }
   ]
  },
@@ -1503,9 +4701,45 @@
    "ops": 1.6,
    "gives": 5.53
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "a lighter, longline tee in combed ring-spun cotton with a crew neck. the mark on the chest, the message on the back. sits best with high-waisted bottoms.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "a lighter, longline tee in combed ring-spun cotton with a crew neck. the mark on the chest, the message on the back. sits best with high-waisted bottoms.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "a lighter, longline tee in combed ring-spun cotton with a crew neck. the mark on the chest, the message on the back. sits best with high-waisted bottoms.",
+    "note": "this piece carries the 3 | 4 | 5 message on the back, a way to say what we don't always say out loud. the hope is that one day it is understood, and doesn't need to be written at all.",
+    "placement": "front chest mark, message on back"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#101010",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f03d15f5",
@@ -1544,6 +4778,8 @@
    },
    {
     "name": "Vintage Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#363633",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f03d15f5",
@@ -1582,6 +4818,8 @@
    },
    {
     "name": "Latte",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#a8826b",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f03d15f5",
@@ -1620,6 +4858,8 @@
    },
    {
     "name": "White",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#ffffff",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/t-shirt-345-message-69083f32eb958",
@@ -1653,6 +4893,390 @@
       "price": 32,
       "cost": 21.73,
       "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#101010",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-dot",
+    "listing": "the-345-tee-womens-dot",
+    "images": [
+     "192788506ae16fce1e2b8",
+     "192788506ae16fce3fee6"
+    ],
+    "template": 109468368,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278850,
+      "catalogVariant": 16445,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278851,
+      "catalogVariant": 16446,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278852,
+      "catalogVariant": 16447,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278853,
+      "catalogVariant": 16448,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#363633",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-dot",
+    "listing": "the-345-tee-womens-dot",
+    "images": [
+     "192788546ae16fcef31ba",
+     "192788546ae16fcf15494"
+    ],
+    "template": 109468368,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278854,
+      "catalogVariant": 16461,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278855,
+      "catalogVariant": 16462,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278856,
+      "catalogVariant": 16463,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278857,
+      "catalogVariant": 16464,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#a8826b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-dot",
+    "listing": "the-345-tee-womens-dot",
+    "images": [
+     "192788586ae16fcfb292b",
+     "192788586ae16fcfc786f"
+    ],
+    "template": 109468368,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278858,
+      "catalogVariant": 16449,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278859,
+      "catalogVariant": 16450,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278860,
+      "catalogVariant": 16451,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278861,
+      "catalogVariant": 16452,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-white-dot",
+    "listing": "the-345-tee-womens-white-dot",
+    "images": [
+     "192788716ae1704010601",
+     "192788716ae1704031593"
+    ],
+    "template": 109468379,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19278871,
+      "catalogVariant": 20176,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19278872,
+      "catalogVariant": 20177,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19278873,
+      "catalogVariant": 20178,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19278874,
+      "catalogVariant": 20179,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#101010",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-roman",
+    "listing": "the-345-tee-womens-roman",
+    "images": [
+     "192850836ae20a22869e6",
+     "192850836ae20a22a6999"
+    ],
+    "template": 109468372,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285083,
+      "catalogVariant": 16445,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285084,
+      "catalogVariant": 16446,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285085,
+      "catalogVariant": 16447,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285086,
+      "catalogVariant": 16448,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Vintage Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#363633",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-roman",
+    "listing": "the-345-tee-womens-roman",
+    "images": [
+     "192850876ae20a23406ab",
+     "192850876ae20a2353aa9"
+    ],
+    "template": 109468372,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285087,
+      "catalogVariant": 16461,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285088,
+      "catalogVariant": 16462,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285089,
+      "catalogVariant": 16463,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285090,
+      "catalogVariant": 16464,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Latte",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#a8826b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-roman",
+    "listing": "the-345-tee-womens-roman",
+    "images": [
+     "192850916ae20a240bcbe",
+     "192850916ae20a24207c3"
+    ],
+    "template": 109468372,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285091,
+      "catalogVariant": 16449,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285092,
+      "catalogVariant": 16450,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285093,
+      "catalogVariant": 16451,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285094,
+      "catalogVariant": 16452,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "White",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#ffffff",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-tee-womens-white-roman",
+    "listing": "the-345-tee-womens-white-roman",
+    "images": [
+     "192851696ae20abae6b2e",
+     "192851696ae20abb11813"
+    ],
+    "template": 109468389,
+    "sizes": [
+     {
+      "size": "S",
+      "variant": 19285169,
+      "catalogVariant": 20176,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "M",
+      "variant": 19285170,
+      "catalogVariant": 20177,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "L",
+      "variant": 19285171,
+      "catalogVariant": 20178,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
+     },
+     {
+      "size": "XL",
+      "variant": 19285172,
+      "catalogVariant": 20179,
+      "price": 32,
+      "cost": 21.73,
+      "printfulRetail": null
      }
     ]
    }
@@ -1699,9 +5323,45 @@
    "ops": 1.3,
    "gives": 5.64
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "a ribbed fisherman beanie with the 3 | 4 | 5 mark embroidered on the cuff. one size, thick enough for real cold, short enough to wear year round.",
+    "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the cuff"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "a ribbed fisherman beanie with the 3 · 4 · 5 mark embroidered on the cuff. one size, thick enough for real cold, short enough to wear year round.",
+    "note": "the 3 · 4 · 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the cuff"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "a ribbed fisherman beanie with the III · IV · V mark embroidered on the cuff. one size, thick enough for real cold, short enough to wear year round.",
+    "note": "the III · IV · V mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the cuff"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#000000",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/hipster-beanie-white-logo",
@@ -1725,6 +5385,8 @@
    },
    {
     "name": "Walnut",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#59392b",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/hipster-beanie-white-logo",
@@ -1748,6 +5410,8 @@
    },
    {
     "name": "Athletic Heather",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#e1dad7",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/hipster-beanie-black-logo",
@@ -1771,6 +5435,8 @@
    },
    {
     "name": "Ecru",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#fff2d9",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/hipster-beanie-black-logo",
@@ -1789,6 +5455,206 @@
       "price": 26,
       "cost": 16.51,
       "printfulRetail": 20
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#000000",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-white-logo-dot",
+    "listing": "the-345-beanie-white-logo-dot",
+    "images": [
+     "192865186ae21548a578b",
+     "192865186ae21548c7164",
+     "192865186ae21548dea41"
+    ],
+    "template": 109487533,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286518,
+      "catalogVariant": 20487,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Walnut",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#59392b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-white-logo-dot",
+    "listing": "the-345-beanie-white-logo-dot",
+    "images": [
+     "192865196ae21548f2262",
+     "192865196ae21549156df",
+     "192865196ae215492f0ec"
+    ],
+    "template": 109487533,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286519,
+      "catalogVariant": 20489,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Athletic Heather",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#e1dad7",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-black-logo-dot",
+    "listing": "the-345-beanie-black-logo-dot",
+    "images": [
+     "192866756ae216c0a46e5",
+     "192866756ae216c0c6328",
+     "192866756ae216c0dcf03"
+    ],
+    "template": 109487548,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286675,
+      "catalogVariant": 20543,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Ecru",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#fff2d9",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-black-logo-dot",
+    "listing": "the-345-beanie-black-logo-dot",
+    "images": [
+     "192866766ae216c10253c",
+     "192866766ae216c11e3fc",
+     "192866766ae216c1393c5"
+    ],
+    "template": 109487548,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286676,
+      "catalogVariant": 20490,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#000000",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-white-logo-roman",
+    "listing": "the-345-beanie-white-logo-roman",
+    "images": [
+     "192866416ae2162d69059",
+     "192866416ae2162d92601",
+     "192866416ae2162dab179"
+    ],
+    "template": 109487538,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286641,
+      "catalogVariant": 20487,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Walnut",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#59392b",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-white-logo-roman",
+    "listing": "the-345-beanie-white-logo-roman",
+    "images": [
+     "192866426ae2162dc23a3",
+     "192866426ae2162de1094",
+     "192866426ae2162e08c3b"
+    ],
+    "template": 109487538,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286642,
+      "catalogVariant": 20489,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Athletic Heather",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#e1dad7",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-black-logo-roman",
+    "listing": "the-345-beanie-black-logo-roman",
+    "images": [
+     "192868256ae21781ea0c7",
+     "192868256ae217821d83c",
+     "192868256ae2178235af3"
+    ],
+    "template": 109487554,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286825,
+      "catalogVariant": 20543,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Ecru",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#fff2d9",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-beanie-black-logo-roman",
+    "listing": "the-345-beanie-black-logo-roman",
+    "images": [
+     "192868266ae2178251527",
+     "192868266ae21782687e4",
+     "192868266ae217827c734"
+    ],
+    "template": 109487554,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286826,
+      "catalogVariant": 20490,
+      "price": 26,
+      "cost": 16.51,
+      "printfulRetail": null
      }
     ]
    }
@@ -1837,9 +5703,45 @@
    "ops": 1.4,
    "gives": 4.79
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "a low-profile dad cap with a distressed brim and crown, so it looks lived in from the first wear. the mark embroidered on the front, love yours. on the back.",
+    "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the front, love yours. on the back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "a low-profile dad cap with a distressed brim and crown, so it looks lived in from the first wear. the mark embroidered on the front, love yours. on the back.",
+    "note": "the 3 · 4 · 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the front, love yours. on the back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "a low-profile dad cap with a distressed brim and crown, so it looks lived in from the first wear. the mark embroidered on the front, love yours. on the back.",
+    "note": "the III · IV · V mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the front, love yours. on the back"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#262626",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/love-yours-distressed-hat-69081cf23bb9d",
@@ -1866,6 +5768,8 @@
    },
    {
     "name": "Charcoal Grey",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#73726e",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/love-yours-distressed-hat-69081cf23bb9d",
@@ -1892,6 +5796,8 @@
    },
    {
     "name": "Khaki",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#f6e6c6",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/love-yours-distressed-hat",
@@ -1913,6 +5819,174 @@
       "price": 28,
       "cost": 19.0,
       "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#262626",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-distressed-black-charcoal-dot",
+    "listing": "the-345-hat-distressed-black-charcoal-dot",
+    "images": [
+     "192869806ae2190e8d5f0",
+     "192869806ae2190ea8f9d",
+     "192869806ae2190ebf9a2",
+     "192869806ae2190ed5725",
+     "192869806ae2190eea354",
+     "192869806ae2190f0dcb2"
+    ],
+    "template": 109487578,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286980,
+      "catalogVariant": 10990,
+      "price": 28,
+      "cost": 19.0,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Grey",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#73726e",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-distressed-black-charcoal-dot",
+    "listing": "the-345-hat-distressed-black-charcoal-dot",
+    "images": [
+     "192869816ae2190f22e02",
+     "192869816ae2190f3609a",
+     "192869816ae2190f51ca1",
+     "192869816ae2190f68634",
+     "192869816ae2190f7ef3d",
+     "192869816ae2190f96649"
+    ],
+    "template": 109487578,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286981,
+      "catalogVariant": 10992,
+      "price": 28,
+      "cost": 19.0,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Khaki",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#f6e6c6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-distressed-khaki-dot",
+    "listing": "the-345-hat-distressed-khaki-dot",
+    "images": [
+     "192871076ae21a08ea085",
+     "192871076ae21a091a5e8",
+     "192871076ae21a09369f5",
+     "192871076ae21a094d301",
+     "192871076ae21a0963c69",
+     "192871076ae21a097b321"
+    ],
+    "template": 109487592,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19287107,
+      "catalogVariant": 10993,
+      "price": 28,
+      "cost": 19.0,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#262626",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-distressed-black-charcoal-roman",
+    "listing": "the-345-hat-distressed-black-charcoal-roman",
+    "images": [
+     "192870676ae21998c3ea3",
+     "192870676ae21998e3d91",
+     "192870676ae219990ee4f",
+     "192870676ae2199923082",
+     "192870676ae2199939f34",
+     "192870676ae219995193a"
+    ],
+    "template": 109487581,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19287067,
+      "catalogVariant": 10990,
+      "price": 28,
+      "cost": 19.0,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Charcoal Grey",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#73726e",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-distressed-black-charcoal-roman",
+    "listing": "the-345-hat-distressed-black-charcoal-roman",
+    "images": [
+     "192870686ae2199967962",
+     "192870686ae219997c23d",
+     "192870686ae21999973e5",
+     "192870686ae21999aa012",
+     "192870686ae21999beaef",
+     "192870686ae21999d21e1"
+    ],
+    "template": 109487581,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19287068,
+      "catalogVariant": 10992,
+      "price": 28,
+      "cost": 19.0,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Khaki",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#f6e6c6",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-distressed-khaki-roman",
+    "listing": "the-345-hat-distressed-khaki-roman",
+    "images": [
+     "192871086ae21ac82eaca",
+     "192871086ae21ac8546b2",
+     "192871086ae21ac869946",
+     "192871086ae21ac87ede8",
+     "192871086ae21ac89a907",
+     "192871086ae21ac8af21a"
+    ],
+    "template": 109487595,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19287108,
+      "catalogVariant": 10993,
+      "price": 28,
+      "cost": 19.0,
+      "printfulRetail": null
      }
     ]
    }
@@ -1962,9 +6036,45 @@
    "ops": 1.4,
    "gives": 3.86
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   },
+   {
+    "id": "dot",
+    "label": "3 · 4 · 5"
+   },
+   {
+    "id": "roman",
+    "label": "III · IV · V"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
+    "note": "the 3 | 4 | 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the front, love yours. on the back"
+   },
+   "dot": {
+    "line": "the same three numbers, joined by dots: 3 · 4 · 5.",
+    "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
+    "note": "the 3 · 4 · 5 mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the front, love yours. on the back"
+   },
+   "roman": {
+    "line": "the same three numbers, written the old way: III · IV · V.",
+    "intro": "a pigment-dyed denim cap, six panels, unstructured, adjustable strap. the mark on the front, love yours. on the back. the cleanest of the three hats.",
+    "note": "the III · IV · V mark, embroidered. small on purpose.",
+    "placement": "embroidered mark on the front, love yours. on the back"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#0d0d0d",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/denim-hat-white-logo",
@@ -1991,6 +6101,8 @@
    },
    {
     "name": "Blue",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#5c839a",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/denim-hat-white-logo",
@@ -2017,6 +6129,8 @@
    },
    {
     "name": "Light Blue",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#c9dddc",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/denim-hat-white-logo",
@@ -2038,6 +6152,174 @@
       "price": 28,
       "cost": 19.86,
       "printfulRetail": 25
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#0d0d0d",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-denim-dot",
+    "listing": "the-345-hat-denim-dot",
+    "images": [
+     "192869186ae21804a386f",
+     "192869186ae21804c378f",
+     "192869186ae21804dd39b",
+     "192869186ae21804f1bd6",
+     "192869186ae2180512250",
+     "192869186ae2180526c60"
+    ],
+    "template": 109487560,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286918,
+      "catalogVariant": 11983,
+      "price": 28,
+      "cost": 19.86,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Blue",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#5c839a",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-denim-dot",
+    "listing": "the-345-hat-denim-dot",
+    "images": [
+     "192869196ae2180539b8e",
+     "192869196ae218054df79",
+     "192869196ae2180564de3",
+     "192869196ae218058a479",
+     "192869196ae21805a7b75",
+     "192869196ae21805c1582"
+    ],
+    "template": 109487560,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286919,
+      "catalogVariant": 11984,
+      "price": 28,
+      "cost": 19.86,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Light Blue",
+    "style": "dot",
+    "styleLabel": "3 · 4 · 5",
+    "hex": "#c9dddc",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-denim-dot",
+    "listing": "the-345-hat-denim-dot",
+    "images": [
+     "192869206ae21805d5dc7",
+     "192869206ae21805effd3",
+     "192869206ae2180610fe4",
+     "192869206ae218062771b",
+     "192869206ae218063d00e",
+     "192869206ae218065a7ed"
+    ],
+    "template": 109487560,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286920,
+      "catalogVariant": 11985,
+      "price": 28,
+      "cost": 19.86,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Black",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#0d0d0d",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-denim-roman",
+    "listing": "the-345-hat-denim-roman",
+    "images": [
+     "192869756ae2188b3031c",
+     "192869756ae2188b4f0ad",
+     "192869756ae2188b67a26",
+     "192869756ae2188b7d34b",
+     "192869756ae2188b98ee1",
+     "192869756ae2188baf7c1"
+    ],
+    "template": 109487564,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286975,
+      "catalogVariant": 11983,
+      "price": 28,
+      "cost": 19.86,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Blue",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#5c839a",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-denim-roman",
+    "listing": "the-345-hat-denim-roman",
+    "images": [
+     "192869766ae2188bc3c3d",
+     "192869766ae2188bdda25",
+     "192869766ae2188c017bd",
+     "192869766ae2188c21140",
+     "192869766ae2188c378e5",
+     "192869766ae2188c4bb74"
+    ],
+    "template": 109487564,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286976,
+      "catalogVariant": 11984,
+      "price": 28,
+      "cost": 19.86,
+      "printfulRetail": null
+     }
+    ]
+   },
+   {
+    "name": "Light Blue",
+    "style": "roman",
+    "styleLabel": "III · IV · V",
+    "hex": "#c9dddc",
+    "tag": null,
+    "printful": "https://345loveyours.printful.me/product/the-345-hat-denim-roman",
+    "listing": "the-345-hat-denim-roman",
+    "images": [
+     "192869776ae2188c62b5b",
+     "192869776ae2188c7bd00",
+     "192869776ae2188c8fe4b",
+     "192869776ae2188ca7dcb",
+     "192869776ae2188cbc109",
+     "192869776ae2188cd4ff9"
+    ],
+    "template": 109487564,
+    "sizes": [
+     {
+      "size": "One size",
+      "variant": 19286977,
+      "catalogVariant": 11985,
+      "price": 28,
+      "cost": 19.86,
+      "printfulRetail": null
      }
     ]
    }
@@ -2084,9 +6366,25 @@
    "ops": 3.25,
    "gives": 8.82
   },
+  "styles": [
+   {
+    "id": "classic",
+    "label": "3 | 4 | 5"
+   }
+  ],
+  "styleCopy": {
+   "classic": {
+    "line": "the original mark: 3 | 4 | 5, with the pipes.",
+    "intro": "fleece on one side, sherpa on the other, 50 by 60 inches. the full message is embroidered on the corner. the piece most often bought as a gift.",
+    "note": "the full message is embroidered on the corner: i love you. i believe in you. i am proud of you.",
+    "placement": "message embroidered on the corner"
+   }
+  },
   "colors": [
    {
     "name": "Black",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#131313",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/premium-sherpa-blanket-345-meaning",
@@ -2109,6 +6407,8 @@
    },
    {
     "name": "Fireside Brown",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#482f2c",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/premium-sherpa-blanket-345-meaning",
@@ -2131,6 +6431,8 @@
    },
    {
     "name": "Heather Grey",
+    "style": "classic",
+    "styleLabel": "3 | 4 | 5",
     "hex": "#716a69",
     "tag": null,
     "printful": "https://345loveyours.printful.me/product/premium-sherpa-blanket-345-meaning",
