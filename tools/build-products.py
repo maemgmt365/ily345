@@ -31,7 +31,7 @@ TEMPLATES = {  # printful listing id -> product template id (same colour set)
     1207662: 109487533, 1207669: 109487538, 1207673: 109487548, 1207678: 109487554, 1207683: 109487560,
     1207687: 109487564, 1207690: 109487578, 1207698: 109487581, 1207703: 109487592, 1207711: 109487595,
     # corduroy cap (Big Accessories BA703): classic, dot, roman
-    1207549: 109491295, 1207546: 109491351, 1207734: 109491369,
+    1208427: 109491295, 1208434: 109491351, 1208444: 109491369,
     # sweats, mark on the left thigh: Cotton Heritage M7580 (white thread on dark, black on white)
     1207790: 109495174, 1207793: 109495179, 1207801: 109495184, 1207781: 109495153, 1207785: 109495166, 1207787: 109495169,
     # oversized sweats, Bella + Canvas 4737 (white thread on black and asphalt, black on dust)
@@ -202,7 +202,7 @@ PRODUCTS = [
         "id": "sweats",
         "name": "the 345 sweats",
         "short": "the everyday pair",
-        "price": {"base": 46, "plus": 46},
+        "price": {"base": 44, "plus": 44},
         "category": "sweats",
         "placement": "embroidered mark on the left thigh",
         "intro": "fleece sweatpants with cuffed ankles and a soft, brushed inside. the 3 | 4 | 5 mark sits small on the left thigh, the same mark as the chest, so they pair with any of the tops.",
@@ -414,23 +414,23 @@ PRODUCTS = [
         "note": LOGO_NOTE,
         "details": ["100% cotton corduroy", "6-panel unstructured cap, low profile", "cotton twill sweatband and taping", "6 embroidered eyelets", "adjustable strap with a gold-colored metal buckle", "head circumference 20″ to 22″"],
         "colors": [
-            ("the-345-hat-corduroy", "Black"),
-            ("the-345-hat-corduroy", "Brown"),
-            ("the-345-hat-corduroy", "Burgundy"),
-            ("the-345-hat-corduroy", "Olive"),
+            ("the-345-hat-corduroy-v2", "Black"),
+            ("the-345-hat-corduroy-v2", "Brown"),
+            ("the-345-hat-corduroy-v2", "Burgundy"),
+            ("the-345-hat-corduroy-v2", "Olive"),
         ],
         "styles": {
             "dot": [
-                ("the-345-hat-corduroy-dot", "Black"),
-                ("the-345-hat-corduroy-dot", "Brown"),
-                ("the-345-hat-corduroy-dot", "Burgundy"),
-                ("the-345-hat-corduroy-dot", "Olive"),
+                ("the-345-hat-corduroy-dot-v2", "Black"),
+                ("the-345-hat-corduroy-dot-v2", "Brown"),
+                ("the-345-hat-corduroy-dot-v2", "Burgundy"),
+                ("the-345-hat-corduroy-dot-v2", "Olive"),
             ],
             "roman": [
-                ("the-345-hat-corduroy-roman-png", "Black"),
-                ("the-345-hat-corduroy-roman-png", "Brown"),
-                ("the-345-hat-corduroy-roman-png", "Burgundy"),
-                ("the-345-hat-corduroy-roman-png", "Olive"),
+                ("the-345-hat-corduroy-roman-v2", "Black"),
+                ("the-345-hat-corduroy-roman-v2", "Brown"),
+                ("the-345-hat-corduroy-roman-v2", "Burgundy"),
+                ("the-345-hat-corduroy-roman-v2", "Olive"),
             ],
         },
     },
