@@ -135,7 +135,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .hero-copy { display: flex; align-items: center; padding: 64px var(--gutter); }
 .hero-copy-inner { max-width: 520px; margin: 0 auto; }
-.hero .display { margin: 16px 0 26px; }
+.hero .display { margin: 0 0 26px; }
 .hero-lines { display: grid; gap: 4px; margin: 0 0 24px; }
 .hero-sub { color: var(--muted); max-width: 400px; margin-bottom: 30px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
