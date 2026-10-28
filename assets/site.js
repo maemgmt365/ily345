@@ -99,7 +99,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=f990530f').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=3d10defe').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
