@@ -131,7 +131,7 @@ async function createCheckout(request, env, cors) {
     form.set(`${p}[price_data][currency]`, 'usd');
     form.set(`${p}[price_data][unit_amount]`, String(l.priceCents));
     form.set(`${p}[price_data][product_data][name]`, l.name);
-    form.set(`${p}[price_data][product_data][description]`, [l.color, l.size].filter(Boolean).join(' · '));
+    form.set(`${p}[price_data][product_data][description]`, [l.color, l.size].filter(Boolean).join(' · ') + (l.styleLabel ? ' · style: ' + l.styleLabel : ''));
     if (l.image) form.set(`${p}[price_data][product_data][images][0]`, l.image);
     form.set(`${p}[price_data][product_data][metadata][variant]`, String(l.variant));
     if ((env.STRIPE_TAX || 'off') === 'on') form.set(`${p}[price_data][tax_behavior]`, 'exclusive');
@@ -260,6 +260,7 @@ async function loadCatalog(env) {
   for (const p of products) for (const c of p.colors) for (const s of c.sizes) {
     byVariant[String(s.variant)] = {
       variant: s.variant, catalogVariant: s.catalogVariant, template: c.template, name: p.name, color: c.name, size: s.size === 'One size' ? '' : s.size,
+      styleLabel: (p.styles && p.styles.length > 1 && c.styleLabel) ? c.styleLabel : '',
       priceCents: Math.round(s.price * 100),
       costCents: Math.round((s.cost || 0) * 100),
       givesCents: Math.round(Math.max(0, Math.floor((p.give && p.give.gives) || 0)) * 100),
