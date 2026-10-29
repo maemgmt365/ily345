@@ -4,7 +4,7 @@ GitHub Pages' cache pick up every deploy. Run before packaging."""
 import hashlib, re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 h = hashlib.sha1((ROOT / 'assets/site.css').read_bytes() + (ROOT / 'assets/site.js').read_bytes() + (ROOT / 'data/products.json').read_bytes()).hexdigest()[:8]
-for f in ROOT.glob('*.html'):
+for f in list(ROOT.glob('*.html')) + list(ROOT.glob('p/*.html')):
     s = f.read_text()
     s2 = re.sub(r'assets/site\.(css|js)(\?v=[0-9a-f]+)?', lambda m: f'assets/site.{m.group(1)}?v={h}', s)
     if s2 != s: f.write_text(s2)

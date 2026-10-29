@@ -537,3 +537,43 @@ for p in PRODUCTS:
 n_colors = sum(len(p["colors"]) for p in out)
 n_var = sum(len(c["sizes"]) for p in out for c in p["colors"])
 print(f"wrote {len(out)} products, {n_colors} colourways, {n_var} variants")
+
+# ---------- share pages: one static page per piece, so a texted link previews that piece ----------
+# p/<id>.html is product.html with the piece baked in: its own title, description and og image.
+# <base href="/"> keeps every relative link and fetch pointing at the site root.
+import html as _html
+TEMPLATE = (ROOT / "product.html").read_text()
+PDIR = ROOT / "p"; PDIR.mkdir(exist_ok=True)
+for old in PDIR.glob("*.html"):
+    if old.stem not in {p["id"] for p in out}: old.unlink()
+for p in out:
+    first = p["colors"][0]
+    img = "https://cdn.printful.me/t/quick-stores/variants/" + first["images"][0]
+    title = f"{p['name']} · 3 | 4 | 5"
+    desc = f"{p['short']}. ${p['price']}. 3 | i love you. 4 | i believe in you. 5 | i am proud of you."
+    url = f"https://ily345.com/p/{p['id']}.html"
+    e = lambda s: _html.escape(s, quote=True)
+    head = (f'<meta charset="UTF-8">\n  <base href="/">\n'
+            f'  <link rel="canonical" href="{url}">')
+    meta = (f'<title>{e(title)}</title>\n'
+            f'  <meta name="description" content="{e(desc)}">\n'
+            f'  <meta property="og:type" content="product">\n'
+            f'  <meta property="og:site_name" content="3 | 4 | 5">\n'
+            f'  <meta property="og:title" content="{e(title)}">\n'
+            f'  <meta property="og:description" content="{e(desc)}">\n'
+            f'  <meta property="og:url" content="{url}">\n'
+            f'  <meta property="og:image" content="{img}">\n'
+            f'  <meta property="og:image:alt" content="{e(p["name"] + ", " + first["name"].lower())}">\n'
+            f'  <meta name="twitter:card" content="summary_large_image">')
+    s = TEMPLATE
+    s = s.replace('<meta charset="UTF-8">', head, 1)
+    start = s.index("<title>"); end = s.index('<link rel="icon"')
+    s = s[:start] + meta + "\n  " + s[end:]
+    s = s.replace('<script src="assets/site.js', f"<script>window.PREVIEW_PRODUCT='{p['id']}';</script>\n  <script src=\"assets/site.js", 1)
+    (PDIR / f"{p['id']}.html").write_text(s)
+
+# sitemap follows the product list
+urls = ["", "shop.html"] + [f"p/{p['id']}.html" for p in out] + ["story.html", "send.html", "ledger.html", "support.html"]
+(ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + "".join(f"  <url><loc>https://ily345.com/{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+print(f"wrote {len(out)} share pages in p/ and sitemap.xml")
