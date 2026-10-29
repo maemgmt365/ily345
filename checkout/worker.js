@@ -131,7 +131,7 @@ async function createCheckout(request, env, cors) {
     form.set(`${p}[price_data][currency]`, 'usd');
     form.set(`${p}[price_data][unit_amount]`, String(l.priceCents));
     form.set(`${p}[price_data][product_data][name]`, l.name);
-    form.set(`${p}[price_data][product_data][description]`, [l.color, l.size].filter(Boolean).join(' · ') + (l.styleLabel ? ' · style: ' + l.styleLabel : ''));
+    form.set(`${p}[price_data][product_data][description]`, [(l.color || '').toLowerCase(), l.size].filter(Boolean).join(' · ') + (l.styleLabel ? ' · style: ' + l.styleLabel : ''));
     if (l.image) form.set(`${p}[price_data][product_data][images][0]`, l.image);
     form.set(`${p}[price_data][product_data][metadata][variant]`, String(l.variant));
     if ((env.STRIPE_TAX || 'off') === 'on') form.set(`${p}[price_data][tax_behavior]`, 'exclusive');
