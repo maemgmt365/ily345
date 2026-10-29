@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ily345.com/</loc></url>
   <url><loc>https://ily345.com/shop.html</loc></url>
-  <url><loc>https://ily345.com/product.html?p=hoodie</loc></url>
-  <url><loc>https://ily345.com/product.html?p=oversized-hoodie</loc></url>
-  <url><loc>https://ily345.com/product.html?p=crewneck</loc></url>
-  <url><loc>https://ily345.com/product.html?p=tee-mens</loc></url>
-  <url><loc>https://ily345.com/product.html?p=tee-womens</loc></url>
-  <url><loc>https://ily345.com/product.html?p=beanie</loc></url>
-  <url><loc>https://ily345.com/product.html?p=hat-distressed</loc></url>
-  <url><loc>https://ily345.com/product.html?p=hat-denim</loc></url>
-  <url><loc>https://ily345.com/product.html?p=blanket</loc></url>
+  <url><loc>https://ily345.com/p/hoodie.html</loc></url>
+  <url><loc>https://ily345.com/p/oversized-hoodie.html</loc></url>
+  <url><loc>https://ily345.com/p/crewneck.html</loc></url>
+  <url><loc>https://ily345.com/p/sweats.html</loc></url>
+  <url><loc>https://ily345.com/p/oversized-sweats.html</loc></url>
+  <url><loc>https://ily345.com/p/tee-mens.html</loc></url>
+  <url><loc>https://ily345.com/p/tee-womens.html</loc></url>
+  <url><loc>https://ily345.com/p/beanie.html</loc></url>
+  <url><loc>https://ily345.com/p/hat-distressed.html</loc></url>
+  <url><loc>https://ily345.com/p/hat-denim.html</loc></url>
+  <url><loc>https://ily345.com/p/hat-corduroy.html</loc></url>
+  <url><loc>https://ily345.com/p/blanket.html</loc></url>
+  <url><loc>https://ily345.com/story.html</loc></url>
   <url><loc>https://ily345.com/send.html</loc></url>
   <url><loc>https://ily345.com/ledger.html</loc></url>
   <url><loc>https://ily345.com/support.html</loc></url>
