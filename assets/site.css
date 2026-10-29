@@ -548,3 +548,11 @@ select.send-input { appearance: none; -webkit-appearance: none; background-image
 .promo { margin: 4px 0 2px; }
 .promo .send-input { height: 42px; font-size: var(--fs-small); }
 .thanks-gives { color: var(--muted); margin-top: 14px; }
+.thanks-nudge { width: 100%; max-width: 460px; display: grid; gap: 14px; justify-items: center; margin-top: 10px; padding-top: 30px; border-top: 1px solid var(--line); }
+.thanks-nudge p { color: var(--muted); }
+.thanks-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
+.thanks-actions .btn { min-width: 180px; }
+@media (max-width: 640px) {
+  .thanks-actions { flex-direction: column; width: 100%; }
+  .thanks-actions .btn { width: 100%; }
+}

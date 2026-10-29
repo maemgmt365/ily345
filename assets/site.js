@@ -125,7 +125,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=368b9fa8').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=ce81c5d0').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -138,7 +138,7 @@
     var nStyles = (p.styles && p.styles.length) || 1;
     var front = c.images[0], back = c.images[1];
     var cover = (p.opaque ? (p.fill ? ' cover' : ' flat') + '" style="background:' + p.opaque : '') + (p.blend ? ' blend' : '');
-    var href = 'product.html?p=' + p.id + (colorName ? '&c=' + encodeURIComponent(c.name) : '');
+    var href = 'p/' + p.id + '.html' + (colorName ? '?c=' + encodeURIComponent(c.name) : '');
     var chips = base.map(function (x) {
       return '<span class="chip" style="background:' + x.hex + '" title="' + esc(x.name) + '"></span>';
     }).join('');
@@ -253,7 +253,8 @@
       $('#style-name').textContent = '';
     }
     function syncUrl() {
-      history.replaceState(null, '', '?p=' + p.id + '&c=' + encodeURIComponent(color().name) + (styles.length > 1 ? '&s=' + state.style : ''));
+      // on a share page (p/<id>.html) the piece is in the path; on product.html it stays in ?p=
+      history.replaceState(null, '', location.pathname + '?' + (window.PREVIEW_PRODUCT ? '' : 'p=' + p.id + '&') + 'c=' + encodeURIComponent(color().name) + (styles.length > 1 ? '&s=' + state.style : ''));
     }
     function drawColors() {
       colors.innerHTML = styleColors().map(function (c, i) {
@@ -328,7 +329,7 @@
       if (!has) return;
       lines.innerHTML = items.map(function (i) {
         return '<div class="bag-line">' +
-          '<a class="bag-thumb' + (i.cover ? (i.fill ? ' cover' : ' flat') + '" style="background:' + i.cover : '') + '" href="product.html?p=' + i.product + '&c=' + encodeURIComponent(i.color) + (i.style && i.styleLabel ? '&s=' + i.style : '') + '"><img src="' + CONFIG.imgGrid(i.image) + '" alt=""></a>' +
+          '<a class="bag-thumb' + (i.cover ? (i.fill ? ' cover' : ' flat') + '" style="background:' + i.cover : '') + '" href="p/' + i.product + '.html?c=' + encodeURIComponent(i.color) + (i.style && i.styleLabel ? '&s=' + i.style : '') + '"><img src="' + CONFIG.imgGrid(i.image) + '" alt=""></a>' +
           '<div class="bag-info">' +
             '<div class="small">' + esc(i.name) + '</div>' +
             '<div class="label muted">' + esc(i.color.toLowerCase()) + (i.size && i.size !== 'One size' ? ' · ' + esc(i.size) : '') + '</div>' +
