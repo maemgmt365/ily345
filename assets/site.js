@@ -59,7 +59,8 @@
       h.innerHTML =
         '<div class="wrap header-row">' +
           '<nav class="nav label" aria-label="primary">' +
-            '<a href="index.html#shop"' + (page === 'shop' || page === 'product' ? ' aria-current="page"' : '') + '>shop</a>' +
+            '<button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-menu">menu</button>' +
+            '<a href="index.html#shop" class="hide-sm"' + (page === 'shop' || page === 'product' ? ' aria-current="page"' : '') + '>shop</a>' +
             '<a href="story.html" class="hide-sm"' + (page === 'story' ? ' aria-current="page"' : '') + '>story</a>' +
             '<a href="send.html" class="hide-sm"' + (page === 'send' ? ' aria-current="page"' : '') + '>send a 345</a>' +
             '<a href="ledger.html" class="hide-sm"' + (page === 'ledger' ? ' aria-current="page"' : '') + '>the ledger</a>' +
@@ -69,7 +70,16 @@
             '<a href="index.html#details" class="hide-sm">good to know</a>' +
             '<a href="bag.html"' + (page === 'bag' ? ' aria-current="page"' : '') + '>bag <span class="bag-count" id="bag-count">(0)</span></a>' +
           '</nav>' +
-        '</div>';
+        '</div>' +
+        // phone only: everything the header hides, plus support, in one menu under the bar
+        '<nav class="site-menu label" id="site-menu" aria-label="menu" hidden>' +
+          '<div class="wrap">' +
+            [['index.html#shop', 'shop', page === 'shop' || page === 'product'], ['story.html', 'story', page === 'story'], ['send.html', 'send a 345', page === 'send'],
+             ['ledger.html', 'the ledger', page === 'ledger'], ['index.html#details', 'good to know', false], ['support.html', 'support', page === 'support']]
+              .map(function (l) { return '<a href="' + l[0] + '"' + (l[2] ? ' aria-current="page"' : '') + '>' + l[1] + '</a>'; }).join('') +
+          '</div>' +
+        '</nav>';
+      initMenu(h);
     }
     var f = $('#site-footer');
     if (f) {
@@ -91,6 +101,22 @@
     }
     renderBagCount();
   }
+  function initMenu(h) {
+    var btn = $('#menu-btn'), menu = $('#site-menu');
+    if (!btn || !menu) return;
+    function set(open) {
+      menu.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? 'close' : 'menu';
+      document.documentElement.classList.toggle('menu-open', open);
+    }
+    btn.addEventListener('click', function () { set(menu.hidden); });
+    // links like index.html#details stay on the same page, so close on any tap inside
+    menu.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) { set(false); btn.focus(); } });
+    document.addEventListener('click', function (e) { if (!menu.hidden && !h.contains(e.target)) set(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 640 && !menu.hidden) set(false); });
+  }
   function renderBagCount() {
     var el = $('#bag-count');
     if (el) el.textContent = '(' + Bag.count() + ')';
@@ -99,7 +125,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=3d10defe').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=368b9fa8').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -197,7 +223,6 @@
           '<div class="label accent">' + esc(p.short) + '</div>' +
           '<h1 class="display-sm">' + esc(p.name) + '</h1>' +
           '<div class="pdp-price" id="pdp-price"></div>' +
-          (p.give && p.give.gives >= 1 ? '<a class="pdp-gives label accent" href="ledger.html">$' + Math.floor(p.give.gives) + ' of this goes to <span id="gives-partner">' + esc(givePartnerName()) + '</span> · the ledger</a>' : '') +
         '</div>' +
         '<div class="opt"><div class="opt-head label"><span>color</span><span class="muted" id="color-name"></span></div><div class="color-list" id="colors"></div></div>' +
         '<div class="opt" id="style-opt"' + (styles.length > 1 ? '' : ' hidden') + '><div class="opt-head label"><span>style</span><span class="muted" id="style-name"></span></div><div class="size-list style-list" id="styles"></div></div>' +
