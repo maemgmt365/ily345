@@ -573,7 +573,7 @@ for p in out:
     (PDIR / f"{p['id']}.html").write_text(s)
 
 # sitemap follows the product list
-urls = ["", "shop.html"] + [f"p/{p['id']}.html" for p in out] + ["story.html", "send.html", "ledger.html", "support.html"]
+urls = ["", "shop.html"] + [f"p/{p['id']}.html" for p in out] + ["story.html", "send.html", "ledger.html", "support.html", "partner.html"]
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"  <url><loc>https://ily345.com/{u}</loc></url>\n" for u in urls) + "</urlset>\n")
 print(f"wrote {len(out)} share pages in p/ and sitemap.xml")
