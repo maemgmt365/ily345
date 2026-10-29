@@ -101,6 +101,16 @@
     }
     renderBagCount();
   }
+  // product page: where the money from this piece goes, line by line (same figures as the ledger page)
+  function pdpLedger(g) {
+    var rows = [['price', g.price], ['making it (printful)', g.cost], ['card processor', g.stripe], ['sales tax on the blank', g.tax], ['5% to keep the site running', g.ops]];
+    return '<div class="pdp-ledger">' +
+      rows.map(function (r) { return '<div class="pl-row"><span>' + r[0] + '</span><span>' + cents(r[1]) + '</span></div>'; }).join('') +
+      '<div class="pl-row pl-gives"><span>goes to the nonprofit</span><span>' + cents(g.gives) + '</span></div>' +
+      '</div>' +
+      '<p>we promise $' + Math.floor(g.gives) + ' on this piece, rounded down so we never promise more than we send. shipping is paid at checkout and goes straight to printful.</p>' +
+      '<p><a class="link-u" href="ledger.html">the ledger</a> shows every transfer and its receipt.</p>';
+  }
   function initMenu(h) {
     var btn = $('#menu-btn'), menu = $('#site-menu');
     if (!btn || !menu) return;
@@ -125,7 +135,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=ce81c5d0').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=b1ba4f52').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -236,6 +246,7 @@
           '<details><summary class="label">the message</summary><div class="acc-body prose">' + p.message.map(function (m) { return '<p>' + esc(m) + '</p>'; }).join('') + '</div></details>' +
           '<details><summary class="label">materials</summary><div class="acc-body"><ul>' + p.details.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul></div></details>' +
           '<details><summary class="label">good to know</summary><div class="acc-body"><ul class="know">' + p.know.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul></div></details>' +
+          (p.give ? '<details><summary class="label">the ledger</summary><div class="acc-body">' + pdpLedger(p.give) + '</div></details>' : '') +
         '</div>' +
       '</div>';
 

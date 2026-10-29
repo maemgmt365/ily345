@@ -267,6 +267,9 @@ h1, h2, h3, p { margin: 0; }
 
 /* ---------- pdp good to know ---------- */
 .know { display: grid; gap: 8px; padding: 18px 0 0; }
+.pdp-ledger { display: grid; padding: 6px 0 14px; font-variant-numeric: tabular-nums; }
+.pdp-ledger .pl-row { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.pdp-ledger .pl-gives { color: var(--accent); border-bottom: 0; }
 .know li { font-size: var(--fs-small); color: var(--muted); list-style: none; padding-left: 14px; position: relative; }
 .know li::before { content: ""; position: absolute; left: 0; top: 0.75em; width: 5px; height: 1px; background: var(--muted); }
 
