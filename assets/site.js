@@ -75,7 +75,7 @@
         '<nav class="site-menu label" id="site-menu" aria-label="menu" hidden>' +
           '<div class="wrap">' +
             [['index.html#shop', 'shop', page === 'shop' || page === 'product'], ['story.html', 'story', page === 'story'], ['send.html', 'send a 345', page === 'send'],
-             ['ledger.html', 'the ledger', page === 'ledger'], ['index.html#details', 'good to know', false], ['support.html', 'support', page === 'support']]
+             ['ledger.html', 'the ledger', page === 'ledger'], ['index.html#details', 'good to know', false], ['support.html', 'support', page === 'support'], ['partner.html', 'partner with us', page === 'partner']]
               .map(function (l) { return '<a href="' + l[0] + '"' + (l[2] ? ' aria-current="page"' : '') + '>' + l[1] + '</a>'; }).join('') +
           '</div>' +
         '</nav>';
@@ -94,6 +94,7 @@
             '<a href="ledger.html">the ledger</a>' +
             '<a href="index.html#details">good to know</a>' +
             '<a href="support.html"' + (page === 'support' ? ' aria-current="page"' : '') + '>support</a>' +
+            '<a href="partner.html"' + (page === 'partner' ? ' aria-current="page"' : '') + '>partner with us</a>' +
           '</nav>' +
           '<div>story first · product second</div>' +
         '</div>' +
@@ -135,7 +136,7 @@
   /* ---------- products ---------- */
   function loadProducts(cb) {
     if (window.PRODUCTS) return cb(window.PRODUCTS);
-    fetch('data/products.json?v=b1ba4f52').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
+    fetch('data/products.json?v=80bf9279').then(function (r) { return r.json(); }).then(function (d) { window.PRODUCTS = d; cb(d); })
       .catch(function () { var el = $('[data-products-error]'); if (el) el.hidden = false; });
   }
   function findProduct(list, id) { return list.filter(function (p) { return p.id === id; })[0]; }
@@ -427,6 +428,8 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var body = { topic: $('#sup-topic').value, name: $('#sup-name').value.trim(), email: $('#sup-email').value.trim(), order: $('#sup-order').value.trim(), message: $('#sup-message').value.trim(), website: $('#sup-website').value, page: location.href };
+      // on the partner page the optional field is an organization, not an order number: put it at the top of the note instead
+      if (page === 'partner') { if (body.order && body.message) body.message = 'organization: ' + body.order + '\n\n' + body.message; body.order = ''; }
       if (!body.name || !body.email || body.email.indexOf('@') < 0 || !body.message) { hint.textContent = 'a name, an email we can answer, and the note itself. that is all we need.'; return; }
       if (CONFIG.checkoutUrl.indexOf('REPLACE' + '-ME') > -1) { hint.textContent = 'the note could not be sent right now. please try again in a little while.'; return; }
       btn.disabled = true; btn.textContent = 'sending';
@@ -586,6 +589,6 @@
   if (page === 'bag') loadProducts(function () { loadGiving(initBag); });
   if (page === 'thanks') initThanks();
   if (page === 'send') initSend();
-  if (page === 'support') initSupport();
+  if (page === 'support' || page === 'partner') initSupport();
   if (page === 'story') observeReveal();
 })();

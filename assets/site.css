@@ -336,8 +336,12 @@ h1, h2, h3, p { margin: 0; }
   .footer-row .nav { display: grid; grid-template-columns: repeat(3, auto); justify-content: center; justify-items: center; gap: 14px 22px; }
   .footer-legal { text-align: center; }
 }
+/* an odd last link (partner with us) gets its own centered row instead of hanging in the first column */
+@media (max-width: 640px) { .footer-row .nav a:last-child:nth-child(3n+1) { grid-column: 1 / -1; } }
 @media (max-width: 374px) {
   .footer-row .nav { grid-template-columns: repeat(2, auto); }
+  .footer-row .nav a:last-child:nth-child(3n+1) { grid-column: auto; }
+  .footer-row .nav a:last-child:nth-child(2n+1) { grid-column: 1 / -1; }
 }
 
 /* ---------- reveal ---------- */
@@ -492,6 +496,13 @@ select.send-input { appearance: none; -webkit-appearance: none; background-image
 .support-answers .label.accent { margin-bottom: 10px; }
 .support-answers .fact .label { color: var(--ink); }
 .support .send-actions .btn { min-width: 160px; }
+.ed-marks { display: grid; gap: 10px; margin: 4px 0 14px; }
+.ed-row { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 14px; }
+/* small | big | small, so the leading number sits in the same spot on every row */
+.ed-mark { display: grid; grid-template-columns: 1fr auto 1fr; align-items: start; font-family: var(--serif); font-size: 30px; line-height: 1; color: var(--ink); }
+.ed-mark sup { font-size: 0.42em; line-height: 1.1; color: var(--accent); }
+.ed-mark sup:first-child { justify-self: end; margin-right: 0.08em; }
+.ed-mark sup:last-child { justify-self: start; margin-left: 0.08em; }
 
 /* back to top */
 .to-top { position: fixed; right: 22px; bottom: 22px; z-index: 30; width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--line-strong); background: var(--bg); color: var(--ink); cursor: pointer; transition: border-color 0.2s var(--ease), color 0.2s var(--ease); }
